@@ -1,0 +1,17 @@
+![Sharing Tools and Artefacts for Reproducible Simulations in healthcare](images/stars_banner.png)
+
+This project is focused on improving the quality and impact of simulation models. Activities have helped modellers to make their models:
+
+Reproducible
+
+Reusable
+
+Replicable
+
+We're also exploring the capabilities of large language models (LLMs) for supporting simulation modelling.
+
+LLMs
+
+We have a package to support Python simulation research.
+
+sim-tools
