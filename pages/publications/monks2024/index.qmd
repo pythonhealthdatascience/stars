@@ -1,0 +1,30 @@
+---
+title: "Towards sharing tools and artefacts for reusable simulations in healthcare"
+author:
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Alison Harper
+    affiliation: University of Exeter Business School and NIHR Applied Research Collaboration South West Peninsula
+    orcid: 0000-0001-5274-5037
+  - name: Navonil Mustafee
+    affiliation: University of Exeter Business School
+    orcid: 0000-0002-2204-8924
+date: 2 May 2024
+date-format: "D MMM YYYY"
+image: frontpage.png
+categories:
+  - Reusable
+---
+
+## Abstract
+
+Discrete-event simulation (DES) is a widely used computational method in health services and health economic studies. Despite increasing recognition of the advantages of open, reusable DES models for both healthcare practitioners and simulation researchers, in practice very few authors share their model code alongside a published paper. In the context of Free and Open Source Software (FOSS), this paper presents a pilot framework called STARS: Sharing Tools and Artefacts for Reusable Simulations to begin to address the challenges and leverage the opportunities of sharing DES models in healthcare. STARS aligns with existing guidelines and documentation, including reproducibility initiatives, and enables computer models to be shared with users of differing technical abilities. We demonstrate the feasibility and applicability of STARS with three applied DES examples using Python. Our framework supports the development of open, reusable DES models which can enable partner healthcare organisations to preview, validate, and use models. Academic research teams can benefit from knowledge exchange, enhanced recognition and scrutiny of their work, and long-term archiving of models.
+
+## Article
+
+```{=html}
+<div class="embed-container">
+  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+</div>
+```

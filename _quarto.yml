@@ -42,10 +42,10 @@ website:
         - pages/simtools.qmd
   page-footer:
     center: |
-      ![](images/exeter.png){width=150px}
-      ![](images/somerset.jpg){width=100px}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      ![](images/ukmrc.png){width=150px}&nbsp;&nbsp;&nbsp;
-      ![](images/nihr.png){width=200px}
+      ![](/images/exeter.png){width=150px}
+      ![](/images/somerset.jpg){width=100px}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      ![](/images/ukmrc.png){width=150px}&nbsp;&nbsp;&nbsp;
+      ![](/images/nihr.png){width=200px}
 
 format:
   html:

@@ -1,31 +1,3 @@
-/* Add line break before H2 */
-section.level2 {
-  padding-top: 2em;
-}
-
-body h2:not(nav[role="doc-toc"] h2) {
-  /* Pale blue background for H2 text */
-  background-color: #e6f2fa; /* Very light blue */
-  padding: 0.5em 1em;
-  border-radius: 0.25em;
-}
-
-/* Horizontal line above H2 */
-body h2:not(nav[role="doc-toc"] h2)::before {
-  content: "";
-  display: block;
-  border-top: 2px solid #9ecae1;
-  margin-bottom: 0.5em;
-}
-
-/* Horizontal line below H2 */
-body h2:not(nav[role="doc-toc"] h2)::after {
-  content: "";
-  display: block;
-  border-bottom: 2px solid #9ecae1;
-  margin-top: 0.5em;
-}
-
 h3 {
   /* Space before H3 */
   margin-top: 1em;
@@ -42,4 +14,22 @@ h3 {
 h4 {
   font-weight: bold;
   margin-top: 1em;
+}
+
+/* PDF container - SOURCE: https://github.com/andrewheiss/ath-quarto/blob/main/cv/index.qmd */
+.embed-container {
+  position: relative;
+  padding-bottom: 129%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
