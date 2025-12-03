@@ -4,4 +4,5 @@ listing:
   contents: publications
   sort: "date desc"
   categories: true
+  fields: [image, date, title, author, categories]
 ---
