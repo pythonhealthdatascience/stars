@@ -12,11 +12,7 @@ website:
       - pages/publications.qmd
     tools:
       - icon: github
-        menu:
-          - text: View the STARS GitHub
-            href: https://github.com/pythonhealthdatascience
-          - text: View the code for this website
-            href: https://github.com/pythonhealthdatascience/stars
+        href: https://github.com/pythonhealthdatascience/stars
   sidebar:
     - id: research
       style: "docked"
