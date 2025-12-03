@@ -18,7 +18,7 @@ author:
     affiliation: Somerset NHS Foundation Trust
     orcid: 0000-0003-1263-2286
 date: 9 September 2025
-date-format: "D MMM YYYY"
+date-format: "DD MMM YYYY"
 image: frontpage.png
 categories:
   - Reproducible

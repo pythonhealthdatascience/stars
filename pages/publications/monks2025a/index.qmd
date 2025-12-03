@@ -1,0 +1,37 @@
+---
+title: "Building healthcare discrete-event simulation models in free and open source software: an introductory tutorial"
+doi: https://doi.org/10.36819/SW25.004
+author:
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Alison Harper
+    affiliation: University of Exeter Business School
+    orcid: 0000-0001-5274-5037
+  - name: Amy Heather
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0002-6596-3479
+  - name: Andrew Mayne
+    affiliation: Somerset NHS Foundation Trust
+    orcid: 0000-0003-1263-2286
+  - name: Navonil Mustafee
+    affiliation: University of Exeter Business School
+    orcid: 0000-0002-2204-8924
+date: 31 March 2025
+date-format: "DD MMM YYYY"
+image: frontpage.png
+categories:
+  - NOTSURE
+---
+
+## Abstract
+
+This tutorial aims to support modellers working in healthcare research or practice to build DiscreteEvent Simulation models using the Free and Open Source Software SimPy and Python. We provide a step-by-step guide to building a stylised urgent care telephone call centre model. Open materials that accompany the tutorial, including models and exercises, are available online and can be run without installing Python. As the materials are introductory, we also provide a "next steps" section that describes simple, intermediate and advanced extensions to the work.
+
+## Article
+
+```{=html}
+<div class="embed-container">
+  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+</div>
+```

@@ -1,0 +1,31 @@
+---
+title: "Unlocking the potential of past research: using generative AI to reconstruct healthcare simulation models"
+doi: https://doi.org/10.1080/01605682.2025.2554751
+author:
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Alison Harper
+    affiliation: University of Exeter Business School
+    orcid: 0000-0001-5274-5037
+  - name: Amy Heather
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0002-6596-3479
+date: 10 September 2025
+date-format: "DD MMM YYYY"
+image: frontpage.png
+categories:
+  - LLMs
+---
+
+## Abstract
+
+Discrete-event simulation (DES) is widely used in healthcare Operations Research, but the models themselves are rarely shared. This limits their potential for reuse and long-term impact in the modelling and healthcare communities. This study explores the feasibility of using generative artificial intelligence (AI) to recreate published models using Free and Open Source Software (FOSS), based on the descriptions provided in an academic journal. Using a structured methodology, we successfully generated, tested and internally reproduced two DES models, including user interfaces. The reported results were replicated for one model, but not the other, likely due to missing information on distributions. These models are substantially more complex than AI-generated DES models published to date. Given the challenges we faced in prompt engineering, code generation, and model testing, we conclude that our iterative approach to model development, systematic comparison and testing, and the expertise of our team were necessary to the success of our recreated simulation models.
+
+## Article
+
+```{=html}
+<div class="embed-container">
+  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+</div>
+```

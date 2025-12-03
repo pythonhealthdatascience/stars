@@ -1,0 +1,66 @@
+---
+title: "Development and application of simulation modelling for orthopaedic elective resource planning in England"
+doi: https://doi.org/10.1136/bmjopen-2023-076221
+author:
+  - name: Alison Harper
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0001-5274-5037
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Rebecca Wilson
+    affiliation: NIHR Applied Research Collaboration West, Bristol
+    orcid: 0000-0003-4709-7260
+  - name: Maria Theresa Redaniel
+    affiliation: NIHR Applied Research Collaboration West, Bristol
+    orcid: 0000-0002-0668-0874
+  - name: Emily Eyles
+    affiliation: NIHR Applied Research Collaboration West, Bristol
+    orcid: 0000-0002-2695-7172
+  - name: Tim Jones
+    affiliation: NIHR Applied Research Collaboration West, Bristol
+    orcid: 0000-0002-1199-8668
+  - name: Chris Penfold
+    affiliation: NIHR Bristol Biomedical Research Centre, Bristol
+    orcid: 0000-0001-8654-353X
+  - name: Andrew Elliott
+    affiliation: North Bristol NHS Trust Southmead Hospital, Bristol
+  - name: Tim Keen
+    affiliation: North Bristol NHS Trust Southmead Hospital, Bristol
+    orcid: 0009-0005-6230-2455
+  - name: Martin Pitt
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-4026-8346
+  - name: Ashley Blom
+    affiliation: University of Sheffield
+    orcid: 0000-0002-9940-1095
+  - name: Michael R Whitehouse
+    affiliation: North Bristol NHS Trust Southmead Hospital, Bristol
+    orcid: 0000-0003-2436-9024
+  - name: Andrew Judge
+    affiliation: NIHR Bristol Biomedical Research Centre, Bristol
+    orcid: 0000-0003-3015-0432
+date: 22 December 2023
+date-format: "DD MMM YYYY"
+image: frontpage.png
+categories:
+  - "NOTSURE"
+---
+
+## Abstract
+
+**Objectives** This study aimed to develop a simulation model to support orthopaedic elective capacity planning.
+
+**Methods** An open-source, generalisable discrete-event simulation was developed, including a web-based application. The model used anonymised patient records between 2016 and 2019 of elective orthopaedic procedures from a National Health Service (NHS) Trust in England. In this paper, it is used to investigate scenarios including resourcing (beds and theatres) and productivity (lengths of stay, delayed discharges and theatre activity) to support planning for meeting new NHS targets aimed at reducing elective orthopaedic surgical backlogs in a proposed ring-fenced orthopaedic surgical facility. The simulation is interactive and intended for use by health service planners and clinicians.
+
+**Results** A higher number of beds (65–70) than the proposed number (40 beds) will be required if lengths of stay and delayed discharge rates remain unchanged. Reducing lengths of stay in line with national benchmarks reduces bed utilisation to an estimated 60%, allowing for additional theatre activity such as weekend working. Further, reducing the proportion of patients with a delayed discharge by 75% reduces bed utilisation to below 40%, even with weekend working. A range of other scenarios can also be investigated directly by NHS planners using the interactive web app.
+
+**Conclusions** The simulation model is intended to support capacity planning of orthopaedic elective services by identifying a balance of capacity across theatres and beds and predicting the impact of productivity measures on capacity requirements. It is applicable beyond the study site and can be adapted for other specialties.
+
+## Article
+
+```{=html}
+<div class="embed-container">
+  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+</div>
+```
