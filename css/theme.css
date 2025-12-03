@@ -1,0 +1,45 @@
+/* Add line break before H2 */
+section.level2 {
+  padding-top: 2em;
+}
+
+body h2:not(nav[role="doc-toc"] h2) {
+  /* Pale blue background for H2 text */
+  background-color: #e6f2fa; /* Very light blue */
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+}
+
+/* Horizontal line above H2 */
+body h2:not(nav[role="doc-toc"] h2)::before {
+  content: "";
+  display: block;
+  border-top: 2px solid #9ecae1;
+  margin-bottom: 0.5em;
+}
+
+/* Horizontal line below H2 */
+body h2:not(nav[role="doc-toc"] h2)::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #9ecae1;
+  margin-top: 0.5em;
+}
+
+h3 {
+  /* Space before H3 */
+  margin-top: 1em;
+  /* Line under H3 */
+  display: inline-block;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.7em;
+  /* Space after H3 */
+  margin-bottom: 1em;
+}
+
+/* Make H4 a little bolder and a little space before */
+h4 {
+  font-weight: bold;
+  margin-top: 1em;
+}

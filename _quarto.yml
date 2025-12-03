@@ -54,5 +54,6 @@ format:
       - css/theme.scss
     css:
       - css/footer.css
+      - css/theme.css
     lightbox: true
     title-block-banner: images/banner.png
