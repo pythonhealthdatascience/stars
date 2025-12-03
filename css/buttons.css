@@ -1,0 +1,47 @@
+/* Adapted from: https://github.com/hsma-programme/decision_intelligence_atlas/blob/main/index.qmd */
+
+.value-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  background-color: #0a4568;
+}
+
+.value-box:hover {
+  transform: translateY(-4px);
+}
+
+.value-box .icon {
+  font-size: 4.5rem;
+  line-height: 1rem;
+  padding-left: 1rem;
+  margin-right: 2rem;
+}
+
+.value-box .text {
+  margin-top: -1rem;
+}
+
+.value-box .title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.value-box .value {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0.2rem 0;
+}
+
+.value-box .details {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.3;
+}

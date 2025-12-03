@@ -1,4 +1,39 @@
 ---
-title: "![STARS: Sharing Tools and Artefacts for Reproducible and Reusable Simulations in healthcare](images/stars_banner.png)"
+title: "![STARS: Sharing Tools and Artefacts for Reproducible and Reusable Simulations in healthcare](images/stars_reproduce_reuse_banner_white.png)"
 pagetitle: STARS
+format:
+  html:
+    css:
+      css/buttons.css
 ---
+
+The STARS project supports researchers in developing transparent, high‑impact discrete-event simulation studies in healthcare that are computationally reproducible and practically reusable. It provides structured guidance, tools, and worked examples to help teams share code, data, and documentation in ways that enable others to understand, verify, and adapt their models for new healthcare settings.
+
+```{=html}
+<br>
+<a href="pages/research.qmd" class="value-box">
+  <div class="icon"><i class="bi bi-search"></i></div>
+  <div class="text">
+    <div class="value">Research</div>
+    <div class="details">Learn about our research.</div>
+  </div>
+</a>
+<br>
+<a href="pages/publications.qmd" class="value-box">
+  <div class="icon"><i class="bi bi-file-earmark-text"></i></div>
+  <div class="text">
+    <div class="value">Publications</div>
+    <div class="details">View our full list of publications.</div>
+  </div>
+</a>
+<br>
+<br>
+```
+
+<br>
+
+> **Funding:**
+>
+> The STARS project is supported by the Medical Research Council [grant number MR/Z503915/1].
+>
+> Pilot work was supported by the National Institute for Health Research Applied Research Collaboration South West Peninsula. The views expressed in this website are those of the author(s) and not necessarily those of the National Institute for Health Research or the Department of Health and Social Care.
