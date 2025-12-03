@@ -1,0 +1,32 @@
+---
+title: "Open Science for Computer Simulation"
+doi: https://doi.org/10.31219/osf.io/zpxtm
+author:
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Alison Harper
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0001-5274-5037
+  - name: Anastasia Anagnostou
+    affiliation: Brunel University London
+    orcid: 0000-0003-3397-8307
+  - name: Simon Taylor
+    affiliation: Brunel University London
+    orcid: 0000-0001-8252-0189
+date: 14 July 2022
+date-format: "DD MMM YYYY"
+image: frontpage.png
+---
+
+## Abstract
+
+This paper provides a framework for conceptualising levels of open science and open working within computer modelling and simulation. We aim to support researchers to share their models and working so that others are free to use, reproduce, adapt and build upon, and re-share their work. We introduce a six level framework of increasing complexity: not open, open access, open artefacts, open models, open environment and open infrastructure. For each we provide practical advice on what aspects of open science researchers must consider, what options are available to them, and what challenges they will need to overcome. We illustrate our open science framework using a stylised discrete-event simulation model. All code used in this paper is available, cloud executable and reusable under an MIT license.
+
+## Article
+
+```{=html}
+<div class="embed-container">
+  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+</div>
+```

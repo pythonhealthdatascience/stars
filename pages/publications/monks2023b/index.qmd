@@ -1,6 +1,6 @@
 ---
-title: "Improving the usability of open health service delivery simulation models using Python and web apps"
-doi: https://doi.org/10.3310/nihropenres.13467.2
+title: "Computer model and code sharing practices in healthcare discrete-event simulation: a systematic scoping review"
+doi: https://doi.org/10.1080/17477778.2023.2260772
 author:
   - name: Thomas Monks
     affiliation: University of Exeter Medical School
@@ -8,7 +8,7 @@ author:
   - name: Alison Harper
     affiliation: University of Exeter Business School
     orcid: 0000-0001-5274-5037
-date: 15 December 2023
+date: "30 September 2023"
 date-format: "DD MMM YYYY"
 image: frontpage.png
 categories:
@@ -17,11 +17,7 @@ categories:
 
 ## Abstract
 
-One aim of Open Science is to increase the accessibility of research. Within health services research that uses discrete-event simulation, Free and Open Source Software (FOSS), such as Python, offers a way for research teams to share their models with other researchers and NHS decision makers.
-
-Although the code for healthcare discrete-event simulation models can be shared alongside publications, it may require specialist skills to use and run. This is a disincentive to researchers adopting Free and Open Source Software and open science practices. Building on work from other health data science disciplines, we propose that web apps offer a user-friendly interface for healthcare models that increase the accessibility of research to the NHS, and researchers from other disciplines. We focus on models coded in Python deployed as streamlit web apps.
-
-To increase uptake of these methods, we provide an approach to structuring discrete-event simulation model code in Python so that models are web app ready. The method is general across discrete-event simulation Python packages, and we include code for both simpy and ciw implementations of a simple urgent care call centre model. We then provide a step-by-step tutorial for linking the model to a streamlit web app interface, to enable other health data science researchers to reproduce and implement our method.
+Discrete-event simulation (DES) is a widely used computational method in health services and health economic studies. This scoping review investigates to what extent authors share DES models and audits if sharing adheres to best practice. The Web of Science, Scopus, PubMed, and ACM Digital Library databases were searched between January 1 2019 till December 31 2022. Cost-effectiveness, health service research and methodology studies in a health context were included. Data extraction and audit were performed by two reviewers. We measured the proportion of literature that shared models; we report analyses by publication type, year of publication, COVID-19 application; and free and open source versus commercial software. Out of the 564 studies included, 47 (8.3%) cited a published computer model, rising to 9.0% in 2022. Studies were more likely to share models if they had been developed using free and open source tools. Studies rarely followed best practice when sharing computer models. Although still in the minority, healthcare DES authors are increasingly sharing their computer model artefacts. Although commercial software dominates the DES literature, free and open source software plays a crucial role in sharing. The DES community can adopt simple best practices to improve the quality of sharing.
 
 ## Article
 

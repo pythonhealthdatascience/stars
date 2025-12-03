@@ -1,0 +1,32 @@
+---
+title: "Improving the usability of open health service delivery simulation models using Python and web apps"
+doi: https://doi.org/10.3310/nihropenres.13467.2
+author:
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Alison Harper
+    affiliation: University of Exeter Business School
+    orcid: 0000-0001-5274-5037
+date: 15 December 2023
+date-format: "DD MMM YYYY"
+image: frontpage.png
+categories:
+  - Reusable
+---
+
+## Abstract
+
+One aim of Open Science is to increase the accessibility of research. Within health services research that uses discrete-event simulation, Free and Open Source Software (FOSS), such as Python, offers a way for research teams to share their models with other researchers and NHS decision makers.
+
+Although the code for healthcare discrete-event simulation models can be shared alongside publications, it may require specialist skills to use and run. This is a disincentive to researchers adopting Free and Open Source Software and open science practices. Building on work from other health data science disciplines, we propose that web apps offer a user-friendly interface for healthcare models that increase the accessibility of research to the NHS, and researchers from other disciplines. We focus on models coded in Python deployed as streamlit web apps.
+
+To increase uptake of these methods, we provide an approach to structuring discrete-event simulation model code in Python so that models are web app ready. The method is general across discrete-event simulation Python packages, and we include code for both simpy and ciw implementations of a simple urgent care call centre model. We then provide a step-by-step tutorial for linking the model to a streamlit web app interface, to enable other health data science researchers to reproduce and implement our method.
+
+## Article
+
+```{=html}
+<div class="embed-container">
+  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+</div>
+```

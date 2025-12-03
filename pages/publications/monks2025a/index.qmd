@@ -21,7 +21,7 @@ date: 31 March 2025
 date-format: "DD MMM YYYY"
 image: frontpage.png
 categories:
-  - NOTSURE
+  - Tutorial
 ---
 
 ## Abstract

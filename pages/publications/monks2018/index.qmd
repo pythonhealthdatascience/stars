@@ -1,0 +1,39 @@
+---
+title: "Strengthening the reporting of empirical simulation studies: Introducing the STRESS guidelines"
+doi: https://doi.org/10.1080/17477778.2018.1442155
+author:
+  - name: Thomas Monks
+    affiliation: NIHR CLAHRC Wessex, Faculty of Health Sciences, University of Southampton
+    orcid: 0000-0003-2631-4481
+  - name: Christine Currie
+    affiliation: Mathematical Sciences, University of Southampton
+    orcid: 0000-0002-7016-3652
+  - name: Bhakti Onggo
+    affiliation: Trinity Business School, Trinity College Dublin
+    orcid: 0000-0001-5899-304X
+  - name: Stewart Robinson
+    affiliation: School of Business and Economics, Loughborough University
+    orcid: 0000-0002-6016-0167
+  - name: Martin Kunc
+    affiliation: Warwick Business School, University of Warwick
+  - name: Simon Taylor
+    affiliation: Department of Computer Science, Brunel University
+    orcid: 0000-0001-8252-0189
+date: 6 March 2018
+date-format: "DD MMM YYYY"
+image: frontpage.png
+categories:
+  - Replicable
+---
+
+## Abstract
+
+This study develops a standardised checklist approach to improve the reporting of discrete-event simulation, system dynamics and agent-based simulation models within the field of Operational Research and Management Science. Incomplete or ambiguous reporting means that many simulation studies are not reproducible, leaving other modellers with an incomplete picture of what has been done and unable to judge the reliability of the results. Crucially, unclear reporting makes it difficult to reproduce or reuse findings. In this paper, we review the evidence on the quality of model reporting and consolidate previous work. We derive general good practice principles and three 20-item checklists aimed at Strengthening The Reporting of Empirical Simulation Studies (STRESS): STRESS-DES, STRESS-ABS and STRESS-SD for discrete-event simulation, agent-based simulation and system dynamics, respectively. Given the variety of simulation projects, we provide usage and troubleshooting advice to cover a wide range of situations.
+
+## Article
+
+```{=html}
+<div class="embed-container">
+  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+</div>
+```

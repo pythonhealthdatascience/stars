@@ -1,0 +1,35 @@
+---
+title: "Deployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration"
+doi: https://doi.org/10.1007/978-3-031-59999-6_10
+author:
+  - name: Alison Harper
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0001-5274-5037
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Sean Manzi
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+date: 23 August 2024
+date-format: "DD MMM YYYY"
+image: frontpage.png
+categories:
+  - Tutorial
+---
+
+## Abstract
+
+Methods or approaches from disciplines outside of OR modelling and Simulation (M&S) can potentially increase the functionality of simulation models through hybrid modelling. In healthcare research, where simulation models are commonly used, we see few applications of models that can easily be deployed by other researchers or by healthcare stakeholders. Models are treated as disposable artefacts, developed to deliver a set of results, and rarely address deployment for model reuse. We propose one potential solution to deploying free and open-source simulations using containerisation with continuous integration. A container provides a self-contained environment that encapsulates the model and all its required dependencies including the operating system, software, and packages. This overcomes a significant barrier to sharing models developed in open-source software, which is dependency management. Isolating the environment in a container ensures that the simulation model behaves the same way across different computing environments. It also means that other users can interact with the model without installing software, supporting both use/reuse, and reproducibility of results. We illustrate the approach using a model for orthopaedic elective recovery planning, developed with a user-friendly interface in Python, including a step-by-step approach to support M&S researchers to deploy their own models using our hybrid framework.
+
+## Article
+
+This is an open-access pre-print (<https://doi.org/10.31219/osf.io/qez45>, 11 October 2023).
+
+To view the published book chapter, please go to <https://doi.org/10.1007/978-3-031-59999-6_10>.
+
+```{=html}
+<div class="embed-container">
+  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+</div>
+```
