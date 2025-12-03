@@ -1,5 +1,6 @@
 ---
 title: "Towards sharing tools and artefacts for reusable simulations in healthcare"
+doi: https://doi.org/10.1080/17477778.2024.2347882
 author:
   - name: Thomas Monks
     affiliation: University of Exeter Medical School

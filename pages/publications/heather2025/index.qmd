@@ -1,0 +1,37 @@
+---
+title: "On the reproducibility of discrete-event simulation studies in health research: an empirical study using open models"
+doi: https://doi.org/10.1080/17477778.2025.2552177
+author:
+  - name: Amy Heather
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0002-6596-3479
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Alison Harper
+    affiliation: University of Exeter Business School
+    orcid: 0000-0001-5274-5037
+  - name: Navonil Mustafee
+    affiliation: University of Exeter Business School
+    orcid: 0000-0002-2204-8924
+  - name: Andrew Mayne
+    affiliation: Somerset NHS Foundation Trust
+    orcid: 0000-0003-1263-2286
+date: 9 September 2025
+date-format: "D MMM YYYY"
+image: frontpage.png
+categories:
+  - Reproducible
+---
+
+## Abstract
+
+Reproducibility of computational research is critical for ensuring transparency, reliability, and reusability. Challenges with computational reproducibility have been documented in several fields, but healthcare discrete-event simulation (DES) models have not been thoroughly examined in this context. This study assessed the computational reproducibility of eight published healthcare DES models (Python or R), selected to represent diverse contexts, complexities, and years of publication. Repositories and articles were also assessed against guidelines and reporting standards, offering insights into their relationship with reproducibility success. Reproducing results required up to 28 hours of troubleshooting per model, with 50% fully reproduced and 50% partially reproduced (12.5% to 94.1% of reported outcomes). Key barriers included the absence of open licences, discrepancies between reported and coded parameters, and missing code to produce model outputs, run scenarios, and generate tables and figures. Addressing these issues would often require relatively little effort from authors: adding an open licence and sharing all materials used to produce the article. Actionable recommendations are proposed to enhance reproducibility practices for simulation modellers and reviewers.
+
+## Article
+
+```{=html}
+<div class="embed-container">
+  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+</div>
+```
