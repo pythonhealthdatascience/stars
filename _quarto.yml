@@ -8,11 +8,8 @@ website:
   navbar:
     logo: images/stars_logo_white.png
     left:
-      - pages/reproducible.qmd
-      - pages/reusable.qmd
-      - pages/replicable.qmd
-      - pages/llms.qmd
-      - pages/simtools.qmd
+      - pages/research.qmd
+      - pages/publications.qmd
     tools:
       - icon: github
         menu:
@@ -20,6 +17,29 @@ website:
             href: https://github.com/pythonhealthdatascience
           - text: View the code for this website
             href: https://github.com/pythonhealthdatascience/stars
+  sidebar:
+    - id: research
+      style: "docked"
+      title: "Research"
+      contents:
+        - pages/research.qmd
+        - section: "Reproducible"
+          contents:
+            - pages/computational_reproducibility.qmd
+            - pages/des_rap_book.qmd
+            - pages/jos_mri.qmd
+            - pages/hdr_uk_futures.qmd
+        - section: "Reusable"
+          contents:
+            - pages/des_sharing_review.qmd
+            - pages/stars_framework.qmd
+            - pages/eom_rcc.qmd
+        - section: "Replicable"
+          contents:
+            - pages/stress.qmd
+        - pages/model_reviews.qmd
+        - pages/llm_generate_des.qmd
+        - pages/simtools.qmd
 
 format:
   html:
@@ -27,3 +47,4 @@ format:
       - cosmo
       - css/theme.scss
     lightbox: true
+    title-block-banner: images/banner.png
