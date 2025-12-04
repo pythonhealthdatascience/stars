@@ -1,3 +1,35 @@
 ---
 title: "Computational reproducibility assessment of published DES models"
+author:
+  - name: Amy Heather
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0002-6596-3479
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Alison Harper
+    affiliation: University of Exeter Business School
+    orcid: 0000-0001-5274-5037
+  - name: Navonil Mustafee
+    affiliation: University of Exeter Business School
+    orcid: 0000-0002-2204-8924
+  - name: Andrew Mayne
+    affiliation: Somerset NHS Foundation Trust
+    orcid: 0000-0003-1263-2286
+listing:
+  - id: pub
+    contents: publications/2025/heather2025reproducibility
 ---
+
+## GW4 Open Research Prize - Improving Quality
+
+This research was shortlisted for the “Improving Quality” prize, which is “for those able to demonstrate that the quality of their research has been enhanced through the adoption of open research practices in their work”. You can find out more about the prize and the other [shortlisted entries and winners here](https://gw4.ac.uk/news/gw4-open-research-prize-2025-winners-announced/).
+
+Amy presented the work at the GW4 Open Research Prize Ceremony. The [slides](https://pythonhealthdatascience.github.io/gw4_prize_presentation/) were created using Quarto (see [slides GitHub](https://github.com/pythonhealthdatascience/gw4_prize_presentation)). You can watch a recording of the presentation:
+
+{{< video https://youtu.be/4ti4Fent07s?si=UAIZRvf9gl2K-cKO >}}
+
+## Publications
+
+::: {#pub}
+:::
