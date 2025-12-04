@@ -1,0 +1,116 @@
+---
+title: "Computational reproducibility assessment of published DES models"
+author:
+  - name: Amy Heather
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0002-6596-3479
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Alison Harper
+    affiliation: University of Exeter Business School
+    orcid: 0000-0001-5274-5037
+  - name: Navonil Mustafee
+    affiliation: University of Exeter Business School
+    orcid: 0000-0002-2204-8924
+  - name: Andrew Mayne
+    affiliation: Somerset NHS Foundation Trust
+    orcid: 0000-0003-1263-2286
+listing:
+  - id: pub
+    contents:
+      - "../publications/2024/heather2024protocol/index.qmd"
+      - "../publications/2025/heather2025reproducibility/index.qmd"
+---
+
+::: {.blue}
+
+**Take-home message**
+
+There are simple steps researchers can take to improve the reproducibility of their healthcare DES models. These include:
+
+* Sharing code with an open licence.
+* Ensuring model parameters are correct.
+* Including code to calculate all required model outputs.
+* Providing code for all scenarios and sensitivity analyses.
+* Including code to generate the tables, figures, and other reported results.
+
+For more suggestions, see the STARS reproducibility recommendations below.
+
+:::
+
+<br>
+
+## Summary
+
+This work assessed the computational reproducibility of eight published healthcare DES models implemented in Python or R. A [detailed study protocol](/pages/publications/2024/heather2024protocol/index.qmd) was first developed, informed by existing reproducibility studies and pilot work. The workflow for assessing each study is summarised in the figure below.
+
+![](computational_reproducibility_resources/stars_wp1_workflow.png){fig-alt="Study methodology"}
+
+The eight models were selected to ensure diversity across a range of factors including the health focus (e.g., healthcare condition, specific system), geographical context, and model complexity
+
+Reproducing results required up to 28 hours of troubleshooting per model. Four models were judged to be fully reproduced, while four were partially reproduced - between 12.5% and 94.1% of reported outcomes.
+
+![Count, proportion, and time to reproduce items within the scope of each study. Inspired by a figure in Krafczyk et al. (<a href="https://doi.org/10.1098/rsta.2020.0069">2021</a>).](computational_reproducibility_resources/article_times.png)
+
+Based on the barriers and facilitators observed during these reproductions, we developed the **STARS reproducibility recommendations**. These are presented in the figures below, divided into categories: recommendations that specifically support reproducibility, and those that were more relevant to troubleshooting models (and therefore also to reuse).
+
+::: {layout-ncol=2}
+
+![Recommendations to support reproducibility. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t perform scenario analysis, or only provided one version of the code).](computational_reproducibility_resources/reproduction_wheel.png)
+
+![Recommendations to support troubleshooting and reuse. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn't have a web application, or didn’t have scenarios to vary parameters). Some recommendations were marked as "N/A" where it was not felt appropriate or feasible to count/assess their inclusion](computational_reproducibility_resources/troubleshooting_wheel.png)
+
+:::
+
+## Websites and GitHub repositories
+
+We have described this work in a [publication in the Journal of Simulation](/pages/publications/2025/heather2025reproducibility/index.qmd).
+
+The work is also documented in a dedicated [Quarto summary website](https://pythonhealthdatascience.github.io/stars_wp1_summary/), which provides more fine-grained detail on the reproductions.
+
+```{=html}
+<div class="iframe-wrapper">
+  <div class="iframe-header">
+    <span>Website preview:</span>
+    <a href="https://pythonhealthdatascience.github.io/stars_wp1_summary/pages/reproduction.html"
+       target="_blank" rel="noopener">
+      View full website in new tab
+    </a>
+  </div>
+
+  <iframe
+    width="100%"
+    height="500"
+    src="https://pythonhealthdatascience.github.io/stars_wp1_summary/pages/reproduction.html"
+    title="Computational Reproducibility Assessments: Summary">
+  </iframe>
+</div>
+<br>
+```
+
+Each of the eight DES models has its own research compendium-style GitHub repository, with a corresponding website and archival record, as linked in the table below. Each repository was created from a [template](https://github.com/pythonhealthdatascience/stars_reproduction_template) which we developed during pilot work. In pilot work, an example model from colleagues was used to test and refine the reproducibility protocol, resulting in the repository [stars-reproduce-allen-2020](https://github.com/pythonhealthdatascience/stars-reproduce-allen-2020).
+
+| Reproduction study | Website | GitHub | Zenodo |
+| - | - | - | - |
+| Shoaib and Ramamohan 2022 | [Website](https://pythonhealthdatascience.github.io/stars-reproduce-shoaib-2022/) | [stars-reproduce-shoaib-2022](https://github.com/pythonhealthdatascience/stars-reproduce-shoaib-2022) | [10.1177/00375497211030931](https://doi.org/10.1177/00375497211030931) |
+| Huang et al. 2019 | [Website](https://pythonhealthdatascience.github.io/stars-reproduce-huang-2019/) | [stars-reproduce-huang-2019](https://github.com/pythonhealthdatascience/stars-reproduce-huang-2019) | [10.5281/zenodo.12657280](https://doi.org/10.5281/zenodo.12657280) |
+| Lim et al. 2020 | [Website](https://pythonhealthdatascience.github.io/stars-reproduce-lim-2020/) | [stars-reproduce-lim-2020](https://github.com/pythonhealthdatascience/stars-reproduce-lim-2020) | [10.5281/zenodo.12795365](https://doi.org/10.5281/zenodo.12795365)
+| Kim et al. 2021 | [Website](https://pythonhealthdatascience.github.io/stars-reproduce-kim-2021/) | [stars-reproduce-kim-2021](https://github.com/pythonhealthdatascience/stars-reproduce-kim-2021) | [10.5281/zenodo.13121136](https://doi.org/10.5281/zenodo.13121136) |
+| Anagnostou et al. 2022 | [Website](https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/) | [stars-reproduce-anagnostou-2022](https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022) | [10.5281/zenodo.13306159](https://doi.org/10.5281/zenodo.13306159) |
+| Johnson et al. 2021 | [Website](https://pythonhealthdatascience.github.io/stars-reproduce-johnson-2021/) | [stars-reproduce-johnson-2021](https://github.com/pythonhealthdatascience/stars-reproduce-johnson-2021) | [10.5281/zenodo.13832333](https://zenodo.org/doi/10.5281/zenodo.13832333) |
+| Hernandez et al. 2015 | [Website](https://pythonhealthdatascience.github.io/stars-reproduce-hernandez-2015/) | [stars-reproduce-hernandez-2015](https://github.com/pythonhealthdatascience/stars-reproduce-hernandez-2015) | [10.5281/zenodo.13832260](https://zenodo.org/doi/10.5281/zenodo.13832260) |
+| Wood et al. 2021 | [Website](https://pythonhealthdatascience.github.io/stars-reproduce-wood-2021/) | [stars-reproduce-wood-2021](https://github.com/pythonhealthdatascience/stars-reproduce-wood-2021) | [10.5281/zenodo.13881986](https://doi.org/10.5281/zenodo.13881986) |
+
+## GW4 Open Research Prize - Improving Quality
+
+This research was shortlisted for the “Improving Quality” prize, which is “for those able to demonstrate that the quality of their research has been enhanced through the adoption of open research practices in their work”. You can find out more about the prize and the other [shortlisted entries and winners here](https://gw4.ac.uk/news/gw4-open-research-prize-2025-winners-announced/).
+
+Amy Heather presented this work at the GW4 Open Research Prize awards event. The slides were created using Quarto: see the [slides](https://pythonhealthdatascience.github.io/gw4_prize_presentation/) and accompanying [slides GitHub repository](https://github.com/pythonhealthdatascience/gw4_prize_presentation). A recording of the presentation is available:
+
+{{< video https://youtu.be/4ti4Fent07s?si=UAIZRvf9gl2K-cKO >}}
+
+## Publications
+
+::: {#pub}
+:::

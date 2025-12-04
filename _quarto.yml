@@ -21,21 +21,21 @@ website:
         - pages/research.qmd
         - section: "Reproducible"
           contents:
-            - pages/computational_reproducibility.qmd
-            - pages/des_rap_book.qmd
-            - pages/jos_mri.qmd
-            - pages/hdr_uk_futures.qmd
+            - pages/research/computational_reproducibility.qmd
+            - pages/research/des_rap_book.qmd
+            - pages/research/jos_mri.qmd
+            - pages/research/hdr_uk_futures.qmd
         - section: "Reusable"
           contents:
-            - pages/des_sharing_review.qmd
-            - pages/stars_framework_reuse.qmd
-            - pages/eom_rcc.qmd
+            - pages/research/des_sharing_review.qmd
+            - pages/research/stars_framework_reuse.qmd
+            - pages/research/eom_rcc.qmd
         - section: "Replicable"
           contents:
-            - pages/stress.qmd
-        - pages/model_reviews.qmd
-        - pages/llm_generate_des.qmd
-        - pages/simtools.qmd
+            - pages/research/stress.qmd
+        - pages/research/model_reviews.qmd
+        - pages/research/llm_generate_des.qmd
+        - pages/research/simtools.qmd
   page-footer:
     center: |
       ![](/images/exeter.png){width=150px}
@@ -51,6 +51,7 @@ format:
     css:
       - css/footer.css
       - css/theme.css
+      - css/boxes.css
     lightbox: true
     title-block-banner: images/banner.png
     title-block-banner-color: "#ffffff"

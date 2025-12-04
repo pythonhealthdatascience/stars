@@ -1,3 +1,0 @@
----
-title: "Journal of Simulation - Model Reproducibility Initiative (JOS-MRI)"
----

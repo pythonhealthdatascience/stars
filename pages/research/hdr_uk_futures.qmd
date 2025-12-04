@@ -1,0 +1,7 @@
+---
+title: "HDR UK Futures training materials"
+author:
+  - name: Amy Heather
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0002-6596-3479
+---
