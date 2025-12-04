@@ -49,3 +49,12 @@ h4 {
 .sidebar-item-text.sidebar-link.text-start {
   font-weight: bold;
 }
+
+/* Breadcrumb items (i.e., page > page) */
+.quarto-title-banner a {
+  color: #cad6dd;
+}
+
+.quarto-title-breadcrumbs .breadcrumb li:last-of-type a {
+  color: #cad6dd;
+}
