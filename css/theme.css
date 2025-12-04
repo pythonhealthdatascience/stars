@@ -1,0 +1,60 @@
+/* Headings*/
+h2 {
+  margin-top: 2em;
+}
+
+h3 {
+  /* Space before H3 */
+  margin-top: 1em;
+  /* Line under H3 */
+  display: inline-block;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.7em;
+  /* Space after H3 */
+  margin-bottom: 1em;
+}
+
+/* Make H4 a little bolder and a little space before */
+h4 {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+/* PDF container - SOURCE: https://github.com/andrewheiss/ath-quarto/blob/main/cv/index.qmd */
+.embed-container {
+  position: relative;
+  padding-bottom: 129%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Sidebar */
+.sidebar-item {
+  padding-bottom: 0.3rem;
+}
+.sidebar-item-container {
+  padding-bottom: 0.3rem;
+}
+.sidebar-item-text.sidebar-link.text-start {
+  font-weight: bold;
+}
+
+/* Breadcrumb items (i.e., page > page) */
+.quarto-title-banner a {
+  color: #cad6dd;
+}
+
+.quarto-title-breadcrumbs .breadcrumb li:last-of-type a {
+  color: #cad6dd;
+}

@@ -1,0 +1,13 @@
+/* Desktop / tablet only */
+@media screen and (min-width: 768px) {
+  /* Make centre footer take up 80% of width and align contents in center */
+  .footer .nav-footer {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .footer .nav-footer-center {
+    text-align: center;
+  }
+}

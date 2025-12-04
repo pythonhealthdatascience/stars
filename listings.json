@@ -1,0 +1,24 @@
+[
+  {
+    "listing": "/pages/publications.html",
+    "items": [
+      "/pages/publications/2025/monks2025unlocking/index.html",
+      "/pages/publications/2025/heather2025reproducibility/index.html",
+      "/pages/publications/2025/monks2025building/index.html",
+      "/pages/publications/2024/harper2024deployable/index.html",
+      "/pages/publications/2024/monks2024towards/index.html",
+      "/pages/publications/2023/harper2023development/index.html",
+      "/pages/publications/2023/monks2023improving/index.html",
+      "/pages/publications/2023/monks2023computer/index.html",
+      "/pages/publications/2023/monks2023framework/index.html",
+      "/pages/publications/2022/monks2022open/index.html",
+      "/pages/publications/2018/monks2018strengthening/index.html"
+    ]
+  },
+  {
+    "listing": "/pages/computational_reproducibility.html",
+    "items": [
+      "/pages/publications/2025/heather2025reproducibility/index.html"
+    ]
+  }
+]
