@@ -18,8 +18,40 @@ author:
     orcid: 0000-0003-1263-2286
 listing:
   - id: pub
-    contents: publications/2025/heather2025reproducibility
+    contents:
+      - publications/2024/heather2024protocol
+      - publications/2025/heather2025reproducibility
 ---
+
+## Takehome message
+
+It can be really hard to reproduce stuff. Follow STARS reproducibility recommendations to help.
+
+## Summary
+
+![](computational_reproducibility_resources/stars_wp1_workflow.png)
+
+![](computational_reproducibility_resources/article_times.png)
+
+![](computational_reproducibility_resources/reproduction_wheel.png)
+
+![](computational_reproducibility_resources/troubleshooting_wheel.png)
+
+## Websites and GitHub repositories
+
+| Repository | Description |
+| - | - |
+| [stars-reproduce-allen-2020](https://github.com/pythonhealthdatascience/stars-reproduce-allen-2020) | Test run of reproducibility protocol on Allen et al. 2020 |
+| [stars-reproduction-template](https://github.com/pythonhealthdatascience/stars_reproduction_template) | Template for assessment of computational reproducibility |
+| [stars-reproduce-shoaib-2022](https://github.com/pythonhealthdatascience/stars-reproduce-shoaib-2022) | Reproduction study 1: Shoaib and Ramamohan 2022 (Python) |
+| [stars-reproduce-huang-2019](https://github.com/pythonhealthdatascience/stars-reproduce-huang-2019) | Reproduction study 2: Huang et al. 2019 (R) |
+| [stars-reproduce-lim-2020](https://github.com/pythonhealthdatascience/stars-reproduce-lim-2020) | Reproduction study 3: Lim et al. 2020 (Python) |
+| [stars-reproduce-kim-2021](https://github.com/pythonhealthdatascience/stars-reproduce-kim-2021) | Reproduction study 4: Kim et al. 2021 (R) |
+| [stars-reproduce-anagnostou-2022](https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022) | Reproduction study 5: Anagnostou et al. 2022 (Python) |
+| [stars-reproduce-johnson-2021](https://github.com/pythonhealthdatascience/stars-reproduce-johnson-2021) | Reproduction study 6: Johnson et al. 2021 (R) |
+| [stars-reproduce-hernandez-2015](https://github.com/pythonhealthdatascience/stars-reproduce-hernandez-2015) | Reproduction study 7: Hernandez et al. 2015 (Python model + R figures) |
+| [stars-reproduce-wood-2021](https://github.com/pythonhealthdatascience/stars-reproduce-wood-2021) | Reproduction study 8: Wood et al. 2021 (R) |
+| [stars_wp1_summary](https://github.com/pythonhealthdatascience/stars_wp1_summary) | Summary of the eight computational reproducibility assessments conducted as part of STARS Work Package 1. These assessed discrete-event simulation papers with models in Python and R. |
 
 ## GW4 Open Research Prize - Improving Quality
 
