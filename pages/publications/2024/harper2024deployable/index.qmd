@@ -1,6 +1,6 @@
 ---
 title: "Deployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration"
-doi: https://doi.org/10.1007/978-3-031-59999-6_10
+doi: 10.1007/978-3-031-59999-6_10
 author:
   - name: Alison Harper
     affiliation: University of Exeter Medical School

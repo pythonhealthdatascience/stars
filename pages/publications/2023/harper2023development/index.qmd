@@ -1,6 +1,6 @@
 ---
 title: "Development and application of simulation modelling for orthopaedic elective resource planning in England"
-doi: https://doi.org/10.1136/bmjopen-2023-076221
+doi: 10.1136/bmjopen-2023-076221
 author:
   - name: Alison Harper
     affiliation: University of Exeter Medical School

@@ -1,6 +1,6 @@
 ---
 title: "Improving the usability of open health service delivery simulation models using Python and web apps"
-doi: https://doi.org/10.3310/nihropenres.13467.2
+doi: 10.3310/nihropenres.13467.2
 author:
   - name: Thomas Monks
     affiliation: University of Exeter Medical School

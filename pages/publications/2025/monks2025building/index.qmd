@@ -1,6 +1,6 @@
 ---
 title: "Building healthcare discrete-event simulation models in free and open source software: an introductory tutorial"
-doi: https://doi.org/10.36819/SW25.004
+doi: 10.36819/SW25.004
 author:
   - name: Thomas Monks
     affiliation: University of Exeter Medical School

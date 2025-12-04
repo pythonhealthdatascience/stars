@@ -1,6 +1,6 @@
 ---
 title: "Open Science for Computer Simulation"
-doi: https://doi.org/10.31219/osf.io/zpxtm
+doi: 10.31219/osf.io/zpxtm
 author:
   - name: Thomas Monks
     affiliation: University of Exeter Medical School

@@ -1,6 +1,6 @@
 ---
 title: "Strengthening the reporting of empirical simulation studies: Introducing the STRESS guidelines"
-doi: https://doi.org/10.1080/17477778.2018.1442155
+doi: 10.1080/17477778.2018.1442155
 author:
   - name: Thomas Monks
     affiliation: NIHR CLAHRC Wessex, Faculty of Health Sciences, University of Southampton

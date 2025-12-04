@@ -1,6 +1,6 @@
 ---
 title: "Computer model and code sharing practices in healthcare discrete-event simulation: a systematic scoping review"
-doi: https://doi.org/10.1080/17477778.2023.2260772
+doi: 10.1080/17477778.2023.2260772
 author:
   - name: Thomas Monks
     affiliation: University of Exeter Medical School

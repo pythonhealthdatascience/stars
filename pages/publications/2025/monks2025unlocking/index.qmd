@@ -1,6 +1,6 @@
 ---
 title: "Unlocking the potential of past research: using generative AI to reconstruct healthcare simulation models"
-doi: https://doi.org/10.1080/01605682.2025.2554751
+doi: 10.1080/01605682.2025.2554751
 author:
   - name: Thomas Monks
     affiliation: University of Exeter Medical School

@@ -1,6 +1,6 @@
 ---
 title: "A framework to share healthcare simulations on the web using free and open source tools and Python"
-doi: http://doi.org/10.36819/SW23.030
+doi: 10.36819/SW23.030
 author:
   - name: Thomas Monks
     affiliation: University of Exeter Medical School
