@@ -2,102 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2023/monks2023computer/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.722Z</lastmod>
+    <lastmod>2025-12-04T15:31:38.682Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2023/harper2023development/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.716Z</lastmod>
+    <lastmod>2025-12-04T15:31:38.675Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2025/monks2025building/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.817Z</lastmod>
+    <lastmod>2025-12-04T15:31:38.781Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2025/monks2025unlocking/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.819Z</lastmod>
+    <lastmod>2025-12-04T15:31:38.783Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2018/monks2018strengthening/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.708Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2024/harper2024deployable/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.746Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/des_sharing_review.html</loc>
-    <lastmod>2025-12-04T13:40:52.706Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/simtools.html</loc>
-    <lastmod>2025-12-04T13:40:52.832Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/hdr_uk_futures.html</loc>
-    <lastmod>2025-12-04T13:40:52.706Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/publications.html</loc>
-    <lastmod>2025-12-04T13:40:52.706Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/computational_reproducibility.html</loc>
-    <lastmod>2025-12-04T13:40:52.706Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/eom_rcc.html</loc>
-    <lastmod>2025-12-04T13:40:52.706Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.706Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/stars_framework_reuse.html</loc>
-    <lastmod>2025-12-04T13:40:52.832Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/des_rap_book.html</loc>
-    <lastmod>2025-12-04T13:40:52.706Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/stress.html</loc>
-    <lastmod>2025-12-04T13:40:52.832Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/research.html</loc>
-    <lastmod>2025-12-04T13:40:52.832Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/llm_generate_des.html</loc>
-    <lastmod>2025-12-04T13:40:52.706Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/jos_mri.html</loc>
-    <lastmod>2025-12-04T13:40:52.706Z</lastmod>
-  </url>
-  <url>
-    <loc>https://pythonhealthdatascience.github.io/stars/pages/model_reviews.html</loc>
-    <lastmod>2025-12-04T13:40:52.706Z</lastmod>
+    <lastmod>2025-12-04T15:31:38.666Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2024/monks2024towards/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.750Z</lastmod>
+    <lastmod>2025-12-04T15:31:38.714Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research/model_reviews.html</loc>
+    <lastmod>2025-12-04T15:31:38.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research/jos_mri.html</loc>
+    <lastmod>2025-12-04T15:31:38.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research/llm_generate_des.html</loc>
+    <lastmod>2025-12-04T15:31:38.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research/stress.html</loc>
+    <lastmod>2025-12-04T15:31:38.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research/des_rap_book.html</loc>
+    <lastmod>2025-12-04T15:31:38.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research/stars_framework_reuse.html</loc>
+    <lastmod>2025-12-04T15:31:38.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/publications.html</loc>
+    <lastmod>2025-12-04T15:31:38.665Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/index.html</loc>
+    <lastmod>2025-12-04T15:31:38.665Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research.html</loc>
+    <lastmod>2025-12-04T15:31:38.795Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research/eom_rcc.html</loc>
+    <lastmod>2025-12-04T15:31:38.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research/computational_reproducibility.html</loc>
+    <lastmod>2025-12-04T15:31:38.796Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research/hdr_uk_futures.html</loc>
+    <lastmod>2025-12-04T15:31:38.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research/simtools.html</loc>
+    <lastmod>2025-12-04T15:31:38.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/research/des_sharing_review.html</loc>
+    <lastmod>2025-12-04T15:31:38.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2024/harper2024deployable/index.html</loc>
+    <lastmod>2025-12-04T15:31:38.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2024/heather2024protocol/index.html</loc>
+    <lastmod>2025-12-04T15:31:38.709Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2022/monks2022open/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.712Z</lastmod>
+    <lastmod>2025-12-04T15:31:38.671Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2025/heather2025reproducibility/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.773Z</lastmod>
+    <lastmod>2025-12-04T15:31:38.736Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2023/monks2023framework/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.733Z</lastmod>
+    <lastmod>2025-12-04T15:31:38.693Z</lastmod>
   </url>
   <url>
     <loc>https://pythonhealthdatascience.github.io/stars/pages/publications/2023/monks2023improving/index.html</loc>
-    <lastmod>2025-12-04T13:40:52.738Z</lastmod>
+    <lastmod>2025-12-04T15:31:38.698Z</lastmod>
   </url>
 </urlset>

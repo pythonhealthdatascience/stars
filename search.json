@@ -112,25 +112,48 @@
     "text": "Article"
   },
   {
-    "objectID": "pages/publications/2024/harper2024deployable/index.html",
-    "href": "pages/publications/2024/harper2024deployable/index.html",
-    "title": "Deployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration",
+    "objectID": "pages/publications/2024/monks2024towards/index.html",
+    "href": "pages/publications/2024/monks2024towards/index.html",
+    "title": "Towards sharing tools and artefacts for reusable simulations in healthcare",
     "section": "",
-    "text": "Methods or approaches from disciplines outside of OR modelling and Simulation (M&S) can potentially increase the functionality of simulation models through hybrid modelling. In healthcare research, where simulation models are commonly used, we see few applications of models that can easily be deployed by other researchers or by healthcare stakeholders. Models are treated as disposable artefacts, developed to deliver a set of results, and rarely address deployment for model reuse. We propose one potential solution to deploying free and open-source simulations using containerisation with continuous integration. A container provides a self-contained environment that encapsulates the model and all its required dependencies including the operating system, software, and packages. This overcomes a significant barrier to sharing models developed in open-source software, which is dependency management. Isolating the environment in a container ensures that the simulation model behaves the same way across different computing environments. It also means that other users can interact with the model without installing software, supporting both use/reuse, and reproducibility of results. We illustrate the approach using a model for orthopaedic elective recovery planning, developed with a user-friendly interface in Python, including a step-by-step approach to support M&S researchers to deploy their own models using our hybrid framework."
+    "text": "Discrete-event simulation (DES) is a widely used computational method in health services and health economic studies. Despite increasing recognition of the advantages of open, reusable DES models for both healthcare practitioners and simulation researchers, in practice very few authors share their model code alongside a published paper. In the context of Free and Open Source Software (FOSS), this paper presents a pilot framework called STARS: Sharing Tools and Artefacts for Reusable Simulations to begin to address the challenges and leverage the opportunities of sharing DES models in healthcare. STARS aligns with existing guidelines and documentation, including reproducibility initiatives, and enables computer models to be shared with users of differing technical abilities. We demonstrate the feasibility and applicability of STARS with three applied DES examples using Python. Our framework supports the development of open, reusable DES models which can enable partner healthcare organisations to preview, validate, and use models. Academic research teams can benefit from knowledge exchange, enhanced recognition and scrutiny of their work, and long-term archiving of models."
   },
   {
-    "objectID": "pages/publications/2024/harper2024deployable/index.html#abstract",
-    "href": "pages/publications/2024/harper2024deployable/index.html#abstract",
-    "title": "Deployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration",
+    "objectID": "pages/publications/2024/monks2024towards/index.html#abstract",
+    "href": "pages/publications/2024/monks2024towards/index.html#abstract",
+    "title": "Towards sharing tools and artefacts for reusable simulations in healthcare",
     "section": "",
-    "text": "Methods or approaches from disciplines outside of OR modelling and Simulation (M&S) can potentially increase the functionality of simulation models through hybrid modelling. In healthcare research, where simulation models are commonly used, we see few applications of models that can easily be deployed by other researchers or by healthcare stakeholders. Models are treated as disposable artefacts, developed to deliver a set of results, and rarely address deployment for model reuse. We propose one potential solution to deploying free and open-source simulations using containerisation with continuous integration. A container provides a self-contained environment that encapsulates the model and all its required dependencies including the operating system, software, and packages. This overcomes a significant barrier to sharing models developed in open-source software, which is dependency management. Isolating the environment in a container ensures that the simulation model behaves the same way across different computing environments. It also means that other users can interact with the model without installing software, supporting both use/reuse, and reproducibility of results. We illustrate the approach using a model for orthopaedic elective recovery planning, developed with a user-friendly interface in Python, including a step-by-step approach to support M&S researchers to deploy their own models using our hybrid framework."
+    "text": "Discrete-event simulation (DES) is a widely used computational method in health services and health economic studies. Despite increasing recognition of the advantages of open, reusable DES models for both healthcare practitioners and simulation researchers, in practice very few authors share their model code alongside a published paper. In the context of Free and Open Source Software (FOSS), this paper presents a pilot framework called STARS: Sharing Tools and Artefacts for Reusable Simulations to begin to address the challenges and leverage the opportunities of sharing DES models in healthcare. STARS aligns with existing guidelines and documentation, including reproducibility initiatives, and enables computer models to be shared with users of differing technical abilities. We demonstrate the feasibility and applicability of STARS with three applied DES examples using Python. Our framework supports the development of open, reusable DES models which can enable partner healthcare organisations to preview, validate, and use models. Academic research teams can benefit from knowledge exchange, enhanced recognition and scrutiny of their work, and long-term archiving of models."
   },
   {
-    "objectID": "pages/publications/2024/harper2024deployable/index.html#article",
-    "href": "pages/publications/2024/harper2024deployable/index.html#article",
-    "title": "Deployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration",
+    "objectID": "pages/publications/2024/monks2024towards/index.html#article",
+    "href": "pages/publications/2024/monks2024towards/index.html#article",
+    "title": "Towards sharing tools and artefacts for reusable simulations in healthcare",
     "section": "Article",
-    "text": "Article\nThis is an open-access pre-print (https://doi.org/10.31219/osf.io/qez45, 11 October 2023).\nTo view the published book chapter, please go to https://doi.org/10.1007/978-3-031-59999-6_10."
+    "text": "Article"
+  },
+  {
+    "objectID": "pages/research/model_reviews.html",
+    "href": "pages/research/model_reviews.html",
+    "title": "Reviewing models to support authors in making their work reproducible and reusable",
+    "section": "",
+    "text": "Devon Air Ambulance Discrete Event Simulation\nHybrid Simulation Modelling for Orthopaedics",
+    "crumbs": [
+      "Research",
+      "Reviewing models to support authors in making their work reproducible and reusable"
+    ]
+  },
+  {
+    "objectID": "pages/research/jos_mri.html",
+    "href": "pages/research/jos_mri.html",
+    "title": "Journal of Simulation - Model Reproducibility Initiative",
+    "section": "",
+    "text": "Journal of Simulation - Model Reproducibility Initiative (JOS-MRI)",
+    "crumbs": [
+      "Research",
+      "Reproducible",
+      "Journal of Simulation - Model Reproducibility Initiative"
+    ]
   },
   {
     "objectID": "pages/publications.html",
@@ -151,7 +174,7 @@
     "href": "pages/publications.html#section-1",
     "title": "Publications",
     "section": "2024",
-    "text": "2024\n\n\n\n\n\n\n\n\n\n\nDeployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration\n\n\n\nTutorial\n\n\n\n\n\n\nAug 23, 2024\n\n\nAlison Harper, Thomas Monks, Sean Manzi\n\n\n\n\n\n\n\n\n\n\n\n\nTowards sharing tools and artefacts for reusable simulations in healthcare\n\n\n\nReusable\n\n\n\n\n\n\nMay 2, 2024\n\n\nThomas Monks, Alison Harper, Navonil Mustafee\n\n\n\n\n\nNo matching items"
+    "text": "2024\n\n\n\n\n\n\n\n\n\n\nDeployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration\n\n\n\nTutorial\n\n\n\n\n\n\nAug 23, 2024\n\n\nAlison Harper, Thomas Monks, Sean Manzi\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol for assessing the computational reproducibility of discrete-event simulation models on STARS\n\n\n\nReproducible\n\n\n\n\n\n\nJun 20, 2024\n\n\nAmy Heather, Thomas Monks, Alison Harper, Navonil Mustafee, Andrew Mayne\n\n\n\n\n\n\n\n\n\n\n\n\nTowards sharing tools and artefacts for reusable simulations in healthcare\n\n\n\nReusable\n\n\n\n\n\n\nMay 2, 2024\n\n\nThomas Monks, Alison Harper, Navonil Mustafee\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "pages/publications.html#section-2",
@@ -186,7 +209,7 @@
     "href": "pages/research.html",
     "title": "Research",
     "section": "",
-    "text": "Reproducible = If all code, data, environment details, and parameters are recorded and published, anyone (including yourself in the future or a different person on a different system) can regenerate the published results by re-creating the documented conditions. This verifies code is working as expected and increases trust.\n\n\n  \n  \n    Computational reproducibility assessment of published DES models\n    We attempted to reproduce eight published Python and R healthcare DES models. From this work, we developed the STARS Reproducibility framework for sharing reproducible healthcare DES models.\n  \n\n\n\n  \n  \n    DES RAP Book and four worked examples\n    ??.\n  \n\n\n\n  \n  \n    Journal of Simulation - Model Reproducibility Initiative\n    ??.\n  \n\n\n\n  \n  \n    HDR UK Futures training materials\n    ??.",
+    "text": "Reproducible = If all code, data, environment details, and parameters are recorded and published, anyone (including yourself in the future or a different person on a different system) can regenerate the published results by re-creating the documented conditions. This verifies code is working as expected and increases trust.\n\n\n  \n  \n    Computational reproducibility assessment of published DES models\n    We attempted to reproduce eight published Python and R healthcare DES models. From this work, we developed the STARS reproducibility recommendations for sharing reproducible healthcare DES models.\n  \n\n\n\n  \n  \n    DES RAP Book and four worked examples\n    ??.\n  \n\n\n\n  \n  \n    Journal of Simulation - Model Reproducibility Initiative\n    ??.\n  \n\n\n\n  \n  \n    HDR UK Futures training materials\n    ??.",
     "crumbs": [
       "Research"
     ]
@@ -196,7 +219,7 @@
     "href": "pages/research.html#reproducible",
     "title": "Research",
     "section": "",
-    "text": "Reproducible = If all code, data, environment details, and parameters are recorded and published, anyone (including yourself in the future or a different person on a different system) can regenerate the published results by re-creating the documented conditions. This verifies code is working as expected and increases trust.\n\n\n  \n  \n    Computational reproducibility assessment of published DES models\n    We attempted to reproduce eight published Python and R healthcare DES models. From this work, we developed the STARS Reproducibility framework for sharing reproducible healthcare DES models.\n  \n\n\n\n  \n  \n    DES RAP Book and four worked examples\n    ??.\n  \n\n\n\n  \n  \n    Journal of Simulation - Model Reproducibility Initiative\n    ??.\n  \n\n\n\n  \n  \n    HDR UK Futures training materials\n    ??.",
+    "text": "Reproducible = If all code, data, environment details, and parameters are recorded and published, anyone (including yourself in the future or a different person on a different system) can regenerate the published results by re-creating the documented conditions. This verifies code is working as expected and increases trust.\n\n\n  \n  \n    Computational reproducibility assessment of published DES models\n    We attempted to reproduce eight published Python and R healthcare DES models. From this work, we developed the STARS reproducibility recommendations for sharing reproducible healthcare DES models.\n  \n\n\n\n  \n  \n    DES RAP Book and four worked examples\n    ??.\n  \n\n\n\n  \n  \n    Journal of Simulation - Model Reproducibility Initiative\n    ??.\n  \n\n\n\n  \n  \n    HDR UK Futures training materials\n    ??.",
     "crumbs": [
       "Research"
     ]
@@ -232,34 +255,116 @@
     ]
   },
   {
-    "objectID": "pages/model_reviews.html",
-    "href": "pages/model_reviews.html",
-    "title": "Reviewing models to support authors in making their work reproducible and reusable",
+    "objectID": "pages/research/eom_rcc.html",
+    "href": "pages/research/eom_rcc.html",
+    "title": "Exeter Oncology Model: Renal Cell Carcinoma edition",
     "section": "",
-    "text": "Devon Air Ambulance Discrete Event Simulation\nHybrid Simulation Modelling for Orthopaedics",
+    "text": "Exeter Oncology Model: Renal Cell Carcinoma edition (EOM-RCC)",
     "crumbs": [
       "Research",
-      "Reviewing models to support authors in making their work reproducible and reusable"
+      "Reusable",
+      "Exeter Oncology Model: Renal Cell Carcinoma edition"
     ]
   },
   {
-    "objectID": "pages/publications/2024/monks2024towards/index.html",
-    "href": "pages/publications/2024/monks2024towards/index.html",
-    "title": "Towards sharing tools and artefacts for reusable simulations in healthcare",
+    "objectID": "pages/research/computational_reproducibility.html",
+    "href": "pages/research/computational_reproducibility.html",
+    "title": "Computational reproducibility assessment of published DES models",
     "section": "",
-    "text": "Discrete-event simulation (DES) is a widely used computational method in health services and health economic studies. Despite increasing recognition of the advantages of open, reusable DES models for both healthcare practitioners and simulation researchers, in practice very few authors share their model code alongside a published paper. In the context of Free and Open Source Software (FOSS), this paper presents a pilot framework called STARS: Sharing Tools and Artefacts for Reusable Simulations to begin to address the challenges and leverage the opportunities of sharing DES models in healthcare. STARS aligns with existing guidelines and documentation, including reproducibility initiatives, and enables computer models to be shared with users of differing technical abilities. We demonstrate the feasibility and applicability of STARS with three applied DES examples using Python. Our framework supports the development of open, reusable DES models which can enable partner healthcare organisations to preview, validate, and use models. Academic research teams can benefit from knowledge exchange, enhanced recognition and scrutiny of their work, and long-term archiving of models."
+    "text": "Take-home message\nThere are simple steps researchers can take to improve the reproducibility of their healthcare DES models. These include:\n\nSharing code with an open licence.\nEnsuring model parameters are correct.\nIncluding code to calculate all required model outputs.\nProviding code for all scenarios and sensitivity analyses.\nIncluding code to generate the tables, figures, and other reported results.\n\nFor more suggestions, see the STARS reproducibility recommendations below.",
+    "crumbs": [
+      "Research",
+      "Reproducible",
+      "Computational reproducibility assessment of published DES models"
+    ]
   },
   {
-    "objectID": "pages/publications/2024/monks2024towards/index.html#abstract",
-    "href": "pages/publications/2024/monks2024towards/index.html#abstract",
-    "title": "Towards sharing tools and artefacts for reusable simulations in healthcare",
-    "section": "",
-    "text": "Discrete-event simulation (DES) is a widely used computational method in health services and health economic studies. Despite increasing recognition of the advantages of open, reusable DES models for both healthcare practitioners and simulation researchers, in practice very few authors share their model code alongside a published paper. In the context of Free and Open Source Software (FOSS), this paper presents a pilot framework called STARS: Sharing Tools and Artefacts for Reusable Simulations to begin to address the challenges and leverage the opportunities of sharing DES models in healthcare. STARS aligns with existing guidelines and documentation, including reproducibility initiatives, and enables computer models to be shared with users of differing technical abilities. We demonstrate the feasibility and applicability of STARS with three applied DES examples using Python. Our framework supports the development of open, reusable DES models which can enable partner healthcare organisations to preview, validate, and use models. Academic research teams can benefit from knowledge exchange, enhanced recognition and scrutiny of their work, and long-term archiving of models."
+    "objectID": "pages/research/computational_reproducibility.html#summary",
+    "href": "pages/research/computational_reproducibility.html#summary",
+    "title": "Computational reproducibility assessment of published DES models",
+    "section": "Summary",
+    "text": "Summary\nThis work assessed the computational reproducibility of eight published healthcare DES models implemented in Python or R. A detailed study protocol was first developed, informed by existing reproducibility studies and pilot work. The workflow for assessing each study is summarised in the figure below.\n\nThe eight models were selected to ensure diversity across a range of factors including the health focus (e.g., healthcare condition, specific system), geographical context, and model complexity\nReproducing results required up to 28 hours of troubleshooting per model. Four models were judged to be fully reproduced, while four were partially reproduced - between 12.5% and 94.1% of reported outcomes.\n\n\n\nCount, proportion, and time to reproduce items within the scope of each study. Inspired by a figure in Krafczyk et al. (2021).\n\n\nBased on the barriers and facilitators observed during these reproductions, we developed the STARS reproducibility recommendations. These are presented in the figures below, divided into categories: recommendations that specifically support reproducibility, and those that were more relevant to troubleshooting models (and therefore also to reuse).\n\n\n\n\n\n\nRecommendations to support reproducibility. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t perform scenario analysis, or only provided one version of the code).\n\n\n\n\n\n\n\nRecommendations to support troubleshooting and reuse. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t have a web application, or didn’t have scenarios to vary parameters). Some recommendations were marked as “N/A” where it was not felt appropriate or feasible to count/assess their inclusion",
+    "crumbs": [
+      "Research",
+      "Reproducible",
+      "Computational reproducibility assessment of published DES models"
+    ]
   },
   {
-    "objectID": "pages/publications/2024/monks2024towards/index.html#article",
-    "href": "pages/publications/2024/monks2024towards/index.html#article",
-    "title": "Towards sharing tools and artefacts for reusable simulations in healthcare",
+    "objectID": "pages/research/computational_reproducibility.html#websites-and-github-repositories",
+    "href": "pages/research/computational_reproducibility.html#websites-and-github-repositories",
+    "title": "Computational reproducibility assessment of published DES models",
+    "section": "Websites and GitHub repositories",
+    "text": "Websites and GitHub repositories\nWe have described this work in a publication in the Journal of Simulation.\nThe work is also documented in a dedicated Quarto summary website, which provides more fine-grained detail on the reproductions.\n\n  \n    Website preview:\n    \n      View full website in new tab\n    \n  \n\n  \n  \n\n\nEach of the eight DES models has its own research compendium-style GitHub repository, with a corresponding website and archival record, as linked in the table below. Each repository was created from a template which we developed during pilot work. In pilot work, an example model from colleagues was used to test and refine the reproducibility protocol, resulting in the repository stars-reproduce-allen-2020.\n\n\n\nReproduction study\nWebsite\nGitHub\nZenodo\n\n\n\n\nShoaib and Ramamohan 2022\nWebsite\nstars-reproduce-shoaib-2022\n10.1177/00375497211030931\n\n\nHuang et al. 2019\nWebsite\nstars-reproduce-huang-2019\n10.5281/zenodo.12657280\n\n\nLim et al. 2020\nWebsite\nstars-reproduce-lim-2020\n10.5281/zenodo.12795365\n\n\nKim et al. 2021\nWebsite\nstars-reproduce-kim-2021\n10.5281/zenodo.13121136\n\n\nAnagnostou et al. 2022\nWebsite\nstars-reproduce-anagnostou-2022\n10.5281/zenodo.13306159\n\n\nJohnson et al. 2021\nWebsite\nstars-reproduce-johnson-2021\n10.5281/zenodo.13832333\n\n\nHernandez et al. 2015\nWebsite\nstars-reproduce-hernandez-2015\n10.5281/zenodo.13832260\n\n\nWood et al. 2021\nWebsite\nstars-reproduce-wood-2021\n10.5281/zenodo.13881986",
+    "crumbs": [
+      "Research",
+      "Reproducible",
+      "Computational reproducibility assessment of published DES models"
+    ]
+  },
+  {
+    "objectID": "pages/research/computational_reproducibility.html#gw4-open-research-prize---improving-quality",
+    "href": "pages/research/computational_reproducibility.html#gw4-open-research-prize---improving-quality",
+    "title": "Computational reproducibility assessment of published DES models",
+    "section": "GW4 Open Research Prize - Improving Quality",
+    "text": "GW4 Open Research Prize - Improving Quality\nThis research was shortlisted for the “Improving Quality” prize, which is “for those able to demonstrate that the quality of their research has been enhanced through the adoption of open research practices in their work”. You can find out more about the prize and the other shortlisted entries and winners here.\nAmy Heather presented this work at the GW4 Open Research Prize awards event. The slides were created using Quarto: see the slides and accompanying slides GitHub repository. A recording of the presentation is available:",
+    "crumbs": [
+      "Research",
+      "Reproducible",
+      "Computational reproducibility assessment of published DES models"
+    ]
+  },
+  {
+    "objectID": "pages/research/computational_reproducibility.html#publications",
+    "href": "pages/research/computational_reproducibility.html#publications",
+    "title": "Computational reproducibility assessment of published DES models",
+    "section": "Publications",
+    "text": "Publications\n\n\n\n\n\n\n\n\n\n\nOn the reproducibility of discrete-event simulation studies in health research: an empirical study using open models\n\n\n\n\n\n\n\n\nSep 9, 2025\n\n\nAmy Heather, Thomas Monks, Alison Harper, Navonil Mustafee, Andrew Mayne\n\n\n\n\n\n\n\n\n\n\n\n\nProtocol for assessing the computational reproducibility of discrete-event simulation models on STARS\n\n\n\n\n\n\n\n\nJun 20, 2024\n\n\nAmy Heather, Thomas Monks, Alison Harper, Navonil Mustafee, Andrew Mayne\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Research",
+      "Reproducible",
+      "Computational reproducibility assessment of published DES models"
+    ]
+  },
+  {
+    "objectID": "pages/publications/2024/harper2024deployable/index.html",
+    "href": "pages/publications/2024/harper2024deployable/index.html",
+    "title": "Deployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration",
+    "section": "",
+    "text": "Methods or approaches from disciplines outside of OR modelling and Simulation (M&S) can potentially increase the functionality of simulation models through hybrid modelling. In healthcare research, where simulation models are commonly used, we see few applications of models that can easily be deployed by other researchers or by healthcare stakeholders. Models are treated as disposable artefacts, developed to deliver a set of results, and rarely address deployment for model reuse. We propose one potential solution to deploying free and open-source simulations using containerisation with continuous integration. A container provides a self-contained environment that encapsulates the model and all its required dependencies including the operating system, software, and packages. This overcomes a significant barrier to sharing models developed in open-source software, which is dependency management. Isolating the environment in a container ensures that the simulation model behaves the same way across different computing environments. It also means that other users can interact with the model without installing software, supporting both use/reuse, and reproducibility of results. We illustrate the approach using a model for orthopaedic elective recovery planning, developed with a user-friendly interface in Python, including a step-by-step approach to support M&S researchers to deploy their own models using our hybrid framework."
+  },
+  {
+    "objectID": "pages/publications/2024/harper2024deployable/index.html#abstract",
+    "href": "pages/publications/2024/harper2024deployable/index.html#abstract",
+    "title": "Deployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration",
+    "section": "",
+    "text": "Methods or approaches from disciplines outside of OR modelling and Simulation (M&S) can potentially increase the functionality of simulation models through hybrid modelling. In healthcare research, where simulation models are commonly used, we see few applications of models that can easily be deployed by other researchers or by healthcare stakeholders. Models are treated as disposable artefacts, developed to deliver a set of results, and rarely address deployment for model reuse. We propose one potential solution to deploying free and open-source simulations using containerisation with continuous integration. A container provides a self-contained environment that encapsulates the model and all its required dependencies including the operating system, software, and packages. This overcomes a significant barrier to sharing models developed in open-source software, which is dependency management. Isolating the environment in a container ensures that the simulation model behaves the same way across different computing environments. It also means that other users can interact with the model without installing software, supporting both use/reuse, and reproducibility of results. We illustrate the approach using a model for orthopaedic elective recovery planning, developed with a user-friendly interface in Python, including a step-by-step approach to support M&S researchers to deploy their own models using our hybrid framework."
+  },
+  {
+    "objectID": "pages/publications/2024/harper2024deployable/index.html#article",
+    "href": "pages/publications/2024/harper2024deployable/index.html#article",
+    "title": "Deployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration",
+    "section": "Article",
+    "text": "Article\nThis is an open-access pre-print (https://doi.org/10.31219/osf.io/qez45, 11 October 2023).\nTo view the published book chapter, please go to https://doi.org/10.1007/978-3-031-59999-6_10."
+  },
+  {
+    "objectID": "pages/publications/2024/heather2024protocol/index.html",
+    "href": "pages/publications/2024/heather2024protocol/index.html",
+    "title": "Protocol for assessing the computational reproducibility of discrete-event simulation models on STARS",
+    "section": "",
+    "text": "This protocol will be used to assess the computational reproducibility of published healthcare discrete-event simulation (DES) models created using Python or R. It forms part of the project STARS: “Sharing Tools and Artefacts for Reproducible Simulations in healthcare”."
+  },
+  {
+    "objectID": "pages/publications/2024/heather2024protocol/index.html#summary",
+    "href": "pages/publications/2024/heather2024protocol/index.html#summary",
+    "title": "Protocol for assessing the computational reproducibility of discrete-event simulation models on STARS",
+    "section": "",
+    "text": "This protocol will be used to assess the computational reproducibility of published healthcare discrete-event simulation (DES) models created using Python or R. It forms part of the project STARS: “Sharing Tools and Artefacts for Reproducible Simulations in healthcare”."
+  },
+  {
+    "objectID": "pages/publications/2024/heather2024protocol/index.html#article",
+    "href": "pages/publications/2024/heather2024protocol/index.html#article",
+    "title": "Protocol for assessing the computational reproducibility of discrete-event simulation models on STARS",
     "section": "Article",
     "text": "Article"
   },

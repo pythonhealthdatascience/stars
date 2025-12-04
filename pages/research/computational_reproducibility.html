@@ -11,9 +11,8 @@
 <meta name="author" content="Alison Harper">
 <meta name="author" content="Navonil Mustafee">
 <meta name="author" content="Andrew Mayne">
-<meta name="dcterms.date" content="2025-09-09">
 
-<title>On the reproducibility of discrete-event simulation studies in health research: an empirical study using open models – STARS</title>
+<title>Computational reproducibility assessment of published DES models – STARS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,25 +28,30 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../../">
-<link href="../../../../images/stars_logo_blue.png" rel="icon" type="image/png">
-<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-43f864970425b910216905c32a8a9e35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/stars_logo_blue.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-43f864970425b910216905c32a8a9e35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,6 +79,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-pub .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-pub'] = new List('listing-pub', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>
 
       .quarto-title-block .quarto-title-banner h1,
@@ -89,29 +122,58 @@ ul.task-list li input[type="checkbox"] {
 
       .quarto-title-block .quarto-title-banner {
         color: #ffffff;
-background-image: url(../../../../images/banner.png);
+background-image: url(../../images/banner.png);
 background-size: cover;
       }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../../../css/footer.css">
-<link rel="stylesheet" href="../../../../css/theme.css">
-<link rel="stylesheet" href="../../../../css/boxes.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../css/footer.css">
+<link rel="stylesheet" href="../../css/theme.css">
+<link rel="stylesheet" href="../../css/boxes.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../../images/stars_logo_white.png" alt="" class="navbar-logo light-content">
-    <img src="../../../../images/stars_logo_white.png" alt="" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/stars_logo_white.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/stars_logo_white.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">STARS</span>
     </a>
   </div>
@@ -122,11 +184,11 @@ background-size: cover;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../../pages/research.html"> 
+    <a class="nav-link active" href="../../pages/research.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../pages/publications.html"> 
+    <a class="nav-link" href="../../pages/publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
 </ul>
@@ -136,16 +198,23 @@ background-size: cover;
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/research/computational_reproducibility.html">Reproducible</a></li><li class="breadcrumb-item"><a href="../../pages/research/computational_reproducibility.html">Computational reproducibility assessment of published DES models</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">On the reproducibility of discrete-event simulation studies in health research: an empirical study using open models</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">Reproducible</div>
-              </div>
-                  </div>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/research/computational_reproducibility.html">Reproducible</a></li><li class="breadcrumb-item"><a href="../../pages/research/computational_reproducibility.html">Computational reproducibility assessment of published DES models</a></li></ol></nav>
+      <h1 class="title">Computational reproducibility assessment of published DES models</h1>
+                      </div>
   </div>
     
   <div class="quarto-title-meta-author">
@@ -197,27 +266,129 @@ background-size: cover;
   <div class="quarto-title-meta">
 
         
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">09 Sep 2025</p>
-      </div>
-    </div>
     
       
-      <div>
-      <div class="quarto-title-meta-heading">Doi</div>
-      <div class="quarto-title-meta-contents">
-        <p class="doi">
-          <a href="https://doi.org/10.1080/17477778.2025.2552177">10.1080/17477778.2025.2552177</a>
-        </p>
-      </div>
-    </div>
     </div>
     
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Reproducible</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research/computational_reproducibility.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Computational reproducibility assessment of published DES models</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research/des_rap_book.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DES RAP Book and four worked examples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research/jos_mri.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Journal of Simulation - Model Reproducibility Initiative</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research/hdr_uk_futures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HDR UK Futures training materials</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Reusable</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research/des_sharing_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DES sharing review</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research/stars_framework_reuse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">STARS framework for model reuse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research/eom_rcc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exeter Oncology Model: Renal Cell Carcinoma edition</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Replicable</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research/stress.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">STRESS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research/model_reviews.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reviewing models to support authors in making their work reproducible and reusable</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research/llm_generate_des.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using LLMs to generate DES models</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/research/simtools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">sim-tools</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
@@ -227,35 +398,200 @@ background-size: cover;
 
 
 
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>Reproducibility of computational research is critical for ensuring transparency, reliability, and reusability. Challenges with computational reproducibility have been documented in several fields, but healthcare discrete-event simulation (DES) models have not been thoroughly examined in this context. This study assessed the computational reproducibility of eight published healthcare DES models (Python or R), selected to represent diverse contexts, complexities, and years of publication. Repositories and articles were also assessed against guidelines and reporting standards, offering insights into their relationship with reproducibility success. Reproducing results required up to 28 hours of troubleshooting per model, with 50% fully reproduced and 50% partially reproduced (12.5% to 94.1% of reported outcomes). Key barriers included the absence of open licences, discrepancies between reported and coded parameters, and missing code to produce model outputs, run scenarios, and generate tables and figures. Addressing these issues would often require relatively little effort from authors: adding an open licence and sharing all materials used to produce the article. Actionable recommendations are proposed to enhance reproducibility practices for simulation modellers and reviewers.</p>
+<div class="blue">
+<p><strong>Take-home message</strong></p>
+<p>There are simple steps researchers can take to improve the reproducibility of their healthcare DES models. These include:</p>
+<ul>
+<li>Sharing code with an open licence.</li>
+<li>Ensuring model parameters are correct.</li>
+<li>Including code to calculate all required model outputs.</li>
+<li>Providing code for all scenarios and sensitivity analyses.</li>
+<li>Including code to generate the tables, figures, and other reported results.</li>
+</ul>
+<p>For more suggestions, see the STARS reproducibility recommendations below.</p>
+</div>
+<p><br></p>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>This work assessed the computational reproducibility of eight published healthcare DES models implemented in Python or R. A <a href="../../pages/publications/2024/heather2024protocol/index.html">detailed study protocol</a> was first developed, informed by existing reproducibility studies and pilot work. The workflow for assessing each study is summarised in the figure below.</p>
+<p><a href="computational_reproducibility_resources/stars_wp1_workflow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="computational_reproducibility_resources/stars_wp1_workflow.png" class="img-fluid" alt="Study methodology"></a></p>
+<p>The eight models were selected to ensure diversity across a range of factors including the health focus (e.g., healthcare condition, specific system), geographical context, and model complexity</p>
+<p>Reproducing results required up to 28 hours of troubleshooting per model. Four models were judged to be fully reproduced, while four were partially reproduced - between 12.5% and 94.1% of reported outcomes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="computational_reproducibility_resources/article_times.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Count, proportion, and time to reproduce items within the scope of each study. Inspired by a figure in Krafczyk et al.&nbsp;(2021)."><img src="computational_reproducibility_resources/article_times.png" class="img-fluid figure-img" alt="Count, proportion, and time to reproduce items within the scope of each study. Inspired by a figure in Krafczyk et al.&nbsp;(2021)."></a></p>
+<figcaption>Count, proportion, and time to reproduce items within the scope of each study. Inspired by a figure in Krafczyk et al.&nbsp;(<a href="https://doi.org/10.1098/rsta.2020.0069">2021</a>).</figcaption>
+</figure>
+</div>
+<p>Based on the barriers and facilitators observed during these reproductions, we developed the <strong>STARS reproducibility recommendations</strong>. These are presented in the figures below, divided into categories: recommendations that specifically support reproducibility, and those that were more relevant to troubleshooting models (and therefore also to reuse).</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="computational_reproducibility_resources/reproduction_wheel.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Recommendations to support reproducibility. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t perform scenario analysis, or only provided one version of the code)."><img src="computational_reproducibility_resources/reproduction_wheel.png" class="img-fluid figure-img" alt="Recommendations to support reproducibility. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t perform scenario analysis, or only provided one version of the code)."></a></p>
+<figcaption>Recommendations to support reproducibility. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t perform scenario analysis, or only provided one version of the code).</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="computational_reproducibility_resources/troubleshooting_wheel.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Recommendations to support troubleshooting and reuse. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t have a web application, or didn’t have scenarios to vary parameters). Some recommendations were marked as “N/A” where it was not felt appropriate or feasible to count/assess their inclusion"><img src="computational_reproducibility_resources/troubleshooting_wheel.png" class="img-fluid figure-img" alt="Recommendations to support troubleshooting and reuse. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t have a web application, or didn’t have scenarios to vary parameters). Some recommendations were marked as “N/A” where it was not felt appropriate or feasible to count/assess their inclusion"></a></p>
+<figcaption>Recommendations to support troubleshooting and reuse. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t have a web application, or didn’t have scenarios to vary parameters). Some recommendations were marked as “N/A” where it was not felt appropriate or feasible to count/assess their inclusion</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="article" class="level2">
-<h2 class="anchored" data-anchor-id="article">Article</h2>
-<div class="embed-container">
-  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+<section id="websites-and-github-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="websites-and-github-repositories">Websites and GitHub repositories</h2>
+<p>We have described this work in a <a href="../../pages/publications/2025/heather2025reproducibility/index.html">publication in the Journal of Simulation</a>.</p>
+<p>The work is also documented in a dedicated <a href="https://pythonhealthdatascience.github.io/stars_wp1_summary/">Quarto summary website</a>, which provides more fine-grained detail on the reproductions.</p>
+<div class="iframe-wrapper">
+  <div class="iframe-header">
+    <span>Website preview:</span>
+    <a href="https://pythonhealthdatascience.github.io/stars_wp1_summary/pages/reproduction.html" target="_blank" rel="noopener">
+      View full website in new tab
+    </a>
+  </div>
+
+  <iframe width="100%" height="500" src="https://pythonhealthdatascience.github.io/stars_wp1_summary/pages/reproduction.html" title="Computational Reproducibility Assessments: Summary">
+  </iframe>
+</div>
+<br>
+<p>Each of the eight DES models has its own research compendium-style GitHub repository, with a corresponding website and archival record, as linked in the table below. Each repository was created from a <a href="https://github.com/pythonhealthdatascience/stars_reproduction_template">template</a> which we developed during pilot work. In pilot work, an example model from colleagues was used to test and refine the reproducibility protocol, resulting in the repository <a href="https://github.com/pythonhealthdatascience/stars-reproduce-allen-2020">stars-reproduce-allen-2020</a>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Reproduction study</th>
+<th>Website</th>
+<th>GitHub</th>
+<th>Zenodo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Shoaib and Ramamohan 2022</td>
+<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-shoaib-2022/">Website</a></td>
+<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-shoaib-2022">stars-reproduce-shoaib-2022</a></td>
+<td><a href="https://doi.org/10.1177/00375497211030931">10.1177/00375497211030931</a></td>
+</tr>
+<tr class="even">
+<td>Huang et al.&nbsp;2019</td>
+<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-huang-2019/">Website</a></td>
+<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-huang-2019">stars-reproduce-huang-2019</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.12657280">10.5281/zenodo.12657280</a></td>
+</tr>
+<tr class="odd">
+<td>Lim et al.&nbsp;2020</td>
+<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-lim-2020/">Website</a></td>
+<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-lim-2020">stars-reproduce-lim-2020</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.12795365">10.5281/zenodo.12795365</a></td>
+</tr>
+<tr class="even">
+<td>Kim et al.&nbsp;2021</td>
+<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-kim-2021/">Website</a></td>
+<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-kim-2021">stars-reproduce-kim-2021</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.13121136">10.5281/zenodo.13121136</a></td>
+</tr>
+<tr class="odd">
+<td>Anagnostou et al.&nbsp;2022</td>
+<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/">Website</a></td>
+<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022">stars-reproduce-anagnostou-2022</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.13306159">10.5281/zenodo.13306159</a></td>
+</tr>
+<tr class="even">
+<td>Johnson et al.&nbsp;2021</td>
+<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-johnson-2021/">Website</a></td>
+<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-johnson-2021">stars-reproduce-johnson-2021</a></td>
+<td><a href="https://zenodo.org/doi/10.5281/zenodo.13832333">10.5281/zenodo.13832333</a></td>
+</tr>
+<tr class="odd">
+<td>Hernandez et al.&nbsp;2015</td>
+<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-hernandez-2015/">Website</a></td>
+<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-hernandez-2015">stars-reproduce-hernandez-2015</a></td>
+<td><a href="https://zenodo.org/doi/10.5281/zenodo.13832260">10.5281/zenodo.13832260</a></td>
+</tr>
+<tr class="even">
+<td>Wood et al.&nbsp;2021</td>
+<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-wood-2021/">Website</a></td>
+<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-wood-2021">stars-reproduce-wood-2021</a></td>
+<td><a href="https://doi.org/10.5281/zenodo.13881986">10.5281/zenodo.13881986</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="gw4-open-research-prize---improving-quality" class="level2">
+<h2 class="anchored" data-anchor-id="gw4-open-research-prize---improving-quality">GW4 Open Research Prize - Improving Quality</h2>
+<p>This research was shortlisted for the “Improving Quality” prize, which is “for those able to demonstrate that the quality of their research has been enhanced through the adoption of open research practices in their work”. You can find out more about the prize and the other <a href="https://gw4.ac.uk/news/gw4-open-research-prize-2025-winners-announced/">shortlisted entries and winners here</a>.</p>
+<p>Amy Heather presented this work at the GW4 Open Research Prize awards event. The slides were created using Quarto: see the <a href="https://pythonhealthdatascience.github.io/gw4_prize_presentation/">slides</a> and accompanying <a href="https://github.com/pythonhealthdatascience/gw4_prize_presentation">slides GitHub repository</a>. A recording of the presentation is available:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/4ti4Fent07s?si=UAIZRvf9gl2K-cKO" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<div id="listing-pub" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="UmVwcm9kdWNpYmxl" data-listing-date-sort="1757376000000" data-listing-file-modified-sort="1764862298736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="176">
+<div class="thumbnail"><a href="../../pages/publications/2025/heather2025reproducibility/index.html" class="no-external">
+
+<img loading="lazy" src="../../pages/publications/2025/heather2025reproducibility/frontpage.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../pages/publications/2025/heather2025reproducibility/index.html" class="no-external">On the reproducibility of discrete-event simulation studies in health research: an empirical study using open models</a>
+</h3>
+<div class="delink listing-description"><a href="../../pages/publications/2025/heather2025reproducibility/index.html" class="no-external">
+Reproducibility of computational research is critical for ensuring transparency, reliability, and reusability. Challenges with computational reproducibility have been…
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../pages/publications/2025/heather2025reproducibility/index.html" class="no-external">
+<div class="listing-date">
+Sep 9, 2025
+</div>
+<div class="listing-author">
+Amy Heather, Thomas Monks, Alison Harper, Navonil Mustafee, Andrew Mayne
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="UmVwcm9kdWNpYmxl" data-listing-date-sort="1718841600000" data-listing-file-modified-sort="1764862298709" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
+<div class="thumbnail"><a href="../../pages/publications/2024/heather2024protocol/index.html" class="no-external">
+
+<img loading="lazy" src="../../pages/publications/2024/heather2024protocol/frontpage.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../pages/publications/2024/heather2024protocol/index.html" class="no-external">Protocol for assessing the computational reproducibility of discrete-event simulation models on STARS</a>
+</h3>
+<div class="delink listing-description"><a href="../../pages/publications/2024/heather2024protocol/index.html" class="no-external">
+This protocol will be used to assess the computational reproducibility of published healthcare discrete-event simulation (DES) models created using Python or R. It forms…
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../pages/publications/2024/heather2024protocol/index.html" class="no-external">
+<div class="listing-date">
+Jun 20, 2024
+</div>
+<div class="listing-author">
+Amy Heather, Thomas Monks, Alison Harper, Navonil Mustafee, Andrew Mayne
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 
 
+
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{heather2025,
-  author = {Heather, Amy and Monks, Thomas and Harper, Alison and
-    Mustafee, Navonil and Mayne, Andrew},
-  title = {On the Reproducibility of Discrete-Event Simulation Studies
-    in Health Research: An Empirical Study Using Open Models},
-  date = {2025-09-09},
-  url = {https://pythonhealthdatascience.github.io/stars/pages/publications/2025/heather2025reproducibility/},
-  doi = {10.1080/17477778.2025.2552177},
-  langid = {en}
-}
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-heather2025" class="csl-entry quarto-appendix-citeas" role="listitem">
-Heather, Amy, Thomas Monks, Alison Harper, Navonil Mustafee, and Andrew
-Mayne. 2025. <span>“On the Reproducibility of Discrete-Event Simulation
-Studies in Health Research: An Empirical Study Using Open
-Models.”</span> September 9, 2025. <a href="https://doi.org/10.1080/17477778.2025.2552177">https://doi.org/10.1080/17477778.2025.2552177</a>.
-</div></div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -663,13 +999,45 @@ Models.”</span> September 9, 2025. <a href="https://doi.org/10.1080/17477778.2
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><img src="../../../../images/exeter.png" class="img-fluid" width="150"> <img src="../../../../images/somerset.jpg" class="img-fluid" width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../../../images/ukmrc.png" class="img-fluid" width="150">&nbsp;&nbsp;&nbsp; <img src="../../../../images/nihr.png" class="img-fluid" width="200"></p>
+<p><img src="../../images/exeter.png" class="img-fluid" width="150"> <img src="../../images/somerset.jpg" class="img-fluid" width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../images/ukmrc.png" class="img-fluid" width="150">&nbsp;&nbsp;&nbsp; <img src="../../images/nihr.png" class="img-fluid" width="200"></p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
