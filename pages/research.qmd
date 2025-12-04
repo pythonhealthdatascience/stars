@@ -1,3 +1,116 @@
 ---
 title: "Research"
 ---
+
+## Reproducible
+
+**Reproducible** = If all code, data, environment details, and parameters are recorded and published, anyone (including yourself in the future or a different person on a different system) can regenerate the published results by re-creating the documented conditions. This verifies code is working as expected and increases trust.
+
+```{=html}
+<br>
+<a href="computational_reproducibility.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-arrow-clockwise"></i></div>
+  <div class="text">
+    <div class="title">Computational reproducibility assessment of published DES models</div>
+    <div class="details">We attempted to reproduce eight published Python and R healthcare DES models. From this work, we developed the STARS Reproducibility framework for sharing reproducible healthcare DES models.</div>
+  </div>
+</a>
+<br>
+<a href="des_rap_book.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-book"></i></div>
+  <div class="text">
+    <div class="title">DES RAP Book and four worked examples</div>
+    <div class="details">??.</div>
+  </div>
+</a>
+<br>
+<a href="jos_mri.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-journal"></i></div>
+  <div class="text">
+    <div class="title">Journal of Simulation - Model Reproducibility Initiative</div>
+    <div class="details">??.</div>
+  </div>
+</a>
+<br>
+<a href="hdr_uk_futures.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-person-workspace"></i></div>
+  <div class="text">
+    <div class="title">HDR UK Futures training materials</div>
+    <div class="details">??.</div>
+  </div>
+</a>
+```
+
+## Reusable
+
+**Reusable** = Code can be adapted and used in new contexts. This saves time and increases impact.
+
+```{=html}
+<br>
+<a href="des_sharing_review.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-bookmarks"></i></div>
+  <div class="text">
+    <div class="title">DES sharing review</div>
+    <div class="details">??.</div>
+  </div>
+</a>
+<br>
+<a href="stars_framework_reuse.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-people"></i></div>
+  <div class="text">
+    <div class="title">STARS framework for model reuse</div>
+    <div class="details">??.</div>
+  </div>
+</a>
+<br>
+<a href="eom_rcc.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-capsule"></i></div>
+  <div class="text">
+    <div class="title">Exeter Oncology Model: Renal Cell Carcinoma edition</div>
+    <div class="details">??.</div>
+  </div>
+</a>
+```
+
+## Replicable
+
+**Replicable** = New code based on described methods produces consistent results. This gives confidence in results: their validity and reliability.
+
+```{=html}
+<br>
+<a href="stress.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-card-checklist"></i></div>
+  <div class="text">
+    <div class="title">STRESS</div>
+    <div class="details">??.</div>
+  </div>
+</a>
+```
+
+## Other avenues of work
+
+```{=html}
+<a href="model_reviews.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-person-lines-fill"></i></div>
+  <div class="text">
+    <div class="title">Reviewing models to support authors in making their work reproducible and reusable</div>
+    <div class="details">??.</div>
+  </div>
+</a>
+<br>
+<a href="llm_generate_des.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-robot"></i></div>
+  <div class="text">
+    <div class="title">Using LLMs to generate DES models</div>
+    <div class="details">??.</div>
+  </div>
+</a>
+<br>
+<a href="simtools.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-tools"></i></div>
+  <div class="text">
+    <div class="title">sim-tools</div>
+    <div class="details">??.</div>
+  </div>
+</a>
+```

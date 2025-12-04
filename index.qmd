@@ -7,14 +7,14 @@ format:
       - css/buttons.css
 ---
 
-The STARS project supports researchers in developing transparent, high‑impact discrete-event simulation studies in healthcare that are computationally reproducible and practically reusable. It provides structured guidance, tools, and worked examples to help teams share code, data, and documentation in ways that enable others to understand, verify, and adapt their models for new healthcare settings.
+The STARS project supports the development of transparent and impactful discrete-event simulation studies in healthcare that are computationally reproducible and practically reusable. It provides structured guidance, tools, and worked examples to help teams share code, data, and documentation in ways that enable others to understand, verify, and adapt their models for new healthcare settings.
 
 ```{=html}
 <br>
 <a href="pages/research.qmd" class="value-box">
   <div class="icon"><i class="bi bi-search"></i></div>
   <div class="text">
-    <div class="value">Research</div>
+    <div class="title">Research</div>
     <div class="details">Learn about our research.</div>
   </div>
 </a>
@@ -22,7 +22,7 @@ The STARS project supports researchers in developing transparent, high‑impact 
 <a href="pages/publications.qmd" class="value-box">
   <div class="icon"><i class="bi bi-file-earmark-text"></i></div>
   <div class="text">
-    <div class="value">Publications</div>
+    <div class="title">Publications</div>
     <div class="details">View our full list of publications.</div>
   </div>
 </a>

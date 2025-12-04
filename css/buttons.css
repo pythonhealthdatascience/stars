@@ -13,6 +13,10 @@
   background-color: #0a4568;
 }
 
+.value-box.pale {
+  background-color: #3484ac;
+}
+
 .value-box:hover {
   transform: translateY(-4px);
 }
@@ -29,15 +33,13 @@
 }
 
 .value-box .title {
-  font-weight: 600;
-  font-size: 0.9rem;
-  opacity: 0.9;
-}
-
-.value-box .value {
   font-size: 2.2rem;
   font-weight: bold;
   margin: 0.2rem 0;
+}
+
+.value-box.small-title .title {
+  font-size: 1.3rem;
 }
 
 .value-box .details {
