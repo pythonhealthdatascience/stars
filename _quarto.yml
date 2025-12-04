@@ -28,7 +28,7 @@ website:
         - section: "Reusable"
           contents:
             - pages/des_sharing_review.qmd
-            - pages/stars_framework.qmd
+            - pages/stars_framework_reuse.qmd
             - pages/eom_rcc.qmd
         - section: "Replicable"
           contents:
