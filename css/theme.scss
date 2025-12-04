@@ -1,2 +1,32 @@
 /*-- scss:defaults --*/
 $navbar-bg: #0a4568;
+
+/*-- scss:rules --*/
+
+// Table of contents
+#TOC {
+    #toc-title {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+// Blog categories - adapted from https://github.com/andrewheiss/ath-quarto/blob/926e2f3b2ec6ac928bb39db3d2314c6401c6c93e/html/ath.scss
+#quarto-margin-sidebar {
+
+    .quarto-listing-category {
+        line-height: 1.1;
+        padding-left: 0.6rem;
+        margin-left: 0.5em;
+        border-left: 1px solid #e9ecef;
+
+        .category {
+            padding-bottom: 0.5rem;
+        }
+
+        .quarto-category-count {
+            font-weight: 200;
+            font-size: 0.8em;
+        }
+    }
+}
