@@ -1,0 +1,37 @@
+---
+title: "Protocol for assessing the computational reproducibility of discrete-event simulation models on STARS"
+doi: 10.5281/zenodo.12179845
+author:
+  - name: Amy Heather
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0002-6596-3479
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Alison Harper
+    affiliation: University of Exeter Business School
+    orcid: 0000-0001-5274-5037
+  - name: Navonil Mustafee
+    affiliation: University of Exeter Business School
+    orcid: 0000-0002-2204-8924
+  - name: Andrew Mayne
+    affiliation: Somerset NHS Foundation Trust
+    orcid: 0000-0003-1263-2286
+date: 20 June 2024
+date-format: "DD MMM YYYY"
+image: frontpage.png
+categories:
+  - Reproducible
+---
+
+## Summary
+
+This protocol will be used to assess the computational reproducibility of published healthcare discrete-event simulation (DES) models created using Python or R. It forms part of the project STARS: “Sharing Tools and Artefacts for Reproducible Simulations in healthcare”.
+
+## Article
+
+```{=html}
+<div class="embed-container">
+  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+</div>
+```
