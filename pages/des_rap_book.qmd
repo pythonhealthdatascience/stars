@@ -1,3 +1,22 @@
 ---
 title: "DES RAP Book and four worked examples"
+author:
+  - name: Amy Heather
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0002-6596-3479
+  - name: Thomas Monks
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0003-2631-4481
+  - name: Alison Harper
+    affiliation: University of Exeter Business School
+    orcid: 0000-0001-5274-5037
+  - name: Fatemeh Alidoost
+    affiliation: University of Exeter Business School
+    orcid: 0009-0000-0252-560X
+  - name: Robert Challen
+    affiliation: School of Engineering Mathematics and Technology, University of Bristol
+    orcid: 0000-0002-5504-7768
+  - name: Navonil Mustafee
+    affiliation: University of Exeter Business School
+    orcid: 0000-0002-2204-8924
 ---

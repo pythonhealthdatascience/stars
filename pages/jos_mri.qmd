@@ -1,3 +1,5 @@
 ---
-title: "Journal of Simulation - Model Reproducibility Initiative (JOS-MRI)"
+title: "Journal of Simulation - Model Reproducibility Initiative"
 ---
+
+Journal of Simulation - Model Reproducibility Initiative (JOS-MRI)
