@@ -26,8 +26,6 @@ listing:
     sort: "date desc"
     categories: true
     fields: [image, date, title, author, categories]
-date: 3 December 2025
-published-title: Last updated
 toc: true
 toc-title: Year
 toc-location: right
