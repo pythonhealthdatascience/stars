@@ -19,11 +19,11 @@ author:
 listing:
   - id: pub
     contents:
-      - publications/2024/heather2024protocol
-      - publications/2025/heather2025reproducibility
+      - "../publications/2024/heather2024protocol/index.qmd"
+      - "../publications/2025/heather2025reproducibility/index.qmd"
 ---
 
-## Takehome message
+## Take-home message
 
 It can be really hard to reproduce stuff. Follow STARS reproducibility recommendations to help.
 
