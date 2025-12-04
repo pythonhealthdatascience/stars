@@ -58,3 +58,28 @@ h4 {
 .quarto-title-breadcrumbs .breadcrumb li:last-of-type a {
   color: #cad6dd;
 }
+
+.iframe-wrapper {
+  border: 2px solid #0a4568;
+}
+
+.iframe-header {
+  background-color: #0a4568;
+  color: #ffffff;
+  padding: 8px 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.iframe-header a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.iframe-header a:hover,
+.iframe-header a:focus {
+  text-decoration: none;
+}

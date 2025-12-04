@@ -51,6 +51,7 @@ format:
     css:
       - css/footer.css
       - css/theme.css
+      - css/boxes.css
     lightbox: true
     title-block-banner: images/banner.png
     title-block-banner-color: "#ffffff"
