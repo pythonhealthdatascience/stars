@@ -1,3 +1,4 @@
+/* Headings*/
 h2 {
   margin-top: 2em;
 }
@@ -36,4 +37,15 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Sidebar */
+.sidebar-item {
+  padding-bottom: 0.3rem;
+}
+.sidebar-item-container {
+  padding-bottom: 0.3rem;
+}
+.sidebar-item-text.sidebar-link.text-start {
+  font-weight: bold;
 }
