@@ -1,10 +1,59 @@
 ---
 title: "Publications"
 listing:
-  contents: publications
-  sort: "date desc"
-  categories: true
-  fields: [image, date, title, author, categories]
+  - id: posts_2025
+    contents: "2025/**/index.qmd"
+    sort: "date desc"
+    categories: true
+    fields: [image, date, title, author, categories]
+  - id: posts_2024
+    contents: "2024/**/index.qmd"
+    sort: "date desc"
+    categories: true
+    fields: [image, date, title, author, categories]
+  - id: posts_2023
+    contents: "2023/**/index.qmd"
+    sort: "date desc"
+    categories: true
+    fields: [image, date, title, author, categories]
+  - id: posts_2022
+    contents: "2022/**/index.qmd"
+    sort: "date desc"
+    categories: true
+    fields: [image, date, title, author, categories]
+  - id: posts_2018
+    contents: "2018/**/index.qmd"
+    sort: "date desc"
+    categories: true
+    fields: [image, date, title, author, categories]
 date: 3 December 2025
 published-title: Last updated
+toc: true
+toc-title: Year
+toc-location: right
 ---
+
+## 2025
+
+:::{#posts_2025}
+:::
+
+## 2024
+
+:::{#posts_2024}
+:::
+
+## 2023
+
+:::{#posts_2023}
+:::
+
+## 2022
+
+:::{#posts_2022}
+:::
+
+## 2018
+
+:::{#posts_2018}
+:::
