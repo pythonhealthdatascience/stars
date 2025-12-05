@@ -1,5 +1,14 @@
 ---
 title: "STARS framework for model reuse"
+listing:
+  - id: pub
+    contents:
+      - "../publications/2024/monks2024towards/index.qmd"
 ---
 
 Page yet to be written!
+
+## Publication
+
+::: {#pub}
+:::

@@ -1,5 +1,14 @@
 ---
 title: "Using LLMs to generate DES models"
+listing:
+  - id: pub
+    contents:
+      - "../publications/2025/monks2025unlocking/index.qmd"
 ---
 
 Page yet to be written!
+
+## Publication
+
+::: {#pub}
+:::

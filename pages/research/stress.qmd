@@ -1,5 +1,14 @@
 ---
 title: "STRESS"
+listing:
+  - id: pub
+    contents:
+      - "../publications/2018/monks2018strengthening/index.qmd"
 ---
 
 Page yet to be written!
+
+## Publication
+
+::: {#pub}
+:::
