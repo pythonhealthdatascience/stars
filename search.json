@@ -95,14 +95,14 @@
     "href": "pages/publications/2018/monks2018strengthening/index.html",
     "title": "Strengthening the reporting of empirical simulation studies: Introducing the STRESS guidelines",
     "section": "",
-    "text": "This study develops a standardised checklist approach to improve the reporting of discrete-event simulation, system dynamics and agent-based simulation models within the field of Operational Research and Management Science. Incomplete or ambiguous reporting means that many simulation studies are not reproducible, leaving other modellers with an incomplete picture of what has been done and unable to judge the reliability of the results. Crucially, unclear reporting makes it difficult to reproduce or reuse findings. In this paper, we review the evidence on the quality of model reporting and consolidate previous work. We derive general good practice principles and three 20-item checklists aimed at Strengthening The Reporting of Empirical Simulation Studies (STRESS): STRESS-DES, STRESS-ABS and STRESS-SD for discrete-event simulation, agent-based simulation and system dynamics, respectively. Given the variety of simulation projects, we provide usage and troubleshooting advice to cover a wide range of situations."
+    "text": "This was not developed as part of the STARS project, but is related work that Tom was involved in."
   },
   {
     "objectID": "pages/publications/2018/monks2018strengthening/index.html#abstract",
     "href": "pages/publications/2018/monks2018strengthening/index.html#abstract",
     "title": "Strengthening the reporting of empirical simulation studies: Introducing the STRESS guidelines",
-    "section": "",
-    "text": "This study develops a standardised checklist approach to improve the reporting of discrete-event simulation, system dynamics and agent-based simulation models within the field of Operational Research and Management Science. Incomplete or ambiguous reporting means that many simulation studies are not reproducible, leaving other modellers with an incomplete picture of what has been done and unable to judge the reliability of the results. Crucially, unclear reporting makes it difficult to reproduce or reuse findings. In this paper, we review the evidence on the quality of model reporting and consolidate previous work. We derive general good practice principles and three 20-item checklists aimed at Strengthening The Reporting of Empirical Simulation Studies (STRESS): STRESS-DES, STRESS-ABS and STRESS-SD for discrete-event simulation, agent-based simulation and system dynamics, respectively. Given the variety of simulation projects, we provide usage and troubleshooting advice to cover a wide range of situations."
+    "section": "Abstract",
+    "text": "Abstract\nThis study develops a standardised checklist approach to improve the reporting of discrete-event simulation, system dynamics and agent-based simulation models within the field of Operational Research and Management Science. Incomplete or ambiguous reporting means that many simulation studies are not reproducible, leaving other modellers with an incomplete picture of what has been done and unable to judge the reliability of the results. Crucially, unclear reporting makes it difficult to reproduce or reuse findings. In this paper, we review the evidence on the quality of model reporting and consolidate previous work. We derive general good practice principles and three 20-item checklists aimed at Strengthening The Reporting of Empirical Simulation Studies (STRESS): STRESS-DES, STRESS-ABS and STRESS-SD for discrete-event simulation, agent-based simulation and system dynamics, respectively. Given the variety of simulation projects, we provide usage and troubleshooting advice to cover a wide range of situations."
   },
   {
     "objectID": "pages/publications/2018/monks2018strengthening/index.html#article",
@@ -137,7 +137,7 @@
     "href": "pages/research/model_reviews.html",
     "title": "Reviewing models to support authors in making their work reproducible and reusable",
     "section": "",
-    "text": "Devon Air Ambulance Discrete Event Simulation\nHybrid Simulation Modelling for Orthopaedics",
+    "text": "Devon Air Ambulance Discrete Event Simulation\nHybrid Simulation Modelling for Orthopaedics\nPage yet to be written!",
     "crumbs": [
       "Research",
       "Reviewing models to support authors in making their work reproducible and reusable"
@@ -148,11 +148,58 @@
     "href": "pages/research/jos_mri.html",
     "title": "Journal of Simulation - Model Reproducibility Initiative",
     "section": "",
-    "text": "Journal of Simulation - Model Reproducibility Initiative (JOS-MRI)",
+    "text": "Members of the STARS team have been involved in setting up the Journal of Simulation - Model Reproducibility Initiative (JOS-MRI). From December 2025, authors submitting to JOS are able to provide their simulation artefacts (e.g., code, data, model documentation) alongside their manuscript. These materials will be evaluated by Model Reproducibility Editors and dedicated review teams.\nSubmissions can receive one or more JOS-MRI badges. These are aligned with the National Information Standards Organization (NISO) reproducibility badge definitions for “Open Research Objects”, “Research Objects Reviewed”, and “Results Reproduced” - as well as introducing an additional Model Reuse badge.\nThe initiative welcomes artefacts from a range of modelling environments, but anticipates that many submissions will employ free and open source software such as:\n\nSimPy and Ciw for discrete-event simulation.\nNetLogo and RePast for agent-based modelling.\nPySD for system dynamics modelling.\n\nModels built using commercial tools (e.g., Simul8, AnyLogic, STELLA) will also be considered, provided that licences can be made available to the JOS-MRI team. Some software, such as Vensim, already offers academic licensing arrangements compatible with open research review.\nThe four JOS-MRI badges are:\n\n\nOpen Research Object: Models submitted for assessment are available in a public repository and distributed under standard open licences. This badge applies to all relevant artefacts, including code, data, models developed in commercial software, and supplementary materials such as scripts.\n\n\nResearch Object Reviewed: Models are reviewed by the JOS-MRI Editors and their teams to confirm that the artefacts are functional and accurately reflect the implementation details reported in the associated paper.\n\n\nResults Reproduced: The submitted models are executed and tested by the JOS-MRI Editors and their teams to verify that the reported results can be successfully reproduced.\n\n\nResearch Object Reusable: The submitted artefacts are evaluated for their reusability, using established frameworks such as Sharing Tools and Artefacts for Reusable Simulations (STARS), STrengthening the Reporting of Empirical Simulation Studies (STRESS), Overview, Design concepts and Details (ODD) protocol for agent-based models and System Dynamics Model Documentation and Assessment (SDM-Doc).\n\nDefinitions copied from https://www.theorsociety.com/ORS/Publications/JOS-MRI.aspx.",
     "crumbs": [
       "Research",
       "Reproducible",
       "Journal of Simulation - Model Reproducibility Initiative"
+    ]
+  },
+  {
+    "objectID": "pages/research/llm_generate_des.html",
+    "href": "pages/research/llm_generate_des.html",
+    "title": "Using LLMs to generate DES models",
+    "section": "",
+    "text": "Page yet to be written!",
+    "crumbs": [
+      "Research",
+      "Using LLMs to generate DES models"
+    ]
+  },
+  {
+    "objectID": "pages/research/stress.html",
+    "href": "pages/research/stress.html",
+    "title": "STRESS",
+    "section": "",
+    "text": "Page yet to be written!",
+    "crumbs": [
+      "Research",
+      "Replicable",
+      "STRESS"
+    ]
+  },
+  {
+    "objectID": "pages/research/des_rap_book.html",
+    "href": "pages/research/des_rap_book.html",
+    "title": "DES RAP Book and four worked examples",
+    "section": "",
+    "text": "Page yet to be written!",
+    "crumbs": [
+      "Research",
+      "Reproducible",
+      "DES RAP Book and four worked examples"
+    ]
+  },
+  {
+    "objectID": "pages/research/stars_framework_reuse.html",
+    "href": "pages/research/stars_framework_reuse.html",
+    "title": "STARS framework for model reuse",
+    "section": "",
+    "text": "Page yet to be written!",
+    "crumbs": [
+      "Research",
+      "Reusable",
+      "STARS framework for model reuse"
     ]
   },
   {
@@ -202,14 +249,14 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "The STARS project supports the development of transparent and impactful discrete-event simulation studies in healthcare that are computationally reproducible and practically reusable. It provides structured guidance, tools, and worked examples to help teams share code, data, and documentation in ways that enable others to understand, verify, and adapt their models for new healthcare settings.\n\n\n  \n  \n    Research\n    Learn about our research.\n  \n\n\n\n  \n  \n    Publications\n    View our full list of publications.\n  \n\n\n\n\nMeet the STARS project team\n\n\n  \n  \n  \n  \n\n\n  \n    \n      \n        \n          \n          Tom Monks\n          Principal Investigator\n          ORCID\n          GitHub\n        \n        \n          \n          Amy Heather\n          Researcher\n          ORCID\n          GitHub\n        \n        \n          \n          Alison Harper\n          Co-Investigator\n          ORCID\n          GitHub\n        \n        \n          \n          Nav Mustafee\n          Co-Investigator\n          ORCID\n          GitHub\n        \n        \n          \n          Andy Mayne\n          Co-Investigator\n          ORCID\n          GitHub\n        \n      \n      \n      \n      \n    \n  \n  \n  \n  \n  \n\n\n\n\nFunding\nThe STARS project is supported by the Medical Research Council [grant number MR/Z503915/1].\nPilot work was supported by the National Institute for Health Research Applied Research Collaboration South West Peninsula. The views expressed in this website are those of the author(s) and not necessarily those of the National Institute for Health Research or the Department of Health and Social Care."
+    "text": "The STARS project supports the development of transparent and impactful discrete-event simulation studies in healthcare that are computationally reproducible and practically reusable. It provides structured guidance, tools, and worked examples to help teams share code, data, and documentation in ways that enable others to understand, verify, and adapt their models for new healthcare settings.\n\n\n  \n  \n    Research\n    Learn about our research.\n  \n\n\n\n  \n  \n    Publications\n    View our full list of publications.\n  \n\n\n\n\nMeet the STARS project team\n\n\n  \n  \n  \n  \n  \n  \n\n\n  \n    \n      \n        \n          \n          Tom Monks\n          Principal Investigator\n          \n             ORCID\n          \n          \n             GitHub\n          \n        \n        \n          \n          Amy Heather\n          Researcher\n          \n             ORCID\n          \n          \n            GitHub\n          \n        \n        \n          \n          Alison Harper\n          Co-Investigator\n          \n             ORCID\n          \n          \n            GitHub\n          \n        \n        \n          \n          Nav Mustafee\n          Co-Investigator\n          \n             ORCID\n          \n          \n            GitHub\n          \n        \n        \n          \n          Andy Mayne\n          Co-Investigator\n          \n             ORCID\n          \n          \n            GitHub\n          \n        \n      \n      \n      \n      \n    \n  \n  \n  \n  \n  \n\n\n\n\nFunding\nThe STARS project is supported by the Medical Research Council [grant number MR/Z503915/1].\nPilot work was supported by the National Institute for Health Research Applied Research Collaboration South West Peninsula. The views expressed in this website are those of the author(s) and not necessarily those of the National Institute for Health Research or the Department of Health and Social Care."
   },
   {
     "objectID": "pages/research.html",
     "href": "pages/research.html",
     "title": "Research",
     "section": "",
-    "text": "Reproducible = If all code, data, environment details, and parameters are recorded and published, anyone (including yourself in the future or a different person on a different system) can regenerate the published results by re-creating the documented conditions. This verifies code is working as expected and increases trust.\n\n\n  \n  \n    Computational reproducibility assessment of published DES models\n    We attempted to reproduce eight published Python and R healthcare DES models. From this work, we developed the STARS reproducibility recommendations for sharing reproducible healthcare DES models.\n  \n\n\n\n  \n  \n    DES RAP Book and four worked examples\n    ??.\n  \n\n\n\n  \n  \n    Journal of Simulation - Model Reproducibility Initiative\n    ??.\n  \n\n\n\n  \n  \n    HDR UK Futures training materials\n    ??.",
+    "text": "Our research has been focused on helping improving the reproducibility, reusability and replicability of DES models. These are defined as follows:",
     "crumbs": [
       "Research"
     ]
@@ -218,8 +265,8 @@
     "objectID": "pages/research.html#reproducible",
     "href": "pages/research.html#reproducible",
     "title": "Research",
-    "section": "",
-    "text": "Reproducible = If all code, data, environment details, and parameters are recorded and published, anyone (including yourself in the future or a different person on a different system) can regenerate the published results by re-creating the documented conditions. This verifies code is working as expected and increases trust.\n\n\n  \n  \n    Computational reproducibility assessment of published DES models\n    We attempted to reproduce eight published Python and R healthcare DES models. From this work, we developed the STARS reproducibility recommendations for sharing reproducible healthcare DES models.\n  \n\n\n\n  \n  \n    DES RAP Book and four worked examples\n    ??.\n  \n\n\n\n  \n  \n    Journal of Simulation - Model Reproducibility Initiative\n    ??.\n  \n\n\n\n  \n  \n    HDR UK Futures training materials\n    ??.",
+    "section": "Reproducible",
+    "text": "Reproducible\n\n\n  \n  \n    Computational reproducibility assessment of published DES models\n    We attempted to reproduce eight published Python and R healthcare DES models. From this work, we developed the STARS reproducibility recommendations for sharing reproducible healthcare DES models.\n  \n\n\n\n  \n  \n    DES RAP Book and four worked examples\n    This comprehensive e-book provides step-by-step instructions for building DES models in Python or R as part of a reproducible analytical pipeline (RAP). It is accompanied by four full example repositories.\n  \n\n\n\n  \n  \n    Journal of Simulation - Model Reproducibility Initiative\n    This new initiative lets authors submit their simulation models for review, awarding badges that show the word is open, reviewed, reproduced and/or reusable.\n  \n\n\n\n  \n  \n    HDR UK Futures training materials\n    In development - watch this space!",
     "crumbs": [
       "Research"
     ]
@@ -229,7 +276,7 @@
     "href": "pages/research.html#reusable",
     "title": "Research",
     "section": "Reusable",
-    "text": "Reusable\nReusable = Code can be adapted and used in new contexts. This saves time and increases impact.\n\n\n  \n  \n    DES sharing review\n    ??.\n  \n\n\n\n  \n  \n    STARS framework for model reuse\n    ??.\n  \n\n\n\n  \n  \n    Exeter Oncology Model: Renal Cell Carcinoma edition\n    ??.",
+    "text": "Reusable\n\n\n  \n  \n    DES sharing review\n    This review assessed the extent to which healthcare DES models are shared, and audited whether sharing adhered to best practices.\n  \n\n\n\n  \n  \n    STARS framework for model reuse\n    The STARS reuse framework is a set of practical guidelines, with essential and optional components, that supports healthcare DES modellers to share open-source models in a way that makes them easier to reuse.\n  \n\n\n\n  \n  \n    Exeter Oncology Model: Renal Cell Carcinoma edition\n    We worked with an oncology cost‑effectiveness model, developed by PenTAG and collaborators for the NICE Pathways Pilot appraisal, to align it with the STARS framework for reusable simulations. Our contribution largely focused on developing clear, user‑oriented documentation and a pilot web application.",
     "crumbs": [
       "Research"
     ]
@@ -239,7 +286,7 @@
     "href": "pages/research.html#replicable",
     "title": "Research",
     "section": "Replicable",
-    "text": "Replicable\nReplicable = New code based on described methods produces consistent results. This gives confidence in results: their validity and reliability.\n\n\n  \n  \n    STRESS\n    ??.",
+    "text": "Replicable\n\n\n  \n  \n    STRESS\n    This was not developed as part of the STARS project, but is related work that Tom was involved in. The STRESS reporting guidelines are designed to improve the replicability of simulation models.",
     "crumbs": [
       "Research"
     ]
@@ -249,7 +296,7 @@
     "href": "pages/research.html#other-avenues-of-work",
     "title": "Research",
     "section": "Other avenues of work",
-    "text": "Other avenues of work\n\n  \n  \n    Reviewing models to support authors in making their work reproducible and reusable\n    ??.\n  \n\n\n\n  \n  \n    Using LLMs to generate DES models\n    ??.\n  \n\n\n\n  \n  \n    sim-tools\n    ??.",
+    "text": "Other avenues of work\n\n  \n  \n    Reviewing models to support authors in making their work reproducible and reusable\n    We worked with model authors to review their DES models, providing guidance to help improve reproducibility and reusability.\n  \n\n\n\n  \n  \n    Using LLMs to generate DES models\n    This study investigated whether generative AI could replicate published healthcare DES models.\n  \n\n\n\n  \n  \n    sim-tools\n    Our python package with tools to support DES and Monte-Carlo simulation.",
     "crumbs": [
       "Research"
     ]
@@ -259,7 +306,7 @@
     "href": "pages/research/eom_rcc.html",
     "title": "Exeter Oncology Model: Renal Cell Carcinoma edition",
     "section": "",
-    "text": "Exeter Oncology Model: Renal Cell Carcinoma edition (EOM-RCC)",
+    "text": "Exeter Oncology Model: Renal Cell Carcinoma edition (EOM-RCC)\nPage yet to be written!",
     "crumbs": [
       "Research",
       "Reusable",
@@ -271,7 +318,7 @@
     "href": "pages/research/computational_reproducibility.html",
     "title": "Computational reproducibility assessment of published DES models",
     "section": "",
-    "text": "Take-home message\nThere are simple steps researchers can take to improve the reproducibility of their healthcare DES models. These include:\n\nSharing code with an open licence.\nEnsuring model parameters are correct.\nIncluding code to calculate all required model outputs.\nProviding code for all scenarios and sensitivity analyses.\nIncluding code to generate the tables, figures, and other reported results.\n\nFor more suggestions, see the STARS reproducibility recommendations below.",
+    "text": "Take-home message:\nThere are simple steps researchers can take to improve the reproducibility of their healthcare DES models. These include:\n\nSharing code with an open licence.\nEnsuring model parameters are correct.\nIncluding code to calculate all required model outputs.\nProviding code for all scenarios and sensitivity analyses.\nIncluding code to generate the tables, figures, and other reported results.\n\nFor more suggestions, see the STARS reproducibility recommendations below.",
     "crumbs": [
       "Research",
       "Reproducible",
@@ -324,6 +371,53 @@
       "Research",
       "Reproducible",
       "Computational reproducibility assessment of published DES models"
+    ]
+  },
+  {
+    "objectID": "pages/research/hdr_uk_futures.html",
+    "href": "pages/research/hdr_uk_futures.html",
+    "title": "HDR UK Futures training materials",
+    "section": "",
+    "text": "In development - watch this space!",
+    "crumbs": [
+      "Research",
+      "Reproducible",
+      "HDR UK Futures training materials"
+    ]
+  },
+  {
+    "objectID": "pages/research/simtools.html",
+    "href": "pages/research/simtools.html",
+    "title": "sim-tools",
+    "section": "",
+    "text": "Page yet to be written!",
+    "crumbs": [
+      "Research",
+      "sim-tools"
+    ]
+  },
+  {
+    "objectID": "pages/research/des_sharing_review.html",
+    "href": "pages/research/des_sharing_review.html",
+    "title": "DES sharing review",
+    "section": "",
+    "text": "Page yet to be written!",
+    "crumbs": [
+      "Research",
+      "Reusable",
+      "DES sharing review"
+    ]
+  },
+  {
+    "objectID": "pages/research/des_sharing_review.html#publication",
+    "href": "pages/research/des_sharing_review.html#publication",
+    "title": "DES sharing review",
+    "section": "Publication",
+    "text": "Publication\n\n\n\n\n\n\n\n\n\n\nComputer model and code sharing practices in healthcare discrete-event simulation: a systematic scoping review\n\n\n\n\n\n\n\n\nSep 30, 2023\n\n\nThomas Monks, Alison Harper\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Research",
+      "Reusable",
+      "DES sharing review"
     ]
   },
   {
