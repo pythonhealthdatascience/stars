@@ -1,3 +1,14 @@
 ---
 title: "DES sharing review"
+listing:
+  - id: pub
+    contents:
+      - "../publications/2023/monks2023computer/index.qmd"
 ---
+
+Page yet to be written!
+
+## Publication
+
+::: {#pub}
+:::
