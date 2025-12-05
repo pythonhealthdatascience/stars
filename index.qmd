@@ -65,7 +65,7 @@ The STARS project supports the development of transparent and impactful discrete
             <i class="fa-brands fa-orcid"></i> ORCID
           </a>
           <a href="https://github.com/amyheather" class="message-button" target="_blank">
-            <i class="fa-brands fa-github"></i>GitHub
+            <i class="fa-brands fa-github"></i> GitHub
           </a>
         </div>
         <div class="card-item swiper-slide">
@@ -76,7 +76,7 @@ The STARS project supports the development of transparent and impactful discrete
             <i class="fa-brands fa-orcid"></i> ORCID
           </a>
           <a href="https://github.com/AliHarp" class="message-button" target="_blank">
-            <i class="fa-brands fa-github"></i>GitHub
+            <i class="fa-brands fa-github"></i> GitHub
           </a>
         </div>
         <div class="card-item swiper-slide">
@@ -87,7 +87,7 @@ The STARS project supports the development of transparent and impactful discrete
             <i class="fa-brands fa-orcid"></i> ORCID
           </a>
           <a href="https://github.com/NavonilNM" class="message-button" target="_blank">
-            <i class="fa-brands fa-github"></i>GitHub
+            <i class="fa-brands fa-github"></i> GitHub
           </a>
         </div>
         <div class="card-item swiper-slide">
@@ -98,7 +98,7 @@ The STARS project supports the development of transparent and impactful discrete
             <i class="fa-brands fa-orcid"></i> ORCID
           </a>
           <a href="https://github.com/andy-mayne" class="message-button" target="_blank">
-            <i class="fa-brands fa-github"></i>GitHub
+            <i class="fa-brands fa-github"></i> GitHub
           </a>
         </div>
       </div>
