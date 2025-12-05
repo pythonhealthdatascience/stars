@@ -2,9 +2,17 @@
 title: "Research"
 ---
 
-## Reproducible
+Our research has been focused on helping improving the reproducibility, reusability and replicability of DES models. These are defined as follows:
 
-**Reproducible** = If all code, data, environment details, and parameters are recorded and published, anyone (including yourself in the future or a different person on a different system) can regenerate the published results by re-creating the documented conditions. This verifies code is working as expected and increases trust.
+* **Reproducible:** If all code, data, environment details, and parameters are recorded and published, anyone (including yourself in the future or a different person on a different system) can regenerate the published results by re-creating the documented conditions. This verifies code is working as expected and increases trust.
+
+* **Reusable:** Code can be adapted and used in new contexts. This saves time and increases impact.
+
+* **Replicable:** New code based on described methods produces consistent results. This gives confidence in results: their validity and reliability.
+
+<br>
+
+## Reproducible
 
 ```{=html}
 <br>
@@ -20,7 +28,7 @@ title: "Research"
   <div class="icon"><i class="bi bi-book"></i></div>
   <div class="text">
     <div class="title">DES RAP Book and four worked examples</div>
-    <div class="details">??.</div>
+    <div class="details">This comprehensive e-book provides step-by-step instructions for building DES models in Python or R as part of a reproducible analytical pipeline (RAP). It is accompanied by four full example repositories.</div>
   </div>
 </a>
 <br>
@@ -28,7 +36,7 @@ title: "Research"
   <div class="icon"><i class="bi bi-journal"></i></div>
   <div class="text">
     <div class="title">Journal of Simulation - Model Reproducibility Initiative</div>
-    <div class="details">??.</div>
+    <div class="details">This new initiative lets authors submit their simulation models for review, awarding badges that show the word is open, reviewed, reproduced and/or reusable.</div>
   </div>
 </a>
 <br>
@@ -36,14 +44,12 @@ title: "Research"
   <div class="icon"><i class="bi bi-person-workspace"></i></div>
   <div class="text">
     <div class="title">HDR UK Futures training materials</div>
-    <div class="details">??.</div>
+    <div class="details">In development - watch this space!</div>
   </div>
 </a>
 ```
 
 ## Reusable
-
-**Reusable** = Code can be adapted and used in new contexts. This saves time and increases impact.
 
 ```{=html}
 <br>
@@ -51,7 +57,7 @@ title: "Research"
   <div class="icon"><i class="bi bi-bookmarks"></i></div>
   <div class="text">
     <div class="title">DES sharing review</div>
-    <div class="details">??.</div>
+    <div class="details">This review assessed the extent to which healthcare DES models are shared, and audited whether sharing adhered to best practices.</div>
   </div>
 </a>
 <br>
@@ -59,7 +65,7 @@ title: "Research"
   <div class="icon"><i class="bi bi-people"></i></div>
   <div class="text">
     <div class="title">STARS framework for model reuse</div>
-    <div class="details">??.</div>
+    <div class="details">The STARS reuse framework is a set of practical guidelines, with essential and optional components, that supports healthcare DES modellers to share open-source models in a way that makes them easier to reuse.</div>
   </div>
 </a>
 <br>
@@ -67,14 +73,12 @@ title: "Research"
   <div class="icon"><i class="bi bi-capsule"></i></div>
   <div class="text">
     <div class="title">Exeter Oncology Model: Renal Cell Carcinoma edition</div>
-    <div class="details">??.</div>
+    <div class="details">We worked with an oncology cost‑effectiveness model, developed by PenTAG and collaborators for the NICE Pathways Pilot appraisal, to align it with the STARS framework for reusable simulations. Our contribution largely focused on developing clear, user‑oriented documentation and a pilot web application.</div>
   </div>
 </a>
 ```
 
 ## Replicable
-
-**Replicable** = New code based on described methods produces consistent results. This gives confidence in results: their validity and reliability.
 
 ```{=html}
 <br>
@@ -82,7 +86,7 @@ title: "Research"
   <div class="icon"><i class="bi bi-card-checklist"></i></div>
   <div class="text">
     <div class="title">STRESS</div>
-    <div class="details">??.</div>
+    <div class="details">This was not developed as part of the STARS project, but is related work that Tom was involved in. The STRESS reporting guidelines are designed to improve the replicability of simulation models.</div>
   </div>
 </a>
 ```
@@ -94,7 +98,7 @@ title: "Research"
   <div class="icon"><i class="bi bi-person-lines-fill"></i></div>
   <div class="text">
     <div class="title">Reviewing models to support authors in making their work reproducible and reusable</div>
-    <div class="details">??.</div>
+    <div class="details">We worked with model authors to review their DES models, providing guidance to help improve reproducibility and reusability.</div>
   </div>
 </a>
 <br>
@@ -102,7 +106,7 @@ title: "Research"
   <div class="icon"><i class="bi bi-robot"></i></div>
   <div class="text">
     <div class="title">Using LLMs to generate DES models</div>
-    <div class="details">??.</div>
+    <div class="details">This study investigated whether generative AI could replicate published healthcare DES models.</div>
   </div>
 </a>
 <br>
@@ -110,7 +114,7 @@ title: "Research"
   <div class="icon"><i class="bi bi-tools"></i></div>
   <div class="text">
     <div class="title">sim-tools</div>
-    <div class="details">??.</div>
+    <div class="details">Our python package with tools to support DES and Monte-Carlo simulation.</div>
   </div>
 </a>
 ```
