@@ -36,25 +36,25 @@ The four JOS-MRI badges are:
 
 ![](jos_mri_resources/badges.png){alt-text="JOS-MRI badges"}
 
-::: {.card .card-open}
+::: {.card-open}
 
 **Open Research Object:** Models submitted for assessment are available in a public repository and distributed under standard open licences. This badge applies to all relevant artefacts, including code, data, models developed in commercial software, and supplementary materials such as scripts.
 
 :::
 
-::: {.card .card-review}
+::: {.card-review}
 
 **Research Object Reviewed:** Models are reviewed by the JOS-MRI Editors and their teams to confirm that the artefacts are functional and accurately reflect the implementation details reported in the associated paper.
 
 :::
 
-::: {.card .card-reproduce}
+::: {.card-reproduce}
 
 **Results Reproduced:** The submitted models are executed and tested by the JOS-MRI Editors and their teams to verify that the reported results can be successfully reproduced.
 
 :::
 
-::: {.card .card-reuse}
+::: {.card-reuse}
 
 **Research Object Reusable:** The submitted artefacts are evaluated for their reusability, using established frameworks such as Sharing Tools and Artefacts for Reusable Simulations (STARS), STrengthening the Reporting of Empirical Simulation Studies (STRESS), Overview, Design concepts and Details (ODD) protocol for agent-based models and System Dynamics Model Documentation and Assessment (SDM-Doc).
 
