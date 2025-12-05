@@ -23,7 +23,7 @@ listing:
       - "../publications/2025/heather2025reproducibility/index.qmd"
 ---
 
-::: {.card}
+::: {.card-blue}
 
 **Take-home message:**
 
