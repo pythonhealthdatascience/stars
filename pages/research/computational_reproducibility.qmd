@@ -23,9 +23,9 @@ listing:
       - "../publications/2025/heather2025reproducibility/index.qmd"
 ---
 
-::: {.blue}
+::: {.card}
 
-**Take-home message**
+**Take-home message:**
 
 There are simple steps researchers can take to improve the reproducibility of their healthcare DES models. These include:
 

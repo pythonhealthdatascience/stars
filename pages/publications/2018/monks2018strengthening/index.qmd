@@ -26,6 +26,8 @@ categories:
   - Replicable
 ---
 
+*This was not developed as part of the STARS project, but is related work that Tom was involved in.*
+
 ## Abstract
 
 This study develops a standardised checklist approach to improve the reporting of discrete-event simulation, system dynamics and agent-based simulation models within the field of Operational Research and Management Science. Incomplete or ambiguous reporting means that many simulation studies are not reproducible, leaving other modellers with an incomplete picture of what has been done and unable to judge the reliability of the results. Crucially, unclear reporting makes it difficult to reproduce or reuse findings. In this paper, we review the evidence on the quality of model reporting and consolidate previous work. We derive general good practice principles and three 20-item checklists aimed at Strengthening The Reporting of Empirical Simulation Studies (STRESS): STRESS-DES, STRESS-ABS and STRESS-SD for discrete-event simulation, agent-based simulation and system dynamics, respectively. Given the variety of simulation projects, we provide usage and troubleshooting advice to cover a wide range of situations.
