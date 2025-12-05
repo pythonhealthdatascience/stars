@@ -1,5 +1,63 @@
 ---
 title: "Journal of Simulation - Model Reproducibility Initiative"
+author:
+  - name: Navonil Mustafee
+    affiliation: University of Exeter, UK
+    orcid: 0000-0002-2204-8924
+  - name: Thomas Monks
+    affiliation: University of Exeter, UK
+    orcid: 0000-0003-2631-4481
+  - name: Ignacio Martinez-Moyano
+    affiliation: Argonne National Laboratory, USA
+    orcid: 0000-0002-0021-6157
+  - name: Varun Ramamohan
+    affiliation: Indian Institute of Technology, Delhi
+    orcid: 0000-0001-6517-9142
+  - name: Charles Macal
+    affiliation: Argonne National Laboratory, USA
+    orcid: 0000-0001-9167-0699
+  - name: Richard Goodman
+    affiliation: Taylor and Francis
 ---
 
-Journal of Simulation - Model Reproducibility Initiative (JOS-MRI)
+Members of the STARS team have been involved in setting up the [Journal of Simulation - Model Reproducibility Initiative (JOS-MRI)](https://www.theorsociety.com/ORS/Publications/JOS-MRI.aspx). From December 2025, authors submitting to JOS are able to provide their simulation artefacts (e.g., code, data, model documentation) alongside their manuscript. These materials will be evaluated by Model Reproducibility Editors and dedicated review teams.
+
+Submissions can receive one or more JOS-MRI badges. These are aligned with the [National Information Standards Organization (NISO) reproducibility badge definitions](https://doi.org/10.3789/niso-rp-31-2021) for "Open Research Objects", "Research Objects Reviewed", and "Results Reproduced" - as well as introducing an additional Model Reuse badge.
+
+The initiative welcomes artefacts from a range of modelling environments, but anticipates that many submissions will employ free and open source software such as:
+
+* SimPy and Ciw for discrete-event simulation.
+* NetLogo and RePast for agent-based modelling.
+* PySD for system dynamics modelling.
+
+Models built using commercial tools (e.g., Simul8, AnyLogic, STELLA) will also be considered, provided that licences can be made available to the JOS-MRI team. Some software, such as Vensim, already offers academic licensing arrangements compatible with open research review.
+
+The four JOS-MRI badges are:
+
+![](jos_mri_resources/badges.png){alt-text="JOS-MRI badges"}
+
+::: {.card .card-open}
+
+**Open Research Object:** Models submitted for assessment are available in a public repository and distributed under standard open licences. This badge applies to all relevant artefacts, including code, data, models developed in commercial software, and supplementary materials such as scripts.
+
+:::
+
+::: {.card .card-review}
+
+**Research Object Reviewed:** Models are reviewed by the JOS-MRI Editors and their teams to confirm that the artefacts are functional and accurately reflect the implementation details reported in the associated paper.
+
+:::
+
+::: {.card .card-reproduce}
+
+**Results Reproduced:** The submitted models are executed and tested by the JOS-MRI Editors and their teams to verify that the reported results can be successfully reproduced.
+
+:::
+
+::: {.card .card-reuse}
+
+**Research Object Reusable:** The submitted artefacts are evaluated for their reusability, using established frameworks such as Sharing Tools and Artefacts for Reusable Simulations (STARS), STrengthening the Reporting of Empirical Simulation Studies (STRESS), Overview, Design concepts and Details (ODD) protocol for agent-based models and System Dynamics Model Documentation and Assessment (SDM-Doc).
+
+:::
+
+*Definitions copied from <https://www.theorsociety.com/ORS/Publications/JOS-MRI.aspx>*.
