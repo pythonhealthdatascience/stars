@@ -1,10 +1,38 @@
-.blue {
-  background-color: #9dd0e2;
-  color: black;
-  border: 2px solid #9dd0e2;
+.card {
+  --card-bg: #9dd0e2;
+  --text-color: black;
+  --card-border: #9dd0e2;
+
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 2px solid var(--card-border);
   border-radius: 8px;
   padding: 1.2em 1em 0.5em 1em;
   margin: 1.5em 0;
   position: relative;
   box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+}
+
+.card-open {
+  --card-bg: #201b45;
+  --text-color: white;
+  --card-border: black;
+}
+
+.card-review {
+  --card-bg: #82c1b1;
+  --text-color: white;
+  --card-border: #68b47a;
+}
+
+.card-reproduce {
+  --card-bg: #d56e46;
+  --text-color: white;
+  --card-border: #d16136;
+}
+
+.card-reuse {
+  --card-bg: #8265f8;
+  --text-color: white;
+  --card-border: #7352f7;
 }
