@@ -21,4 +21,78 @@ author:
     orcid: 0000-0002-2204-8924
 ---
 
-Page yet to be written!
+::: {.card-blue}
+
+**Take-home message:**
+
+Healthcare DES modellers are supported in developing reproducible analytical pipelines (RAPs). We provide:
+
+* A comprehensive open-access e-book providing a step-by-step guide to building DES model RAPs.
+* Four RAP example repositories (M/M/s queue and stroke pathway in Python/R) achieving STARS reproducibility recommendations and NHS RAP Gold status.
+
+:::
+
+<br>
+
+## Summary
+
+We have developed the [DES RAP Book](https://pythonhealthdatascience.github.io/des_rap_book/), a practical guide that teaches users how to build reproducible discrete-event simulation models (DES) that fit into a reproducible analytical pipeline (RAP), with tips that benefit all types of models and analysis.
+
+Key features include:
+
+* **Dual Implementation:** Every concept is demonstrated with working code examples in both Python (SimPy) and R (simmer), allowing you to learn in your preferred language.
+
+* **Example repositories:** The book includes practical case studies like M/M/s queueing models and a stroke capacity planning model, implementing all the book recommendations and available as separate GitHub repositories.
+
+* **Built on Research:** Follows the [STARS reproducibility recommendations](/pages/research/computational_reproducibility.qmd) and the [NHS RAP Community of Practice Levels of RAP](https://nhsdigital.github.io/rap-community-of-practice/introduction_to_RAP/levels_of_RAP/).
+
+* **Interactive Learning:** Structured as a Quarto website with searchable content, code examples you can copy, and clear explanations suitable for beginners through advanced users.
+
+## Websites and GitHub repositories
+
+**DES RAP Book:** &nbsp; 
+[![](https://img.shields.io/badge/GitHub-des__rap__book-green?style=for-the-badge&labelColor=gray)](https://github.com/pythonhealthdatascience/des_rap_book)
+[![](https://img.shields.io/badge/DOI-10.5281/zenodo.17094155-blue?style=for-the-badge&labelColor=gray)](https://doi.org/10.5281/zenodo.17094155)
+[![](https://img.shields.io/badge/Website-des__rap__book-purple?style=for-the-badge&labelColor=gray)](https://pythonhealthdatascience.github.io/des_rap_book/)
+
+**Python M/M/s queueing model:** &nbsp; 
+[![](https://img.shields.io/badge/GitHub-pydesrap__mms-green?style=for-the-badge&labelColor=gray)](https://github.com/pythonhealthdatascience/pydesrap_mms)
+[![](https://img.shields.io/badge/DOI-10.5281/zenodo.14622466-blue?style=for-the-badge&labelColor=gray)](https://doi.org/10.5281/zenodo.14622466)
+
+**R M/M/s queueing model:** &nbsp; 
+[![](https://img.shields.io/badge/GitHub-rdesrap__mms-green?style=for-the-badge&labelColor=gray)](https://github.com/pythonhealthdatascience/rdesrap_mms)
+[![](https://img.shields.io/badge/DOI-10.5281/zenodo.14980863-blue?style=for-the-badge&labelColor=gray)](https://doi.org/10.5281/zenodo.14980863)
+
+**Python stroke model:** &nbsp; 
+[![](https://img.shields.io/badge/GitHub-pydesrap__stroke-green?style=for-the-badge&labelColor=gray)](https://github.com/pythonhealthdatascience/pydesrap_stroke)
+[![](https://img.shields.io/badge/DOI-10.5281/zenodo.15574906-blue?style=for-the-badge&labelColor=gray)](https://doi.org/10.5281/zenodo.15574906)
+
+**R stroke model:** &nbsp; 
+[![](https://img.shields.io/badge/GitHub-rdesrap__stroke-green?style=for-the-badge&labelColor=gray)](https://github.com/pythonhealthdatascience/rdesrap_stroke)
+[![](https://img.shields.io/badge/DOI-10.5281/zenodo.15863376-blue?style=for-the-badge&labelColor=gray)](https://doi.org/10.5281/zenodo.15863376)
+
+## Preview e-book
+
+```{=html}
+<div class="iframe-wrapper">
+  <div class="iframe-header">
+    <span>Website preview:</span>
+    <a href="https://pythonhealthdatascience.github.io/des_rap_book/"
+       target="_blank" rel="noopener">
+      View full website in new tab
+    </a>
+  </div>
+
+  <iframe
+    width="100%"
+    height="500"
+    src="https://pythonhealthdatascience.github.io/des_rap_book/"
+    title="DES RAP Book">
+  </iframe>
+</div>
+<br>
+```
+
+## Publications
+
+In development!
