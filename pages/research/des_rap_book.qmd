@@ -21,19 +21,6 @@ author:
     orcid: 0000-0002-2204-8924
 ---
 
-::: {.card-blue}
-
-**Take-home message:**
-
-Healthcare DES modellers are supported in developing reproducible analytical pipelines (RAPs). We provide:
-
-* A comprehensive open-access e-book providing a step-by-step guide to building DES model RAPs.
-* Four RAP example repositories (M/M/s queue and stroke pathway in Python/R) achieving STARS reproducibility recommendations and NHS RAP Gold status.
-
-:::
-
-<br>
-
 ## Summary
 
 We have developed the [DES RAP Book](https://pythonhealthdatascience.github.io/des_rap_book/), a practical guide that teaches users how to build reproducible discrete-event simulation models (DES) that fit into a reproducible analytical pipeline (RAP), with tips that benefit all types of models and analysis.
@@ -96,3 +83,8 @@ Key features include:
 ## Publications
 
 In development!
+
+<br>
+---
+
+*This page was written by Amy Heather and reflects her interpretation of this work, which may not fully represent the views of all project authors or affiliated institutions.*
