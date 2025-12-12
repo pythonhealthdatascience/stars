@@ -1,7 +1,5 @@
 # STARS
 
-**⚠ Work in progress**
-
 This repository contains the **Quarto source used to build the [STARS project website](https://pythonhealthdatascience.github.io/stars/)**, which collates and explains research outputs from STARS.
 
 [![Sharing Tools and Artefacts for Reproducible & Reusable Simulations in healthcare](images/stars_reproduce_reuse_banner_blue.png)](https://pythonhealthdatascience.github.io/stars/)
