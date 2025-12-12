@@ -21,7 +21,7 @@ The model was developed by the Peninsula Technology Assessment Group (PenTAG) an
 
 The model is available on GitHub:
 
-> Lee D., Muthukumar M., Lovell A., Farmer C., Burns D., Matthews J., Coelho H., O'Toole B., Trigg L., Snowsill T., Barnish M., Nikoglou T., Brand A., Ahmad Z., Abdelsabour A., Robinson S., Heather A., Wilson E., Melendez-Torres G. Exeter Oncology Model: RCC edition URL: <https://github.com/nice-digital/NICE-model-repo>.
+> Lee D. [![ORCID](/images/orcid.png)](https://orcid.org/0000-0003-4027-8456), Muthukumar M. , Lovell A., Farmer C., Burns D. [![ORCID](/images/orcid.png)](https://orcid.org/0000-0002-5209-8041), Matthews J., Coelho H. [![ORCID](/images/orcid.png)](https://orcid.org/0000-0002-4799-4300), O'Toole B., Trigg L. [![ORCID](/images/orcid.png)](https://orcid.org/0000-0002-8447-2616), Snowsill T. [![ORCID](/images/orcid.png)](https://orcid.org/0000-0001-7406-2819), Barnish M. [![ORCID](/images/orcid.png)](https://orcid.org/0000-0003-0139-6548), Nikoglou T., Brand A., Ahmad Z., Abdelsabour A. [![ORCID](/images/orcid.png)](https://orcid.org/0009-0007-2532-4676), Robinson S. [![ORCID](/images/orcid.png)](https://orcid.org/0000-0003-0463-875X), Heather A. [![ORCID](/images/orcid.png)](https://orcid.org/0000-0002-6596-3479), Wilson E. [![ORCID](/images/orcid.png)](https://orcid.org/0000-0002-8369-1577), Melendez-Torres G. [![ORCID](/images/orcid.png)](https://orcid.org/0000-0002-9823-4790) Exeter Oncology Model: RCC edition URL: <https://github.com/nice-digital/NICE-model-repo>.
 
 ## Improving the reusability of EOM-RCC
 
