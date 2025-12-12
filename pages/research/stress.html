@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../images/stars_logo_blue.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-pub .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-pub'] = new List('listing-pub', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>
 
       .quarto-title-block .quarto-title-banner h1,
@@ -88,6 +119,35 @@ background-size: cover;
       }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../css/footer.css">
 <link rel="stylesheet" href="../../css/theme.css">
@@ -285,9 +345,195 @@ background-size: cover;
 
 
 
-<p>Page yet to be written!</p>
+<p>The STRESS guidelines were not developed as part of the STARS project, but is related work that Tom was involved in. The STRESS reporting guidelines are designed to improve the replicability of simulation models.</p>
+<section id="what-is-stress" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-stress">What is STRESS?</h2>
+<p>STRESS stands for “Strengthening the reporting of empirical simulation studies”. They are a set of guidelines intended to improve the <strong>replicability</strong> of models - specifically:</p>
+<ul>
+<li>DES models (STRESS-DES).</li>
+<li>Agent-based simulation models (STRESS-ABS).</li>
+<li>System dynamics models (STRESS-SD)</li>
+</ul>
+<p>The guidelines are described in the 2018 paper <a href="../../pages/publications/2018/monks2018strengthening/index.html">Strengthening the reporting of empirical simulation studies: Introducing the STRESS guidelines</a>.</p>
+<p>They are included in the <a href="https://www.equator-network.org/reporting-guidelines/strengthening-the-reporting-of-empirical-simulation-studies-introducing-the-stress-guidelines/">equator network</a>.</p>
+</section>
+<section id="example-stress-des" class="level2">
+<h2 class="anchored" data-anchor-id="example-stress-des">Example: STRESS-DES</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 80%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Item</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Objectives</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>1.1 Purpose of the model</strong><br>Explain the background and objectives for the model</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>1.2 Model outputs</strong><br>Define all quantitative performance measures that are reported, using equations where necessary. Specify how and when they are calculated during the model run along with how any measures of error such as confidence intervals are calculated.</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>1.3 Experimentation aims</strong><br>If the model has been used for experimentation, state the objectives that it was used to investigate.<br>(A) Scenario based analysis – Provide a name and description for each scenario, providing a rationale for the choice of scenarios and ensure that item 2.3 (below) is completed.<br>(B) Design of experiments – Provide details of the overall design of the experiments with reference to performance measures and their parameters (provide further details in data below).<br>(C) Simulation Optimisation – (if appropriate) Provide full details of what is to be optimised, the parameters that were included and the algorithm(s) that was be used. Where possible provide a citation of the algorithm(s).</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>Logic</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>2.1 Base model overview diagram</strong><br>Describe the base model using appropriate diagrams and description. This could include one or more process flow, activity cycle or equivalent diagrams sufficient to describe the model to readers. Avoid complicated diagrams in the main text. The goal is to describe the breadth and depth of the model with respect to the system being studied.</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>2.2 Base model logic</strong><br>Give details of the base model logic. Give additional model logic details sufficient to communicate to the reader how the model works.</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>2.3 Scenario logic</strong><br>Give details of the logical difference between the base case model and scenarios (if any). This could be incorporated as text or where differences are substantial could be incorporated in the same manner as 2.2.</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>2.4 Algorithms</strong><br>Provide further detail on any algorithms in the model that (for example) mimic complex or manual processes in the real world (i.e.&nbsp;scheduling of arrivals/ appointments/ operations/ maintenance, operation of a conveyor system, machine breakdowns, etc.). Sufficient detail should be included (or referred to in other published work) for the algorithms to be reproducible. Pseudo-code may be used to describe an algorithm.</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>2.5.1 Components - entities</strong><br>Give details of all entities within the simulation including a description of their role in the model and a description of all their attributes.</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>2.5.2 Components - activities</strong><br>Describe the activities that entities engage in within the model. Provide details of entity routing into and out of the activity.</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>2.5.3 Components - resources</strong><br>List all the resources included within the model and which activities make use of them.</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>2.5.4 Components - queues</strong><br>Give details of the assumed queuing discipline used in the model (e.g.&nbsp;First in First Out, Last in First Out, prioritisation, etc.). Where one or more queues have a different discipline from the rest, provide a list of queues, indicating the queuing discipline used for each. If reneging, balking or jockeying occur, etc., provide details of the rules. Detail any delays or capacity constraints on the queues.</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>2.5.5 Components - entry/exit points</strong><br>Give details of the model boundaries i.e.&nbsp;all arrival and exit points of entities. Detail the arrival mechanism (e.g.&nbsp;‘thinning’ to mimic a non-homogenous Poisson process or balking)</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>Data</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>3.1 Data sources</strong><br>List and detail all data sources. Sources may include:<br>• Interviews with stakeholders,<br>• Samples of routinely collected data,<br>• Prospectively collected samples for the purpose of the simulation study,<br>• Public domain data published in either academic or organisational literature. Provide, where possible, the link and DOI to the data or reference to published literature.<br>All data source descriptions should include details of the sample size, sample date ranges and use within the study.</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>3.2 Pre-processing</strong><br>Provide details of any data manipulation that has taken place before its use in the simulation, e.g.&nbsp;interpolation to account for missing data or the removal of outliers.</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>3.3 Input parameters</strong><br>List all input variables in the model. Provide a description of their use and include parameter values. For stochastic inputs provide details of any continuous, discrete or empirical distributions used along with all associated parameters. Give details of all time dependent parameters and correlation.<br>Clearly state:<br>• Base case data<br>• Data use in experimentation, where different from the base case.<br>• Where optimisation or design of experiments has been used, state the range of values that parameters can take.<br>• Where theoretical distributions are used, state how these were selected and prioritised above other candidate distributions.</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>3.4 Assumptions</strong><br>Where data or knowledge of the real system is unavailable what assumptions are included in the model? This might include parameter values, distributions or routing logic within the model.</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>Experimentation</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>4.1 Initialisation</strong><br>Report if the system modelled is terminating or non-terminating. State if a warm-up period has been used, its length and the analysis method used to select it. For terminating systems state the stopping condition.<br>State what if any initial model conditions have been included, e.g., pre-loaded queues and activities. Report whether initialisation of these variables is deterministic or stochastic.</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>4.2 Run length</strong><br>Detail the run length of the simulation model and time units.</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>4.3 Estimation approach</strong><br>State the method used to account for the stochasticity: For example, two common methods are multiple replications or batch means. Where multiple replications have been used, state the number of replications and for batch means, indicate the batch length and whether the batch means procedure is standard, spaced or overlapping. For both procedures provide a justification for the methods used and the number of replications/size of batches.</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>Implementation</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>5.1 Software or programming language</strong><br>State the operating system and version and build number.<br>State the name, version and build number of commercial or open source DES software that the model is implemented in.<br>State the name and version of general-purpose programming languages used (e.g.&nbsp;Python 3.5).<br>Where frameworks and libraries have been used provide all details including version numbers.</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>5.2 Random sampling</strong><br>State the algorithm used to generate random samples in the software/programming language used e.g.&nbsp;Mersenne Twister.<br>If common random numbers are used, state how seeds (or random number streams) are distributed among sampling processes.</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>5.3 Model execution</strong><br>State the event processing mechanism used e.g.&nbsp;three phase, event, activity, process interaction.<br><em>Note that in some commercial software the event processing mechanism may not be published. In these cases authors should adhere to item 5.1 software recommendations.</em><br>State all priority rules included if entities/activities compete for resources.<br>If the model is parallel, distributed and/or use grid or cloud computing, etc., state and preferably reference the technology used. For parallel and distributed simulations the time management algorithms used. If the HLA is used then state the version of the standard, which run-time infrastructure (and version), and any supporting documents (FOMs, etc.)</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>5.4 System specification</strong><br>State the model run time and specification of hardware used. This is particularly important for large scale models that require substantial computing power. For parallel, distributed and/or use grid or cloud computing, etc. state the details of all systems used in the implementation (processors, network, etc.)</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>Code access</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>6.1 Computer model sharing statement</strong><br>Describe how someone could obtain the model described in the paper, the simulation software and any other associated software (or hardware) needed to reproduce the results. Provide, where possible, the link and DOIs to these.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="publication" class="level2">
+<h2 class="anchored" data-anchor-id="publication">Publication</h2>
+<div id="listing-pub" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="UmVwbGljYWJsZQ==" data-listing-date-sort="1520294400000" data-listing-file-modified-sort="1765552896367" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="167">
+<div class="thumbnail"><a href="../../pages/publications/2018/monks2018strengthening/index.html" class="no-external">
+
+<img loading="lazy" src="../../pages/publications/2018/monks2018strengthening/frontpage.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../pages/publications/2018/monks2018strengthening/index.html" class="no-external">Strengthening the reporting of empirical simulation studies: Introducing the STRESS guidelines</a>
+</h3>
+<div class="delink listing-description"><a href="../../pages/publications/2018/monks2018strengthening/index.html" class="no-external">
+<em>This was not developed as part of the STARS project, but is related work that Tom was involved in.</em>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../pages/publications/2018/monks2018strengthening/index.html" class="no-external">
+<div class="listing-date">
+Mar 6, 2018
+</div>
+<div class="listing-author">
+Thomas Monks, Christine Currie, Bhakti Onggo, Stewart Robinson, Martin Kunc, Simon Taylor
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"><br></h2>
+<p><em>This page was written by Amy Heather and reflects her interpretation of this work, which may not fully represent the views of all project authors or affiliated institutions.</em></p>
 
 
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

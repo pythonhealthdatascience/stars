@@ -1,5 +1,23 @@
 [
   {
+    "listing": "/pages/research/llm_generate_des.html",
+    "items": [
+      "/pages/publications/2025/monks2025unlocking/index.html"
+    ]
+  },
+  {
+    "listing": "/pages/research/stress.html",
+    "items": [
+      "/pages/publications/2018/monks2018strengthening/index.html"
+    ]
+  },
+  {
+    "listing": "/pages/research/stars_framework_reuse.html",
+    "items": [
+      "/pages/publications/2024/monks2024towards/index.html"
+    ]
+  },
+  {
     "listing": "/pages/publications.html",
     "items": [
       "/pages/publications/2025/monks2025unlocking/index.html",

@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../images/stars_logo_blue.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -42,6 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-43f864970425b910216905c32a8a9e35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-pub .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-pub'] = new List('listing-pub', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>
 
       .quarto-title-block .quarto-title-banner h1,
@@ -88,6 +122,35 @@ background-size: cover;
       }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../css/footer.css">
 <link rel="stylesheet" href="../../css/theme.css">
@@ -285,9 +348,259 @@ background-size: cover;
 
 
 
-<p>Page yet to be written!</p>
+<section id="stars-framework" class="level2">
+<h2 class="anchored" data-anchor-id="stars-framework">STARS framework</h2>
+<p>We designed the STARS framework to support researchers in making the healthcare DES models more <strong>reusable</strong>. It is dividing into essential and optional components.</p>
+<p>Essential components provide the minimum work needed to share DES models to allow them to be available long-term, citable, functional, appropriately licenced, and likely to be at a standard that is reusable in further work.</p>
+<p>Optional components focus on enhancing the accessibility, understanding, and maintainability of FOSS simulation models.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="des_sharing_review_resources/stars.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Overview of the STARS framework. Components shaded in green are essential and those shaded in blue are optional"><img src="des_sharing_review_resources/stars.jpg" class="img-fluid figure-img" alt="Overview of the STARS framework. Components shaded in green are essential and those shaded in blue are optional"></a></p>
+<figcaption>Overview of the STARS framework. Components shaded in green are essential and those shaded in blue are optional</figcaption>
+</figure>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Essential components</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Open licence</td>
+<td>Free and open-source software (FOSS) licence (e.g.&nbsp;MIT, GNU Public Licence (GPL))</td>
+</tr>
+<tr class="odd">
+<td>Dependency management</td>
+<td>Specify software libraries, version numbers and sources (e.g.&nbsp;dependency management tools like virtualenv, conda, poetry)</td>
+</tr>
+<tr class="even">
+<td>FOSS model</td>
+<td>Coded in FOSS language (e.g.&nbsp;R, Julia, Python)</td>
+</tr>
+<tr class="odd">
+<td>Minimum documentation</td>
+<td>Minimal instructions (e.g.&nbsp;in README) that overview (a) what model does, (b) how to install and run model to obtain results, and (c) how to vary parameters to run new experiments</td>
+</tr>
+<tr class="even">
+<td>ORCID</td>
+<td>ORCID for each study author</td>
+</tr>
+<tr class="odd">
+<td>Citation information</td>
+<td>Instructions on how to cite the research artefact (e.g.&nbsp;CITATION.cff file)</td>
+</tr>
+<tr class="even">
+<td>Remote code repository</td>
+<td>Code available in a remote code repository (e.g.&nbsp;GitHub, GitLab, BitBucket)</td>
+</tr>
+<tr class="odd">
+<td>Open science archive</td>
+<td>Code stored in an open science archive with FORCE11 compliant citation and guaranteed persistance of digital artefacts (e.g.&nbsp;Figshare, Zenodo, the Open Science Framework (OSF), and the Computational Modeling in the Social and Ecological Sciences Network (CoMSES Net))</td>
+</tr>
+<tr class="even">
+<td><strong>Optional components</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Enhanced documentation</td>
+<td>Open and high quality documentation on how the model is implemented and works (e.g.&nbsp;via notebooks and markdown files, brought together using software like Quarto and Jupyter Book). Suggested content includes:<br>• Plain english summary of project and model<br>• Clarifying licence<br>• Citation instructions<br>• Contribution instructions<br>• Model installation instructions<br>• Structured code walk through of model<br>• Documentation of modelling cycle using TRACE<br>• Annotated simulation reporting guidelines<br>• Clear description of model validation including its intended purpose</td>
+</tr>
+<tr class="even">
+<td>Documentation hosting</td>
+<td>Host documentation (e.g.&nbsp;with GitHub pages, GitLab pages, BitBucket Cloud, Quarto Pub)</td>
+</tr>
+<tr class="odd">
+<td>Online coding environment</td>
+<td>Provide an online environment where users can run and change code (e.g.&nbsp;BinderHub, Google Colaboratory, Deepnote)</td>
+</tr>
+<tr class="even">
+<td>Model interface</td>
+<td>Provide web application interface to the model so it is accessible to less technical simulation users</td>
+</tr>
+<tr class="odd">
+<td>Web app hosting</td>
+<td>Host web app online (e.g.&nbsp;Streamlit Community Cloud, ShinyApps hosting)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="implementation-of-the-framework-across-the-three-examples" class="level2">
+<h2 class="anchored" data-anchor-id="implementation-of-the-framework-across-the-three-examples">Implementation of the framework across the three examples</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">STARS Components</th>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Applied example 1</th>
+<th style="text-align: left;">Applied example 2</th>
+<th style="text-align: left;">Applied example 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Essential</td>
+<td style="text-align: left;">Open Licence</td>
+<td style="text-align: left;">MIT</td>
+<td style="text-align: left;">MIT</td>
+<td style="text-align: left;">GNU Public Licence 3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Essential</td>
+<td style="text-align: left;">Dependency mgt</td>
+<td style="text-align: left;">conda</td>
+<td style="text-align: left;">conda</td>
+<td style="text-align: left;">conda</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Essential</td>
+<td style="text-align: left;">DES software</td>
+<td style="text-align: left;">simpy</td>
+<td style="text-align: left;">simpy</td>
+<td style="text-align: left;">ciw</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Essential</td>
+<td style="text-align: left;">Code repository</td>
+<td style="text-align: left;">GitHub</td>
+<td style="text-align: left;">GitHub</td>
+<td style="text-align: left;">GitHub</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Essential</td>
+<td style="text-align: left;">Meta-data</td>
+<td style="text-align: left;">citation.cff + ORCID</td>
+<td style="text-align: left;">citation.cff + ORCID</td>
+<td style="text-align: left;">citation.cff + ORCID</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Essential</td>
+<td style="text-align: left;">Minimum documentation</td>
+<td style="text-align: left;">README.md</td>
+<td style="text-align: left;">README.md</td>
+<td style="text-align: left;">README.md</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Essential</td>
+<td style="text-align: left;">Open science repository</td>
+<td style="text-align: left;">Zenodo</td>
+<td style="text-align: left;">Zenodo</td>
+<td style="text-align: left;">Zenodo</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Online coding environment</td>
+<td style="text-align: left;">Binder</td>
+<td style="text-align: left;">Binder</td>
+<td style="text-align: left;">Binder</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Enhanced documentation</td>
+<td style="text-align: left;">Electronic Notebook</td>
+<td style="text-align: left;">Jupyter Book + STRESS</td>
+<td style="text-align: left;">Quarto + STRESS</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Documentation hosting</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">GitHub pages</td>
+<td style="text-align: left;">GitHub pages</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Model interface</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">streamlit</td>
+<td style="text-align: left;">Shiny for python</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Optional</td>
+<td style="text-align: left;">Web app hosting</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">streamlit community cloud</td>
+<td style="text-align: left;">shinyapps.io</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="example-1" class="level2">
+<h2 class="anchored" data-anchor-id="example-1">Example 1</h2>
+<p><strong>Code repository:</strong> <a href="https://github.com/pythonhealthdatascience/stars-treat-sim" class="uri">https://github.com/pythonhealthdatascience/stars-treat-sim</a></p>
+<p><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.10026327" class="uri">https://doi.org/10.5281/zenodo.10026327</a></p>
+</section>
+<section id="example-2" class="level2">
+<h2 class="anchored" data-anchor-id="example-2">Example 2</h2>
+<p><strong>Code repository (app):</strong> <a href="https://github.com/pythonhealthdatascience/stars-streamlit-example" class="uri">https://github.com/pythonhealthdatascience/stars-streamlit-example</a></p>
+<p><strong>Code repository (documentation):</strong> <a href="https://github.com/pythonhealthdatascience/stars-simpy-example-docs" class="uri">https://github.com/pythonhealthdatascience/stars-simpy-example-docs</a></p>
+<p><strong>Web app:</strong> <a href="https://stars-simpy-example.streamlit.app/" class="uri">https://stars-simpy-example.streamlit.app/</a></p>
+<p><strong>Documentation:</strong> <a href="https://pythonhealthdatascience.github.io/stars-simpy-example-docs" class="uri">https://pythonhealthdatascience.github.io/stars-simpy-example-docs</a></p>
+<p><strong>DOIs:</strong> <a href="https://doi.org/10.5281/zenodo.10055169" class="uri">https://doi.org/10.5281/zenodo.10055169</a> and <a href="https://doi.org/10.5281/zenodo.10054063" class="uri">https://doi.org/10.5281/zenodo.10054063</a></p>
+</section>
+<section id="example-3" class="level2">
+<h2 class="anchored" data-anchor-id="example-3">Example 3</h2>
+<p><strong>Code repository:</strong> <a href="https://github.com/pythonhealthdatascience/stars-ciw-example" class="uri">https://github.com/pythonhealthdatascience/stars-ciw-example</a></p>
+<p><strong>Web app:</strong> <a href="https://pythonhealthdatascience.shinyapps.io/stars-ciw-examplar" class="uri">https://pythonhealthdatascience.shinyapps.io/stars-ciw-examplar</a></p>
+<p><strong>Documentation:</strong> <a href="https://pythonhealthdatascience.github.io/stars-ciw-example" class="uri">https://pythonhealthdatascience.github.io/stars-ciw-example</a></p>
+<p><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.10051495" class="uri">https://doi.org/10.5281/zenodo.10051495</a></p>
+</section>
+<section id="publication" class="level2">
+<h2 class="anchored" data-anchor-id="publication">Publication</h2>
+<div id="listing-pub" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="UmV1c2FibGU=" data-listing-date-sort="1714608000000" data-listing-file-modified-sort="1765552896413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="175">
+<div class="thumbnail"><a href="../../pages/publications/2024/monks2024towards/index.html" class="no-external">
+
+<img loading="lazy" src="../../pages/publications/2024/monks2024towards/frontpage.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../pages/publications/2024/monks2024towards/index.html" class="no-external">Towards sharing tools and artefacts for reusable simulations in healthcare</a>
+</h3>
+<div class="delink listing-description"><a href="../../pages/publications/2024/monks2024towards/index.html" class="no-external">
+Discrete-event simulation (DES) is a widely used computational method in health services and health economic studies. Despite increasing recognition of the advantages of…
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../pages/publications/2024/monks2024towards/index.html" class="no-external">
+<div class="listing-date">
+May 2, 2024
+</div>
+<div class="listing-author">
+Thomas Monks, Alison Harper, Navonil Mustafee
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"><br></h2>
+<p><em>This page was written by Amy Heather and reflects her interpretation of this work, which may not fully represent the views of all project authors or affiliated institutions.</em></p>
 
 
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -704,6 +1017,38 @@ background-size: cover;
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
