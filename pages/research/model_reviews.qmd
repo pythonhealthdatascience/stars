@@ -1,12 +1,41 @@
 ---
 title: "Reviewing models to support authors in making their work reproducible and reusable"
+author:
+  - name: Amy Heather
+    affiliation: University of Exeter Medical School
+    orcid: 0000-0002-6596-3479
 ---
 
-Devon Air Ambulance Discrete Event Simulation
+We have supported some existing modellers to make their DES more reproducible and reusable.
 
-Hybrid Simulation Modelling for Orthopaedics
+## Devon Air Ambulance Discrete Event Simulation
 
-Page yet to be written!
+In progress - watch this space!
+<!--TODO-->
+
+## Hybrid Simulation Modelling for Orthopaedics
+
+The model is available at:
+
+> Matthew Howells [![ORCID](/images/orcid.png)](https://orcid.org/0000-0002-3931-7027), Paul Harper [![ORCID](/images/orcid.png)](https://orcid.org/0000-0001-7894-4907), Daniel Gartner [![ORCID](/images/orcid.png)](https://orcid.org/0000-0003-4361-8559), Geraint Palmer [![ORCID](/images/orcid.png)](https://orcid.org/0000-0001-7865-6964) (2025) Hybrid Simulation Modelling for Orthopaedics. GitHub. <https://github.com/MHowells/HybridSimModel>.
+
+It combines:
+
+* A system dynamics model used to model patient deterioration while waiting for a GP referral to primary care.
+* A DES model used to model the patient journey through an orthopaedic department.
+
+It is summarised in the poster "[Clinical Pathway Modelling of a Trauma and Orthopaedics Department](https://github.com/MHowells/SW25_poster)" from the OR Society's 12th Simulation Workshop (SW25) conference
+
+Our involvement was to complete a review of the model repository, providing the review as a [GitHub issue](https://github.com/MHowells/HybridSimModel/issues/3) (and an accompanying [pull request](https://github.com/MHowells/HybridSimModel/pull/2)). The review was structured into:
+
+* A review summary.
+* Feedback from running the code (e.g., dependency management, code troubleshooting).
+* Evaluation against the STARS framework for model reuse.
+* Evaluation against the STARS reproducibility recommendations.
+
+For example, a snapshot from the review:
+
+![Screenshot from the review GitHub issue](model_reviews_resources/ortho_snapshot.png)
 
 <br>
 ---
