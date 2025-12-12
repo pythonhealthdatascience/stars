@@ -50,11 +50,27 @@ h4 {
   font-weight: bold;
 }
 
+/* Navbar/sidebar toggle button background and text/icon color */
+.quarto-secondary-nav .quarto-btn-toggle.btn {
+  background-color: #0a4568;
+  color: #ffffff;
+  margin-right: 1rem !important;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.quarto-banner nav.quarto-secondary-nav {
+  border-top: 1px solid #0a4568;
+  border-bottom: 4px solid #0a4568;
+}
+
 /* Breadcrumb items (i.e., page > page) */
+.quarto-secondary-nav nav.quarto-page-breadcrumbs a {
+  color: #cad6dd;
+}
 .quarto-title-banner a {
   color: #cad6dd;
 }
-
 .quarto-title-breadcrumbs .breadcrumb li:last-of-type a {
   color: #cad6dd;
 }
