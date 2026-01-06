@@ -18,7 +18,8 @@ author:
     affiliation: University of Exeter Business School
     orcid: 0000-0002-2204-8924
 date: 31 March 2025
-date-format: "DD MMM YYYY"
+citation:
+  container-title: "Proceedings of the Operational Research Society Simulation Workshop 2025 (SW25)"
 image: frontpage.png
 categories:
   - Tutorial
@@ -27,6 +28,16 @@ categories:
 ## Abstract
 
 This tutorial aims to support modellers working in healthcare research or practice to build DiscreteEvent Simulation models using the Free and Open Source Software SimPy and Python. We provide a step-by-step guide to building a stylised urgent care telephone call centre model. Open materials that accompany the tutorial, including models and exercises, are available online and can be run without installing Python. As the materials are introductory, we also provide a "next steps" section that describes simple, intermediate and advanced extensions to the work.
+
+## Research artefacts
+
+<a class="research-btn" href="https://pythonhealthdatascience.github.io/intro-open-sim/">
+  ➤ &nbsp;&nbsp; Interactive materials
+</a>
+
+<a class="research-btn" href="https://github.com/pythonhealthdatascience/intro-open-sim">
+  ➤ &nbsp;&nbsp; GitHub
+</a>
 
 ## Article
 

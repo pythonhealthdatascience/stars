@@ -78,6 +78,27 @@ Our research has been focused on helping improving the reproducibility, reusabil
 </a>
 ```
 
+## Reproducible and reusable
+
+```{=html}
+<br>
+<a href="research/jos_mri.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-journal"></i></div>
+  <div class="text">
+    <div class="title">Journal of Simulation - Model Reproducibility Initiative</div>
+    <div class="details">This new initiative lets authors submit their simulation models for review, awarding badges that show the word is open, reviewed, reproduced and/or reusable.</div>
+  </div>
+</a>
+<br>
+<a href="research/model_reviews.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-person-lines-fill"></i></div>
+  <div class="text">
+    <div class="title">Reviewing models to support authors in making their work reproducible and reusable</div>
+    <div class="details">We worked with model authors to review their DES models, providing guidance to help improve reproducibility and reusability.</div>
+  </div>
+</a>
+```
+
 ## Replicable
 
 ```{=html}
@@ -94,13 +115,6 @@ Our research has been focused on helping improving the reproducibility, reusabil
 ## Other avenues of work
 
 ```{=html}
-<a href="research/model_reviews.qmd" class="value-box pale small-title">
-  <div class="icon"><i class="bi bi-person-lines-fill"></i></div>
-  <div class="text">
-    <div class="title">Reviewing models to support authors in making their work reproducible and reusable</div>
-    <div class="details">We worked with model authors to review their DES models, providing guidance to help improve reproducibility and reusability.</div>
-  </div>
-</a>
 <br>
 <a href="research/llm_generate_des.qmd" class="value-box pale small-title">
   <div class="icon"><i class="bi bi-robot"></i></div>

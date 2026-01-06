@@ -9,7 +9,8 @@ author:
     affiliation: University of Exeter Business School
     orcid: 0000-0001-5274-5037
 date: "30 September 2023"
-date-format: "DD MMM YYYY"
+citation:
+  container-title: "Journal of Simulation"
 image: frontpage.png
 categories:
   - Reusable
@@ -18,6 +19,12 @@ categories:
 ## Abstract
 
 Discrete-event simulation (DES) is a widely used computational method in health services and health economic studies. This scoping review investigates to what extent authors share DES models and audits if sharing adheres to best practice. The Web of Science, Scopus, PubMed, and ACM Digital Library databases were searched between January 1 2019 till December 31 2022. Cost-effectiveness, health service research and methodology studies in a health context were included. Data extraction and audit were performed by two reviewers. We measured the proportion of literature that shared models; we report analyses by publication type, year of publication, COVID-19 application; and free and open source versus commercial software. Out of the 564 studies included, 47 (8.3%) cited a published computer model, rising to 9.0% in 2022. Studies were more likely to share models if they had been developed using free and open source tools. Studies rarely followed best practice when sharing computer models. Although still in the minority, healthcare DES authors are increasingly sharing their computer model artefacts. Although commercial software dominates the DES literature, free and open source software plays a crucial role in sharing. The DES community can adopt simple best practices to improve the quality of sharing.
+
+## Research artefacts
+
+<a class="research-btn" href="/pages/research/des_sharing_review.qmd">
+  ➤ &nbsp;&nbsp; View research summary and artefacts
+</a>
 
 ## Article
 

@@ -9,7 +9,8 @@ author:
     affiliation: University of Exeter Business School
     orcid: 0000-0001-5274-5037
 date: 15 December 2023
-date-format: "DD MMM YYYY"
+citation:
+  container-title: "NIHR Open Research"
 image: frontpage.png
 categories:
   - Reusable
@@ -22,6 +23,16 @@ One aim of Open Science is to increase the accessibility of research. Within hea
 Although the code for healthcare discrete-event simulation models can be shared alongside publications, it may require specialist skills to use and run. This is a disincentive to researchers adopting Free and Open Source Software and open science practices. Building on work from other health data science disciplines, we propose that web apps offer a user-friendly interface for healthcare models that increase the accessibility of research to the NHS, and researchers from other disciplines. We focus on models coded in Python deployed as streamlit web apps.
 
 To increase uptake of these methods, we provide an approach to structuring discrete-event simulation model code in Python so that models are web app ready. The method is general across discrete-event simulation Python packages, and we include code for both simpy and ciw implementations of a simple urgent care call centre model. We then provide a step-by-step tutorial for linking the model to a streamlit web app interface, to enable other health data science researchers to reproduce and implement our method.
+
+## Research artefacts
+
+<a class="research-btn" href="https://health-data-science-or.github.io/simpy-streamlit-tutorial/">
+  ➤ &nbsp;&nbsp; Detailed online tutorial
+</a>
+
+<a class="research-btn" href="https://github.com/health-data-science-OR/simpy-streamlit-tutorial">
+  ➤ &nbsp;&nbsp; GitHub
+</a>
 
 ## Article
 

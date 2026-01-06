@@ -18,7 +18,8 @@ author:
     affiliation: Somerset NHS Foundation Trust
     orcid: 0000-0003-1263-2286
 date: 20 June 2024
-date-format: "DD MMM YYYY"
+citation:
+  container-title: "Zenodo"
 image: frontpage.png
 categories:
   - Reproducible
@@ -26,7 +27,17 @@ categories:
 
 ## Summary
 
-This protocol will be used to assess the computational reproducibility of published healthcare discrete-event simulation (DES) models created using Python or R. It forms part of the project STARS: “Sharing Tools and Artefacts for Reproducible Simulations in healthcare”.
+This protocol will be used to assess the computational reproducibility of published healthcare discrete-event simulation (DES) models created using Python or R. It forms part of the project STARS: "Sharing Tools and Artefacts for Reproducible Simulations in healthcare".
+
+## Research artefacts
+
+<a class="research-btn" href="https://github.com/pythonhealthdatascience/stars_reproduction_template">
+  ➤ &nbsp;&nbsp; Repository template
+</a>
+
+<a class="research-btn" href="https://github.com/pythonhealthdatascience/stars-reproduce-allen-2020">
+  ➤ &nbsp;&nbsp; Test run of reproducibility protocol on Allen et al. 2020
+</a>
 
 ## Article
 
