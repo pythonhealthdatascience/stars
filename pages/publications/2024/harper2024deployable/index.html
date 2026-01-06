@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-43f864970425b910216905c32a8a9e35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-e7e9eae08d07a71492fcc4553b864ec0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -137,15 +137,17 @@ background-size: cover;
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
+
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Deployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">Tutorial</div>
-              </div>
+              <h1 class="title">Deployable Healthcare Simulations: A Hybrid Method for Combining Simulation with Containerisation and Continuous Integration</h1>
+                                    <div class="quarto-categories">
+                          <div class="quarto-category">Tutorial</div>
+                      </div>
                   </div>
   </div>
-    
+
+  
   <div class="quarto-title-meta-author">
     <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-heading">Affiliation</div>
@@ -197,8 +199,15 @@ background-size: cover;
     </div>
     </div>
     
+
+      <div class="quarto-title-meta-heading">
+      Journal
+    </div>
+    <div class="quarto-title-meta-contents">
+      OSF Preprints
+    </div>
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
@@ -208,10 +217,15 @@ background-size: cover;
 
 
 
-
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>Methods or approaches from disciplines outside of OR modelling and Simulation (M&amp;S) can potentially increase the functionality of simulation models through hybrid modelling. In healthcare research, where simulation models are commonly used, we see few applications of models that can easily be deployed by other researchers or by healthcare stakeholders. Models are treated as disposable artefacts, developed to deliver a set of results, and rarely address deployment for model reuse. We propose one potential solution to deploying free and open-source simulations using containerisation with continuous integration. A container provides a self-contained environment that encapsulates the model and all its required dependencies including the operating system, software, and packages. This overcomes a significant barrier to sharing models developed in open-source software, which is dependency management. Isolating the environment in a container ensures that the simulation model behaves the same way across different computing environments. It also means that other users can interact with the model without installing software, supporting both use/reuse, and reproducibility of results. We illustrate the approach using a model for orthopaedic elective recovery planning, developed with a user-friendly interface in Python, including a step-by-step approach to support M&amp;S researchers to deploy their own models using our hybrid framework.</p>
+</section>
+<section id="research-artefacts" class="level2">
+<h2 class="anchored" data-anchor-id="research-artefacts">Research artefacts</h2>
+<p><a class="research-btn" href="https://github.com/TomMonks/hep-deploy"> ➤ &nbsp;&nbsp; GitHub </a></p>
+<p><a class="research-btn" href="https://hub.docker.com/r/tommonks01/hep-sim"> ➤ &nbsp;&nbsp; Docker container </a></p>
+<p><a class="research-btn" href="https://zenodo.org/record/8011462"> ➤ &nbsp;&nbsp; Code archive </a></p>
 </section>
 <section id="article" class="level2">
 <h2 class="anchored" data-anchor-id="article">Article</h2>
@@ -224,11 +238,12 @@ background-size: cover;
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{harper2024,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{harper2024,
   author = {Harper, Alison and Monks, Thomas and Manzi, Sean},
   title = {Deployable {Healthcare} {Simulations:} {A} {Hybrid} {Method}
     for {Combining} {Simulation} with {Containerisation} and
     {Continuous} {Integration}},
+  journal = {OSF Preprints},
   date = {2024-08-23},
   url = {https://pythonhealthdatascience.github.io/stars/pages/publications/2024/harper2024deployable/},
   doi = {10.1007/978-3-031-59999-6_10},
@@ -237,7 +252,8 @@ background-size: cover;
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-harper2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Harper, Alison, Thomas Monks, and Sean Manzi. 2024. <span>“Deployable
 Healthcare Simulations: A Hybrid Method for Combining Simulation with
-Containerisation and Continuous Integration.”</span> August 23, 2024. <a href="https://doi.org/10.1007/978-3-031-59999-6_10">https://doi.org/10.1007/978-3-031-59999-6_10</a>.
+Containerisation and Continuous Integration.”</span> <em>OSF
+Preprints</em>, August. <a href="https://doi.org/10.1007/978-3-031-59999-6_10">https://doi.org/10.1007/978-3-031-59999-6_10</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
