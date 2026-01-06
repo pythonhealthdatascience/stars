@@ -16,6 +16,7 @@ date-format: "DD MMM YYYY"
 image: frontpage.png
 categories:
   - Reusable
+  - Framework
 ---
 
 ## Abstract

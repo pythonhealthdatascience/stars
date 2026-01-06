@@ -24,6 +24,7 @@ date-format: "DD MMM YYYY"
 image: frontpage.png
 categories:
   - Replicable
+  - Framework
 ---
 
 *This was not developed as part of the STARS project, but is related work that Tom was involved in.*
