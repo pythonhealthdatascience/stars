@@ -17,6 +17,12 @@
                 <% } %>
             </a>
             
+            <% if (item.citation && item.citation["container-title"]) { %>
+                <div class="listing-container-title">
+                    <%= item.citation["container-title"] %>
+                </div>
+            <% } %>
+            
             <% if (item.categories && item.categories.length > 0) { %>
                 <div class="listing-categories">
                     <% for (const category of item.categories) { %>
@@ -25,7 +31,6 @@
                 </div>
             <% } %>
 
-            <div class="listing-description"><%= item.description %></div>
         </div>
 
         <div class="thumbnail">

@@ -99,3 +99,11 @@ h4 {
 .iframe-header a:focus {
   text-decoration: none;
 }
+
+/* Blog posts / listings */
+.listing-container-title {
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-top: 0.1rem;
+  margin-bottom: 0.7rem;
+}
