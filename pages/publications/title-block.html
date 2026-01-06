@@ -31,4 +31,13 @@
 
   $title-metadata.html()$
 
+  $if(citation.container-title)$
+    <div class="quarto-title-meta-heading">
+      Journal
+    </div>
+    <div class="quarto-title-meta-contents">
+      $citation.container-title$
+    </div>
+  $endif$
+
 </header>
