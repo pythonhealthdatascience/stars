@@ -22,6 +22,20 @@ categories:
 
 Methods or approaches from disciplines outside of OR modelling and Simulation (M&S) can potentially increase the functionality of simulation models through hybrid modelling. In healthcare research, where simulation models are commonly used, we see few applications of models that can easily be deployed by other researchers or by healthcare stakeholders. Models are treated as disposable artefacts, developed to deliver a set of results, and rarely address deployment for model reuse. We propose one potential solution to deploying free and open-source simulations using containerisation with continuous integration. A container provides a self-contained environment that encapsulates the model and all its required dependencies including the operating system, software, and packages. This overcomes a significant barrier to sharing models developed in open-source software, which is dependency management. Isolating the environment in a container ensures that the simulation model behaves the same way across different computing environments. It also means that other users can interact with the model without installing software, supporting both use/reuse, and reproducibility of results. We illustrate the approach using a model for orthopaedic elective recovery planning, developed with a user-friendly interface in Python, including a step-by-step approach to support M&S researchers to deploy their own models using our hybrid framework.
 
+## Research artefacts
+
+<a class="research-btn" href="https://github.com/TomMonks/hep-deploy">
+  ➤ &nbsp;&nbsp; GitHub
+</a>
+
+<a class="research-btn" href="https://hub.docker.com/r/tommonks01/hep-sim">
+  ➤ &nbsp;&nbsp; Docker container
+</a>
+
+<a class="research-btn" href="https://zenodo.org/record/8011462">
+  ➤ &nbsp;&nbsp; Code archive
+</a>
+
 ## Article
 
 This is an open-access pre-print (<https://doi.org/10.31219/osf.io/qez45>, 11 October 2023).

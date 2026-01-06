@@ -23,6 +23,16 @@ Although the code for healthcare discrete-event simulation models can be shared 
 
 To increase uptake of these methods, we provide an approach to structuring discrete-event simulation model code in Python so that models are web app ready. The method is general across discrete-event simulation Python packages, and we include code for both simpy and ciw implementations of a simple urgent care call centre model. We then provide a step-by-step tutorial for linking the model to a streamlit web app interface, to enable other health data science researchers to reproduce and implement our method.
 
+## Research artefacts
+
+<a class="research-btn" href="https://health-data-science-or.github.io/simpy-streamlit-tutorial/">
+  ➤ &nbsp;&nbsp; Detailed online tutorial
+</a>
+
+<a class="research-btn" href="https://github.com/health-data-science-OR/simpy-streamlit-tutorial">
+  ➤ &nbsp;&nbsp; GitHub
+</a>
+
 ## Article
 
 ```{=html}

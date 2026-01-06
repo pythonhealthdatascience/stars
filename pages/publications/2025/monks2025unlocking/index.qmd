@@ -24,23 +24,9 @@ Discrete-event simulation (DES) is widely used in healthcare Operations Research
 
 ## Research artefacts
 
-[View research summary page](/pages/research/llm_generate_des.qmd)
-
-### Research compendium
-
-**Website:** <https://pythonhealthdatascience.github.io/llm_simpy>
-
-**Code archive:** <https://doi.org/10.5281/zenodo.15090962>
-
-**GitHub:** <https://github.com/pythonhealthdatascience/llm_simpy>
-
-### Deployed models
-
-**Web app:** <https://pythonhealthdatascience.github.io/llm_simpy_models>
-
-**Code archive:** <https://doi.org/10.5281/zenodo.15082494>
-
-**GitHub:** <https://github.com/pythonhealthdatascience/llm_simpy_models>
+<a class="research-btn" href="/pages/research/llm_generate_des.qmd">
+  ➤ &nbsp;&nbsp; View research summary and artefacts
+</a>
 
 ## Article
 

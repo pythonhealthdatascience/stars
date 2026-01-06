@@ -46,6 +46,7 @@ We created a comprehensive website using JupyterBook showing every step of our r
 
 * [Website](https://pythonhealthdatascience.github.io/llm_simpy/)
 * [GitHub for the website](https://github.com/pythonhealthdatascience/llm_simpy)
+* [Code archive](https://doi.org/10.5281/zenodo.15090962)
 
 ```{=html}
 <div class="iframe-wrapper">
@@ -73,6 +74,7 @@ We have deployed the AI-generated user interfaces as a web app on GitHub pages u
 
 * [Web apps](https://pythonhealthdatascience.github.io/llm_simpy_models/)
 * [GitHub for deployed web apps](https://github.com/pythonhealthdatascience/llm_simpy_models)
+* [Code archive](https://doi.org/10.5281/zenodo.15082494)
 
 ```{=html}
 <div class="iframe-wrapper">
