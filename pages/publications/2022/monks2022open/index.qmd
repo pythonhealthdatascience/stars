@@ -15,9 +15,7 @@ author:
     affiliation: Brunel University London
     orcid: 0000-0001-8252-0189
 date: 14 July 2022
-date-format: "DD MMM YYYY"
 citation:
-  type: article-journal
   container-title: "OSF Preprints"
 image: frontpage.png
 categories:

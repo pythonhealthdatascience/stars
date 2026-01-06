@@ -20,9 +20,7 @@ author:
     affiliation: Department of Computer Science, Brunel University
     orcid: 0000-0001-8252-0189
 date: 6 March 2018
-date-format: "DD MMM YYYY"
 citation:
-  type: article-journal
   container-title: "Journal of Simulation"
 image: frontpage.png
 categories:

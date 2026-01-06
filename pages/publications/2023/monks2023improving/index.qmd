@@ -9,9 +9,7 @@ author:
     affiliation: University of Exeter Business School
     orcid: 0000-0001-5274-5037
 date: 15 December 2023
-date-format: "DD MMM YYYY"
 citation:
-  type: article-journal
   container-title: "NIHR Open Research"
 image: frontpage.png
 categories:

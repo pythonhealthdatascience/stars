@@ -3,5 +3,11 @@ format:
     template-partials:
       - title-block.html
 
+date-format: "DD MMM YYYY"
+
+# Type: article-journal required so container-title is registered as journal name
+citation:
+  type: article-journal
+
 # At end of page, generate BibTex and display version of citation
-citation: true
+appendix-cite-as: true

@@ -9,9 +9,7 @@ author:
     affiliation: University of Exeter Medical School
     orcid: 0000-0003-2631-4481
 date: 28 April 2023
-date-format: "DD MMM YYYY"
 citation:
-  type: article-journal
   container-title: "Proceedings of the Operational Research Society Simulation Workshop 2023 (SW23)"
 image: frontpage.png
 categories:
