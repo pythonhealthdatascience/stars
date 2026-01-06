@@ -13,6 +13,9 @@ author:
     orcid: 0000-0002-6596-3479
 date: 10 September 2025
 date-format: "DD MMM YYYY"
+citation:
+  type: article-journal
+  container-title: "Journal of the Operational Research Society"
 image: frontpage.png
 categories:
   - LLMs

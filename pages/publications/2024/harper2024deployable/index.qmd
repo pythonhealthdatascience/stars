@@ -13,6 +13,9 @@ author:
     orcid: 0000-0003-2631-4481
 date: 23 August 2024
 date-format: "DD MMM YYYY"
+citation:
+  type: article-journal
+  container-title: "OSF Preprints"
 image: frontpage.png
 categories:
   - Tutorial
