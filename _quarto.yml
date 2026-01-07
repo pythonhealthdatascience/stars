@@ -19,6 +19,7 @@ website:
       title: "Research"
       contents:
         - pages/research.qmd
+        - pages/research/motivation.qmd
         - section: "Reproducible"
           contents:
             - pages/research/computational_reproducibility.qmd
