@@ -6,13 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Amy Heather">
-<meta name="author" content="Thomas Monks">
-<meta name="author" content="Alison Harper">
-<meta name="author" content="Navonil Mustafee">
-<meta name="author" content="Andrew Mayne">
 
-<title>Computational reproducibility assessment of published DES models – STARS</title>
+<title>Motivation: a failed attempt at reuse – STARS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../images/stars_logo_blue.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -79,35 +72,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-pub .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-pub'] = new List('listing-pub', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>
 
       .quarto-title-block .quarto-title-banner h1,
@@ -127,35 +91,6 @@ background-size: cover;
       }
 </style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../css/footer.css">
 <link rel="stylesheet" href="../../css/theme.css">
@@ -203,7 +138,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/research/computational_reproducibility.html">Reproducible</a></li><li class="breadcrumb-item"><a href="../../pages/research/computational_reproducibility.html">Computational reproducibility assessment of published DES models</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/research/motivation.html">Motivation: a failed attempt at reuse</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -212,60 +147,15 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/research/computational_reproducibility.html">Reproducible</a></li><li class="breadcrumb-item"><a href="../../pages/research/computational_reproducibility.html">Computational reproducibility assessment of published DES models</a></li></ol></nav>
-      <h1 class="title">Computational reproducibility assessment of published DES models</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title">Motivation: a failed attempt at reuse</h1>
                       </div>
   </div>
     
-  <div class="quarto-title-meta-author">
-    <div class="quarto-title-meta-heading">Authors</div>
-    <div class="quarto-title-meta-heading">Affiliations</div>
-    
-      <div class="quarto-title-meta-contents">
-      <p class="author">Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              University of Exeter Medical School
-            </p>
-        </div>
-      <div class="quarto-title-meta-contents">
-      <p class="author">Thomas Monks <a href="https://orcid.org/0000-0003-2631-4481" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              University of Exeter Medical School
-            </p>
-        </div>
-      <div class="quarto-title-meta-contents">
-      <p class="author">Alison Harper <a href="https://orcid.org/0000-0001-5274-5037" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              University of Exeter Business School
-            </p>
-        </div>
-      <div class="quarto-title-meta-contents">
-      <p class="author">Navonil Mustafee <a href="https://orcid.org/0000-0002-2204-8924" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              University of Exeter Business School
-            </p>
-        </div>
-      <div class="quarto-title-meta-contents">
-      <p class="author">Andrew Mayne <a href="https://orcid.org/0000-0003-1263-2286" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              Somerset NHS Foundation Trust
-            </p>
-        </div>
-    </div>
-
+  
   <div class="quarto-title-meta">
 
-        
+      
     
       
     </div>
@@ -288,7 +178,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/research/motivation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../pages/research/motivation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Motivation: a failed attempt at reuse</span></a>
   </div>
 </li>
@@ -303,7 +193,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/research/computational_reproducibility.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../pages/research/computational_reproducibility.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Computational reproducibility assessment of published DES models</span></a>
   </div>
 </li>
@@ -404,199 +294,77 @@ window.Quarto = {
 
 
 
-<div class="card-blue">
-<p><strong>Take-home message:</strong></p>
-<p>There are simple steps researchers can take to improve the reproducibility of their healthcare DES models. These include:</p>
-<ul>
-<li>Sharing code with an open licence.</li>
-<li>Ensuring model parameters are correct.</li>
-<li>Including code to calculate all required model outputs.</li>
-<li>Providing code for all scenarios and sensitivity analyses.</li>
-<li>Including code to generate the tables, figures, and other reported results.</li>
-</ul>
-<p>For more suggestions, see the STARS reproducibility recommendations below.</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Tom Monks is the Principal Investigator on STARS. His interest in open and reproducible simulation research began with an unsuccessful attempt to share a model with the NHS in England.</p>
+</section>
+<section id="the-original-model" class="level2">
+<h2 class="anchored" data-anchor-id="the-original-model">The original model</h2>
+<p>A few years ago, Tom was part of a team that developed a discrete-event simulation model of stroke care in England using <strong>Simul8</strong>, a commercial simulation platform.</p>
+<p>To support replication, the team published full details of the model design, parameters, assumptions, and system flow in the following paper:</p>
+<blockquote class="blockquote">
+<p>Monks T, Worthington D, Allen M, Pitt M, Stein K, James MA. A modelling tool for capacity planning in acute and community stroke services. BMC Health Serv Res. 2016 Sep 29;16(1):530. doi: <a href="https://doi.org/10.1186/s12913-016-1789-4">10.1186/s12913-016-1789-4</a>. PMID: 27688152; PMCID: PMC5043535.</p>
+</blockquote>
+<p><a href="motivation_resources/stroke_flow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="motivation_resources/stroke_flow.png" class="img-fluid" style="width:80.0%"></a></p>
+</section>
+<section id="a-request-for-reuse" class="level2">
+<h2 class="anchored" data-anchor-id="a-request-for-reuse">A request for reuse</h2>
+<p>After publication, an NHS organisation covering two large cities in England asked to reuse the model to help redesign and evaluate their stroke service.</p>
+<p>The research team was happy to share the Simul8 model, Excel interface, and usage instructions. However, several barriers soon became clear:</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Problem 1">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p><br></p>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>This work assessed the computational reproducibility of eight published healthcare DES models implemented in Python or R. A <a href="../../pages/publications/2024/heather2024protocol/index.html">detailed study protocol</a> was first developed, informed by existing reproducibility studies and pilot work. The workflow for assessing each study is summarised in the figure below.</p>
-<p><a href="computational_reproducibility_resources/stars_wp1_workflow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="computational_reproducibility_resources/stars_wp1_workflow.png" class="img-fluid" alt="Study methodology"></a></p>
-<p>The eight models were selected to ensure diversity across a range of factors including the health focus (e.g., healthcare condition, specific system), geographical context, and model complexity</p>
-<p>Reproducing results required up to 28 hours of troubleshooting per model. Four models were judged to be fully reproduced, while four were partially reproduced - between 12.5% and 94.1% of reported outcomes.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="computational_reproducibility_resources/article_times.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Count, proportion, and time to reproduce items within the scope of each study. Inspired by a figure in Krafczyk et al.&nbsp;(2021)."><img src="computational_reproducibility_resources/article_times.png" class="img-fluid figure-img" alt="Count, proportion, and time to reproduce items within the scope of each study. Inspired by a figure in Krafczyk et al.&nbsp;(2021)."></a></p>
-<figcaption>Count, proportion, and time to reproduce items within the scope of each study. Inspired by a figure in Krafczyk et al.&nbsp;(<a href="https://doi.org/10.1098/rsta.2020.0069">2021</a>).</figcaption>
-</figure>
-</div>
-<p>Based on the barriers and facilitators observed during these reproductions, we developed the <strong>STARS reproducibility recommendations</strong>. These are presented in the figures below, divided into categories: recommendations that specifically support reproducibility, and those that were more relevant to troubleshooting models (and therefore also to reuse).</p>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="computational_reproducibility_resources/reproduction_wheel.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Recommendations to support reproducibility. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t perform scenario analysis, or only provided one version of the code)."><img src="computational_reproducibility_resources/reproduction_wheel.png" class="img-fluid figure-img" alt="Recommendations to support reproducibility. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t perform scenario analysis, or only provided one version of the code)."></a></p>
-<figcaption>Recommendations to support reproducibility. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t perform scenario analysis, or only provided one version of the code).</figcaption>
-</figure>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Problem 1
 </div>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="computational_reproducibility_resources/troubleshooting_wheel.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Recommendations to support troubleshooting and reuse. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t have a web application, or didn’t have scenarios to vary parameters). Some recommendations were marked as “N/A” where it was not felt appropriate or feasible to count/assess their inclusion"><img src="computational_reproducibility_resources/troubleshooting_wheel.png" class="img-fluid figure-img" alt="Recommendations to support troubleshooting and reuse. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t have a web application, or didn’t have scenarios to vary parameters). Some recommendations were marked as “N/A” where it was not felt appropriate or feasible to count/assess their inclusion"></a></p>
-<figcaption>Recommendations to support troubleshooting and reuse. Below each recommendation, a count of studies that fully met it is provided. The total may fall below eight if the criteria were not applicable to a given study (e.g., If they didn’t have a web application, or didn’t have scenarios to vary parameters). Some recommendations were marked as “N/A” where it was not felt appropriate or feasible to count/assess their inclusion</figcaption>
-</figure>
+<div class="callout-body-container callout-body">
+<p>The NHS organisation did not have budget for the commercial simulation software.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-important callout-titled" title="Problem 2">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Problem 2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Simul8 licence held by the research team did not allow sharing the model via the cloud.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Problem 3">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Problem 3
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The NHS could have commissioned the research team to carry out the work, but that would have cost even more.</p>
 </div>
 </div>
 </section>
-<section id="websites-and-github-repositories" class="level2">
-<h2 class="anchored" data-anchor-id="websites-and-github-repositories">Websites and GitHub repositories</h2>
-<p>We have described this work in a <a href="../../pages/publications/2025/heather2025reproducibility/index.html">publication in the Journal of Simulation</a>.</p>
-<p>The work is also documented in a dedicated <a href="https://pythonhealthdatascience.github.io/stars_wp1_summary/">Quarto summary website</a>, which provides more fine-grained detail on the reproductions.</p>
-<div class="iframe-wrapper">
-  <div class="iframe-header">
-    <span>Website preview:</span>
-    <a href="https://pythonhealthdatascience.github.io/stars_wp1_summary/pages/reproduction.html" target="_blank" rel="noopener">
-      View full website in new tab
-    </a>
-  </div>
-
-  <iframe width="100%" height="500" src="https://pythonhealthdatascience.github.io/stars_wp1_summary/pages/reproduction.html" title="Computational Reproducibility Assessments: Summary">
-  </iframe>
-</div>
-<br>
-<p>Each of the eight DES models has its own research compendium-style GitHub repository, with a corresponding website and archival record, as linked in the table below. Each repository was created from a <a href="https://github.com/pythonhealthdatascience/stars_reproduction_template">template</a> which we developed during pilot work. In pilot work, an example model from colleagues was used to test and refine the reproducibility protocol, resulting in the repository <a href="https://github.com/pythonhealthdatascience/stars-reproduce-allen-2020">stars-reproduce-allen-2020</a>.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Reproduction study</th>
-<th>Website</th>
-<th>GitHub</th>
-<th>Zenodo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Shoaib and Ramamohan 2022</td>
-<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-shoaib-2022/">Website</a></td>
-<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-shoaib-2022">stars-reproduce-shoaib-2022</a></td>
-<td><a href="https://doi.org/10.1177/00375497211030931">10.1177/00375497211030931</a></td>
-</tr>
-<tr class="even">
-<td>Huang et al.&nbsp;2019</td>
-<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-huang-2019/">Website</a></td>
-<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-huang-2019">stars-reproduce-huang-2019</a></td>
-<td><a href="https://doi.org/10.5281/zenodo.12657280">10.5281/zenodo.12657280</a></td>
-</tr>
-<tr class="odd">
-<td>Lim et al.&nbsp;2020</td>
-<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-lim-2020/">Website</a></td>
-<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-lim-2020">stars-reproduce-lim-2020</a></td>
-<td><a href="https://doi.org/10.5281/zenodo.12795365">10.5281/zenodo.12795365</a></td>
-</tr>
-<tr class="even">
-<td>Kim et al.&nbsp;2021</td>
-<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-kim-2021/">Website</a></td>
-<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-kim-2021">stars-reproduce-kim-2021</a></td>
-<td><a href="https://doi.org/10.5281/zenodo.13121136">10.5281/zenodo.13121136</a></td>
-</tr>
-<tr class="odd">
-<td>Anagnostou et al.&nbsp;2022</td>
-<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-anagnostou-2022/">Website</a></td>
-<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-anagnostou-2022">stars-reproduce-anagnostou-2022</a></td>
-<td><a href="https://doi.org/10.5281/zenodo.13306159">10.5281/zenodo.13306159</a></td>
-</tr>
-<tr class="even">
-<td>Johnson et al.&nbsp;2021</td>
-<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-johnson-2021/">Website</a></td>
-<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-johnson-2021">stars-reproduce-johnson-2021</a></td>
-<td><a href="https://zenodo.org/doi/10.5281/zenodo.13832333">10.5281/zenodo.13832333</a></td>
-</tr>
-<tr class="odd">
-<td>Hernandez et al.&nbsp;2015</td>
-<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-hernandez-2015/">Website</a></td>
-<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-hernandez-2015">stars-reproduce-hernandez-2015</a></td>
-<td><a href="https://zenodo.org/doi/10.5281/zenodo.13832260">10.5281/zenodo.13832260</a></td>
-</tr>
-<tr class="even">
-<td>Wood et al.&nbsp;2021</td>
-<td><a href="https://pythonhealthdatascience.github.io/stars-reproduce-wood-2021/">Website</a></td>
-<td><a href="https://github.com/pythonhealthdatascience/stars-reproduce-wood-2021">stars-reproduce-wood-2021</a></td>
-<td><a href="https://doi.org/10.5281/zenodo.13881986">10.5281/zenodo.13881986</a></td>
-</tr>
-</tbody>
-</table>
+<section id="lessons-learned" class="level2">
+<h2 class="anchored" data-anchor-id="lessons-learned">Lessons learned</h2>
+<p>In the end, the model could not be reused. This experience raised an important question:</p>
+<blockquote class="blockquote">
+<p><strong>Can others actually use the models and materials we publish?</strong></p>
+</blockquote>
+<p>It showed that even detailed reporting is not enough if reuse depends on restricted tools or resources.</p>
 </section>
-<section id="gw4-open-research-prize---improving-quality" class="level2">
-<h2 class="anchored" data-anchor-id="gw4-open-research-prize---improving-quality">GW4 Open Research Prize - Improving Quality</h2>
-<p>This research was shortlisted for the “Improving Quality” prize, which is “for those able to demonstrate that the quality of their research has been enhanced through the adoption of open research practices in their work”. You can find out more about the prize and the other <a href="https://gw4.ac.uk/news/gw4-open-research-prize-2025-winners-announced/">shortlisted entries and winners here</a>.</p>
-<p>Amy Heather presented this work at the GW4 Open Research Prize awards event. The slides were created using Quarto: see the <a href="https://pythonhealthdatascience.github.io/gw4_prize_presentation/">slides</a> and accompanying <a href="https://github.com/pythonhealthdatascience/gw4_prize_presentation">slides GitHub repository</a>. A recording of the presentation is available:</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/4ti4Fent07s?si=UAIZRvf9gl2K-cKO" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<div id="listing-pub" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UmVwcm9kdWNpYmxl" data-listing-date-sort="1757376000000" data-listing-file-modified-sort="1767778569168" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="188">
-<div class="thumbnail"><a href="../../pages/publications/2025/heather2025reproducibility/index.html" class="no-external">
-
-<img loading="lazy" src="../../pages/publications/2025/heather2025reproducibility/frontpage.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../pages/publications/2025/heather2025reproducibility/index.html" class="no-external">On the reproducibility of discrete-event simulation studies in health research: an empirical study using open models</a>
-</h3>
-<div class="delink listing-description"><a href="../../pages/publications/2025/heather2025reproducibility/index.html" class="no-external">
-Reproducibility of computational research is critical for ensuring transparency, reliability, and reusability. Challenges with computational reproducibility have been…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../pages/publications/2025/heather2025reproducibility/index.html" class="no-external">
-<div class="listing-date">
-Sep 9, 2025
-</div>
-<div class="listing-author">
-Amy Heather, Thomas Monks, Alison Harper, Navonil Mustafee, Andrew Mayne
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UmVwcm9kdWNpYmxl" data-listing-date-sort="1718841600000" data-listing-file-modified-sort="1767778569141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
-<div class="thumbnail"><a href="../../pages/publications/2024/heather2024protocol/index.html" class="no-external">
-
-<img loading="lazy" src="../../pages/publications/2024/heather2024protocol/frontpage.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../pages/publications/2024/heather2024protocol/index.html" class="no-external">Protocol for assessing the computational reproducibility of discrete-event simulation models on STARS</a>
-</h3>
-<div class="delink listing-description"><a href="../../pages/publications/2024/heather2024protocol/index.html" class="no-external">
-This protocol will be used to assess the computational reproducibility of published healthcare discrete-event simulation (DES) models created using Python or R. It forms…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../pages/publications/2024/heather2024protocol/index.html" class="no-external">
-<div class="listing-date">
-Jun 20, 2024
-</div>
-<div class="listing-author">
-Amy Heather, Thomas Monks, Alison Harper, Navonil Mustafee, Andrew Mayne
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"><br></h2>
-<p><em>This page was written by Amy Heather and reflects her interpretation of this work, which may not fully represent the views of all project authors or affiliated institutions.</em></p>
-
+<section id="what-came-next" class="level2">
+<h2 class="anchored" data-anchor-id="what-came-next">What came next?</h2>
+<p>This experience helped shape later research into reproducibility and reuse in simulation.</p>
+<p>The team has since developed <strong>open-source versions</strong> of the stroke model in <strong>Python</strong> and <strong>R</strong>, freely available for others to use and adapt.</p>
+<p><a class="research-btn" href="https://github.com/pythonhealthdatascience/pydesrap_stroke"> ➤ &nbsp;&nbsp; View Python version of the stroke model </a></p>
+<p><a class="research-btn" href="https://github.com/pythonhealthdatascience/rdesrap_stroke"> ➤ &nbsp;&nbsp; View R version of the stroke model </a></p>
 
 
 </section>
