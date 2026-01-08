@@ -10,6 +10,7 @@ website:
     left:
       - pages/research.qmd
       - pages/publications.qmd
+      - pages/checklists.qmd
     tools:
       - icon: github
         href: https://github.com/pythonhealthdatascience/stars

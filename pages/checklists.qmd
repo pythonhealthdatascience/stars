@@ -1,0 +1,326 @@
+---
+title: "Checklists"
+format:
+  html:
+    embed-resources: false
+    page-layout: full
+filters:
+  - shinylive
+---
+
+On this page, we have embedded web applications which can support you to complete checklists, frameworks and guidance associated with STARS. Navigate between the tabs to your desired checklist:
+
+:::: {.panel-tabset}
+
+## STARS Reuse
+
+::: {.column-screen-inset}
+```{shinylive-python}
+#| standalone: true
+#| viewerHeight: 1000
+
+from __future__ import annotations
+
+from shiny import App, Inputs, Outputs, Session, reactive, render, ui
+
+# ---- Helper: field definitions ----
+
+# Core STARS Reuse items (essential + optional, grouped)
+SECTIONS = [
+    {
+        "id": "essential",
+        "title": "Essential components",
+        "items": [
+            {
+                "id": "open_licence",
+                "label": "Open licence",
+                "help": (
+                    "Specify that the model artefacts are released under an "
+                    "explicit open licence (e.g. MIT, GPL), and where this is stated."
+                ),
+            },
+            {
+                "id": "foss_licence",
+                "label": "FOSS licence",
+                "help": (
+                    "Provide the specific free and open-source licence "
+                    "for the code and other artefacts (e.g. MIT, GPL-3.0)."
+                ),
+            },
+            {
+                "id": "dependency_mgmt",
+                "label": "Dependency management",
+                "help": (
+                    "Describe how dependencies are specified and managed "
+                    "(e.g. requirements.txt, conda environment.yml, poetry)."
+                ),
+            },
+            {
+                "id": "foss_language",
+                "label": "FOSS model language",
+                "help": (
+                    "State the language(s) used (e.g. Python, R, Julia) "
+                    "and confirm they are FOSS."
+                ),
+            },
+            {
+                "id": "min_docs",
+                "label": "Minimum documentation",
+                "help": (
+                    "Summarise where minimal documentation is found: "
+                    "what the model does, how to install/run, how to vary parameters."
+                ),
+            },
+            {
+                "id": "orcids",
+                "label": "ORCID for authors",
+                "help": "List ORCID identifiers for each study author, or explain where they are provided.",
+            },
+            {
+                "id": "citation_info",
+                "label": "Citation information",
+                "help": (
+                    "Explain how to cite the artefact (e.g. CITATION.cff, "
+                    "Zenodo record, README section)."
+                ),
+            },
+            {
+                "id": "remote_repo",
+                "label": "Remote code repository",
+                "help": "Provide the public repository URL(s) (e.g. GitHub, GitLab, Bitbucket).",
+            },
+            {
+                "id": "open_science_archive",
+                "label": "Open science archive",
+                "help": (
+                    "Provide DOI / URL(s) for persistent archives "
+                    "(e.g. Zenodo, OSF, Figshare, CoMSES Net)."
+                ),
+            },
+        ],
+    },
+    {
+        "id": "optional",
+        "title": "Optional components",
+        "items": [
+            {
+                "id": "enhanced_docs",
+                "label": "Enhanced documentation",
+                "help": (
+                    "Describe any richer documentation (Quarto/Jupyter books, "
+                    "TRACE, reporting guidelines, validation description, etc.)."
+                ),
+            },
+            {
+                "id": "docs_hosting",
+                "label": "Documentation hosting",
+                "help": "Give URLs and hosting platform(s) for the documentation (e.g. GitHub Pages, Quarto Pub).",
+            },
+            {
+                "id": "online_env",
+                "label": "Online coding environment",
+                "help": "List any Binder, Colab, Deepnote etc. environments and what they support.",
+            },
+            {
+                "id": "model_interface",
+                "label": "Model interface",
+                "help": (
+                    "Describe any web or GUI interfaces for non-technical users "
+                    "(e.g. Shiny, Streamlit, Dash)."
+                ),
+            },
+            {
+                "id": "web_app_hosting",
+                "label": "Web app hosting",
+                "help": "Provide URLs and hosting details for any deployed web apps.",
+            },
+        ],
+    },
+]
+
+APP_TITLE = "STARS Reuse Framework (Shiny for Python)"
+
+
+# ---- UI ----
+
+def make_section(section: dict) -> ui.Tag:
+    """Render a card with textareas for all items in a section."""
+    items_ui = []
+    for item in section["items"]:
+        items_ui.append(
+            ui.div(
+                ui.h4(item["label"]),
+                ui.p(item["help"], class_="text-muted"),
+                ui.input_text_area(
+                    item["id"],
+                    label=None,
+                    placeholder="Enter details here…",
+                    rows=4,
+                    width="100%",
+                ),
+                class_="mb-4",
+            )
+        )
+    return ui.card(
+        ui.card_header(section["title"]),
+        *items_ui,
+        class_="mb-4",
+    )
+
+
+app_ui = ui.page_fluid(
+    ui.h2(APP_TITLE),
+    ui.p(
+        "Use this form to record how a simulation study satisfies the STARS Reuse "
+        "framework items. When finished, use the Download button to obtain a "
+        "markdown summary that can be stored with the model artefacts."
+    ),
+    ui.layout_columns(
+        ui.card(
+            ui.card_header("Project metadata"),
+            ui.input_text("project_title", "Project title", ""),
+            ui.input_text("project_id", "Project ID / short name", ""),
+            ui.input_text("contact_name", "Contact person", ""),
+            ui.input_text("contact_email", "Contact email", ""),
+        ),
+        ui.card(
+            ui.card_header("Export"),
+            ui.input_select(
+                "export_format",
+                "Export format",
+                choices=["markdown"],  # extensible later to docx/pdf
+                selected="markdown",
+            ),
+            ui.input_text(
+                "filename",
+                "File name (without extension)",
+                "stars_reuse_checklist",
+            ),
+            ui.input_switch(
+                "include_empty",
+                "Include empty items in export",
+                value=True,
+            ),
+            ui.input_action_button("download_btn", "Download completed checklist"),
+            ui.output_text_verbatim("download_hint"),
+        ),
+        col_widths=(7, 5),
+    ),
+    ui.hr(),
+    make_section(SECTIONS[0]),
+    make_section(SECTIONS[1]),
+    class_="p-3",
+)
+
+
+# ---- Server logic ----
+
+def server(input: Inputs, output: Outputs, session: Session) -> None:
+    @reactive.calc
+    def collected_items():
+        """Return a list of dicts with all item values."""
+        data = []
+        for section in SECTIONS:
+            for item in section["items"]:
+                value = getattr(input, item["id"])()
+                data.append(
+                    {
+                        "section_id": section["id"],
+                        "section_title": section["title"],
+                        "id": item["id"],
+                        "label": item["label"],
+                        "value": value.strip() if value else "",
+                    }
+                )
+        return data
+
+    @reactive.calc
+    def markdown_export() -> str:
+        """Build a markdown document containing project metadata and checklist."""
+        title = input.project_title().strip() or "Untitled project"
+        proj_id = input.project_id().strip()
+        contact_name = input.contact_name().strip()
+        contact_email = input.contact_email().strip()
+        include_empty = input.include_empty()
+
+        lines: list[str] = []
+
+        # Header
+        lines.append(f"# STARS Reuse Framework")
+        lines.append("")
+        lines.append(f"**Project title:** {title}")
+        if proj_id:
+            lines.append(f"**Project ID:** {proj_id}")
+        if contact_name or contact_email:
+            contact_bits = ", ".join(
+                [b for b in [contact_name or None, contact_email or None] if b]
+            )
+            lines.append(f"**Contact:** {contact_bits}")
+        lines.append("")
+
+        # Checklist sections
+        items = collected_items()
+        for section in SECTIONS:
+            lines.append(f"## {section['title']}")
+            lines.append("")
+            for item in [i for i in items if i["section_id"] == section["id"]]:
+                if not include_empty and not item["value"]:
+                    continue
+                lines.append(f"### {item['label']}")
+                lines.append("")
+                if item["value"]:
+                    lines.append(item["value"])
+                else:
+                    lines.append("_No information provided yet._")
+                lines.append("")
+
+        return "\n".join(lines)
+
+    @output
+    @render.text
+    def download_hint():
+        fmt = input.export_format()
+        return (
+            "Click the Download button to save a markdown file containing the "
+            f"current responses in the checklist. You can then store it alongside "
+            "your model artefacts or convert it to other formats (e.g. docx/pdf) "
+            "using Quarto or pandoc."
+        )
+
+    @render.download(
+        filename=lambda: f"stars_reuse_{date.today().isoformat()}.md"
+    )
+    def download_checklist():
+        content = "# Example\n\nThis is a test file.\n"
+        # Can yield once or multiple times
+        yield content
+    #@render.download(filename=lambda: f"{input.filename() or #'stars_reuse_checklist'}.md")
+    #def download_btn():
+    #    # Only markdown supported here; other formats would be handled client-side
+    #    # or via separate tooling.
+    #    content = markdown_export()
+    #    yield content.encode("utf-8")
+
+
+app = App(app_ui, server)
+
+```
+:::
+
+## STRESS-DES
+
+A
+
+## STRESS-ABS
+
+A
+
+## STRESS-SD
+
+A
+
+## STARS Reproduction
+
+A
+
+::::
