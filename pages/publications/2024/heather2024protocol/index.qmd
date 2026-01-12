@@ -39,6 +39,10 @@ This protocol will be used to assess the computational reproducibility of publis
   ➤ &nbsp;&nbsp; Test run of reproducibility protocol on Allen et al. 2020
 </a>
 
+<a class="research-btn" href="/pages/research/computational_reproducibility.qmd">
+  ➤ &nbsp;&nbsp; View the completed study (based on protocol)
+</a>
+
 ## Article
 
 ```{=html}
