@@ -27,7 +27,7 @@ We present a simple framework to support sharing of executable healthcare discre
 
 *The research artefacts in this conference paper are superceded by those in the full publication.*
 
-<a class="research-btn" href="/pages/research/stars_framework_reuse.qmd">
+<a class="research-btn" href="/pages/research/stars_framework_reuse.qmd" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; View summary and research artefacts from full publication
 </a>
 

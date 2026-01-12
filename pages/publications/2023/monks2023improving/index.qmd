@@ -26,11 +26,11 @@ To increase uptake of these methods, we provide an approach to structuring discr
 
 ## Research artefacts
 
-<a class="research-btn" href="https://health-data-science-or.github.io/simpy-streamlit-tutorial/">
+<a class="research-btn" href="https://health-data-science-or.github.io/simpy-streamlit-tutorial/" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; Detailed online tutorial
 </a>
 
-<a class="research-btn" href="https://github.com/health-data-science-OR/simpy-streamlit-tutorial">
+<a class="research-btn" href="https://github.com/health-data-science-OR/simpy-streamlit-tutorial" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; GitHub
 </a>
 

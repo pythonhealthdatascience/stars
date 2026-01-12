@@ -22,7 +22,7 @@ Discrete-event simulation (DES) is a widely used computational method in health 
 
 ## Research artefacts
 
-<a class="research-btn" href="/pages/research/des_sharing_review.qmd">
+<a class="research-btn" href="/pages/research/des_sharing_review.qmd" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; View research summary and artefacts
 </a>
 

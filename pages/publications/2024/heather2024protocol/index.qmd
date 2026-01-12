@@ -31,15 +31,15 @@ This protocol will be used to assess the computational reproducibility of publis
 
 ## Research artefacts
 
-<a class="research-btn" href="https://github.com/pythonhealthdatascience/stars_reproduction_template">
+<a class="research-btn" href="https://github.com/pythonhealthdatascience/stars_reproduction_template" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; Repository template
 </a>
 
-<a class="research-btn" href="https://github.com/pythonhealthdatascience/stars-reproduce-allen-2020">
+<a class="research-btn" href="https://github.com/pythonhealthdatascience/stars-reproduce-allen-2020" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; Test run of reproducibility protocol on Allen et al. 2020
 </a>
 
-<a class="research-btn" href="/pages/research/computational_reproducibility.qmd">
+<a class="research-btn" href="/pages/research/computational_reproducibility.qmd" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; View the completed study (based on protocol)
 </a>
 

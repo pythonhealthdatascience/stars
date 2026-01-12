@@ -31,11 +31,11 @@ This tutorial aims to support modellers working in healthcare research or practi
 
 ## Research artefacts
 
-<a class="research-btn" href="https://pythonhealthdatascience.github.io/intro-open-sim/">
+<a class="research-btn" href="https://pythonhealthdatascience.github.io/intro-open-sim/" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; Interactive materials
 </a>
 
-<a class="research-btn" href="https://github.com/pythonhealthdatascience/intro-open-sim">
+<a class="research-btn" href="https://github.com/pythonhealthdatascience/intro-open-sim" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; GitHub
 </a>
 
