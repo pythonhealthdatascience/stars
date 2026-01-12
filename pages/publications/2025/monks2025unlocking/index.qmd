@@ -25,7 +25,7 @@ Discrete-event simulation (DES) is widely used in healthcare Operations Research
 
 ## Research artefacts
 
-<a class="research-btn" href="/pages/research/llm_generate_des.qmd">
+<a class="research-btn" href="/pages/research/llm_generate_des.qmd" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; View research summary and artefacts
 </a>
 

@@ -25,15 +25,15 @@ Methods or approaches from disciplines outside of OR modelling and Simulation (M
 
 ## Research artefacts
 
-<a class="research-btn" href="https://github.com/TomMonks/hep-deploy">
+<a class="research-btn" href="https://github.com/TomMonks/hep-deploy" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; GitHub
 </a>
 
-<a class="research-btn" href="https://hub.docker.com/r/tommonks01/hep-sim">
+<a class="research-btn" href="https://hub.docker.com/r/tommonks01/hep-sim" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; Docker container
 </a>
 
-<a class="research-btn" href="https://zenodo.org/record/8011462">
+<a class="research-btn" href="https://zenodo.org/record/8011462" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; Code archive
 </a>
 

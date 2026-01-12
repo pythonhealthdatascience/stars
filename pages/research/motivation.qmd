@@ -54,10 +54,10 @@ This experience helped shape later research into reproducibility and reuse in si
 
 The team has since developed **open-source versions** of the stroke model in **Python** and **R**, freely available for others to use and adapt.
 
-<a class="research-btn" href="https://github.com/pythonhealthdatascience/pydesrap_stroke">
+<a class="research-btn" href="https://github.com/pythonhealthdatascience/pydesrap_stroke" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; View Python version of the stroke model
 </a>
 
-<a class="research-btn" href="https://github.com/pythonhealthdatascience/rdesrap_stroke">
+<a class="research-btn" href="https://github.com/pythonhealthdatascience/rdesrap_stroke" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; View R version of the stroke model
 </a>

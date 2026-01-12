@@ -31,7 +31,7 @@ Reproducibility of computational research is critical for ensuring transparency,
 
 ## Research artefacts
 
-<a class="research-btn" href="/pages/research/computational_reproducibility.qmd">
+<a class="research-btn" href="/pages/research/computational_reproducibility.qmd" target="_blank" rel="noopener noreferrer">
   ➤ &nbsp;&nbsp; View research summary and artefacts
 </a>
 
