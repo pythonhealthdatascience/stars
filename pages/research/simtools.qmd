@@ -26,17 +26,17 @@ We have developed a Python package to support discrete-event simulation (DES) an
 
 6. EXPERIMENTAL: model trace functionality to support debugging of simulation models.
 
-You can find the package on [GitHub](https://github.com/TomMonks/sim-tools), [PyPI](https://pypi.org/pypi/sim-tools/), and [Conda](https://anaconda.org/conda-forge/sim-tools)
+You can find the package on [GitHub](https://github.com/sim-tools/sim-tools), [PyPI](https://pypi.org/pypi/sim-tools/), and [Conda](https://anaconda.org/conda-forge/sim-tools)
 
 ## Package documentation
 
-The `sim-tools` documentation is available at <https://tommonks.github.io/sim-tools/>.
+The `sim-tools` documentation is available at <https://sim-tools.github.io/sim-tools/>.
 
 ```{=html}
 <div class="iframe-wrapper">
   <div class="iframe-header">
     <span>Website preview:</span>
-    <a href="https://tommonks.github.io/sim-tools/"
+    <a href="https://sim-tools.github.io/sim-tools/"
        target="_blank" rel="noopener">
       View full website in new tab
     </a>
@@ -45,7 +45,7 @@ The `sim-tools` documentation is available at <https://tommonks.github.io/sim-to
   <iframe
     width="100%"
     height="500"
-    src="https://tommonks.github.io/sim-tools/"
+    src="https://sim-tools.github.io/sim-tools/"
     title="sim-tools documentation">
   </iframe>
 </div>
