@@ -13,6 +13,18 @@
     ]
   },
   {
+    "listing": "/pages/research/stress.html",
+    "items": [
+      "/pages/publications/2018/monks2018strengthening/index.html"
+    ]
+  },
+  {
+    "listing": "/pages/research/llm_generate_des.html",
+    "items": [
+      "/pages/publications/2025/monks2025unlocking/index.html"
+    ]
+  },
+  {
     "listing": "/pages/research/stars_framework_reuse.html",
     "items": [
       "/pages/publications/2024/monks2024towards/index.html"
@@ -32,18 +44,6 @@
       "/pages/publications/2023/harper2023framework/index.html",
       "/pages/publications/2022/monks2022open/index.html",
       "/pages/publications/2018/monks2018strengthening/index.html"
-    ]
-  },
-  {
-    "listing": "/pages/research/stress.html",
-    "items": [
-      "/pages/publications/2018/monks2018strengthening/index.html"
-    ]
-  },
-  {
-    "listing": "/pages/research/llm_generate_des.html",
-    "items": [
-      "/pages/publications/2025/monks2025unlocking/index.html"
     ]
   }
 ]
