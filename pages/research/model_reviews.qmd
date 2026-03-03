@@ -8,12 +8,7 @@ author:
 
 We have supported some existing modellers to make their DES more reproducible and reusable.
 
-## Devon Air Ambulance Discrete Event Simulation
-
-In progress - watch this space!
-<!--TODO-->
-
-## Hybrid Simulation Modelling for Orthopaedics
+## Hybrid simulation modelling for orthopaedics
 
 The model is available at:
 
@@ -26,16 +21,38 @@ It combines:
 
 It is summarised in the poster "[Clinical Pathway Modelling of a Trauma and Orthopaedics Department](https://github.com/MHowells/SW25_poster)" from the OR Society's 12th Simulation Workshop (SW25) conference
 
-Our involvement was to complete a review of the model repository, providing the review as a [GitHub issue](https://github.com/MHowells/HybridSimModel/issues/3) (and an accompanying [pull request](https://github.com/MHowells/HybridSimModel/pull/2)). The review was structured into:
+Amy reviewed the model repository, providing the review as a [GitHub issue](https://github.com/MHowells/HybridSimModel/issues/3) (and an accompanying [pull request](https://github.com/MHowells/HybridSimModel/pull/2)). The review was structured into:
 
 * A review summary.
 * Feedback from running the code (e.g., dependency management, code troubleshooting).
 * Evaluation against the STARS framework for model reuse.
 * Evaluation against the STARS reproducibility recommendations.
 
-For example, a snapshot from the review:
+::: {.callout-note title="Example snapshot from review" collapse="true"}
 
 ![Screenshot from the review GitHub issue](model_reviews_resources/ortho_snapshot.png)
+
+:::
+
+## Nurse staffing simulation
+
+The model is available at:
+
+> Tolusha Dahanayake Yapa [![ORCID](/images/orcid.png)](https://orcid.org/0009-0003-3576-5177), Peter Griffiths [![ORCID](/images/orcid.png)](https://orcid.org/0000-0003-2439-2857), Tom Monks [![ORCID](/images/orcid.png)](https://orcid.org/0000-0003-2631-4481), Chiara Dall'Ora [![ORCID](/images/orcid.png)](https://orcid.org/0000-0002-6858-3535), Ezekwesiri Nwanosike [![ORCID](/images/orcid.png)](https://orcid.org/0000-0003-1831-6591), Natalie Pattison [![ORCID](/images/orcid.png)](https://orcid.org/0000-0002-6771-8733), Christina Saville [![ORCID](/images/orcid.png)](https://orcid.org/0000-0001-7718-5689) (2026). Nurse Staffing Simulation Paper. GitHub. <https://github.com/TolushaDYapa/NurseStaffingSimulation_Paper>.
+
+Amy attempted to reproduce results in the draft paper, recording results in a [GitHub issues](https://github.com/TolushaDYapa/NurseStaffingSimulation_Paper/issues/1) and providing pull requests with some suggested changes.
+
+This supported the addition of an environment file with all required dependencies, and identified a missing analysis script required for creating the paper tables.
+
+## Stroke pathway simulation
+
+The model is available at:
+
+> John Williams (2026). GitHub. <https://github.com/jfwilliams4/des_stroke_project>.
+
+A revised version of the repository is available at: <https://github.com/Bergam0t/jw_hsma_des_stroke_project>. 
+
+Working alongside Sammi Rosser [![ORCID](/images/orcid.png)](https://orcid.org/0000-0002-9552-8988), Amy has been contributing to improvements of the model repository. This includes testing, documentation, further analyses, and more.
 
 <br>
 ---
