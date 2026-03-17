@@ -6,16 +6,16 @@
     ]
   },
   {
+    "listing": "/pages/research/stress.html",
+    "items": [
+      "/pages/publications/2018/monks2018strengthening/index.html"
+    ]
+  },
+  {
     "listing": "/pages/research/computational_reproducibility.html",
     "items": [
       "/pages/publications/2025/heather2025reproducibility/index.html",
       "/pages/publications/2024/heather2024protocol/index.html"
-    ]
-  },
-  {
-    "listing": "/pages/research/stress.html",
-    "items": [
-      "/pages/publications/2018/monks2018strengthening/index.html"
     ]
   },
   {
