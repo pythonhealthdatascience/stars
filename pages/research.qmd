@@ -57,7 +57,7 @@ Our research has been focused on helping improving the reproducibility, reusabil
   <div class="icon"><i class="bi bi-person-workspace"></i></div>
   <div class="text">
     <div class="title">HDR UK Futures training materials</div>
-    <div class="details">In development - watch this space!</div>
+    <div class="details">Developing introductory training website and videos on testing in research workflows using Python and R examples.</div>
   </div>
 </a>
 ```
@@ -110,6 +110,14 @@ Our research has been focused on helping improving the reproducibility, reusabil
     <div class="details">We worked with model authors to review their DES models, providing guidance to help improve reproducibility and reusability.</div>
   </div>
 </a>
+<br>
+<a href="research/ambulance.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-person-lines-fill"></i></div>
+  <div class="text">
+    <div class="title">Ambulance modelling</div>
+    <div class="details">In development - watch this space!</div>
+  </div>
+</a>
 ```
 
 ## Replicable
@@ -142,6 +150,14 @@ Our research has been focused on helping improving the reproducibility, reusabil
   <div class="text">
     <div class="title">sim-tools</div>
     <div class="details">Our python package with tools to support DES and Monte-Carlo simulation.</div>
+  </div>
+</a>
+<br>
+<a href="research/quarto.qmd" class="value-box pale small-title">
+  <div class="icon"><i class="bi bi-tools"></i></div>
+  <div class="text">
+    <div class="title">Using Quarto for sharing research</div>
+    <div class="details">In development - watch this space!</div>
   </div>
 </a>
 ```
