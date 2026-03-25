@@ -24,7 +24,7 @@
     "href": "pages/research.html#reproducible",
     "title": "Research",
     "section": "Reproducible",
-    "text": "Reproducible\n\n\n  \n  \n    Computational reproducibility assessment of published DES models\n    We attempted to reproduce eight published Python and R healthcare DES models. From this work, we developed the STARS reproducibility recommendations for sharing reproducible healthcare DES models.\n  \n\n\n\n  \n  \n    DES RAP Book and four worked examples\n    This comprehensive e-book provides step-by-step instructions for building DES models in Python or R as part of a reproducible analytical pipeline (RAP). It is accompanied by four full example repositories.\n  \n\n\n\n  \n  \n    Journal of Simulation - Model Reproducibility Initiative\n    This new initiative lets authors submit their simulation models for review, awarding badges that show the word is open, reviewed, reproduced and/or reusable.\n  \n\n\n\n  \n  \n    HDR UK Futures training materials\n    Developing introductory training website and videos on testing in research workflows using Python and R examples.",
+    "text": "Reproducible\n\n\n  \n  \n    Computational reproducibility assessment of published DES models\n    We attempted to reproduce eight published Python and R healthcare DES models. From this work, we developed the STARS reproducibility recommendations for sharing reproducible healthcare DES models.\n  \n\n\n\n  \n  \n    DES RAP Book and four worked examples\n    This comprehensive e-book provides step-by-step instructions for building DES models in Python or R as part of a reproducible analytical pipeline (RAP). It is accompanied by four full example repositories.\n  \n\n\n\n  \n  \n    HDR UK Futures training materials\n    Developing introductory training website and videos on testing in research workflows using Python and R examples.",
     "crumbs": [
       "Research"
     ]
@@ -331,7 +331,11 @@
     "href": "pages/research/quarto.html",
     "title": "Using Quarto for sharing research",
     "section": "",
-    "text": "In development - watch this space!\nhttps://github.com/pythonhealthdatascience/quarto-tutorial/"
+    "text": "In development - watch this space!\nhttps://github.com/pythonhealthdatascience/quarto-tutorial/",
+    "crumbs": [
+      "Research",
+      "Using Quarto for sharing research"
+    ]
   },
   {
     "objectID": "pages/research/motivation.html",
@@ -497,7 +501,12 @@
     "href": "pages/research/ambulance.html",
     "title": "Ambulance modelling",
     "section": "",
-    "text": "In development - watch this space!\nhttps://github.com/ambmodels/ambdes"
+    "text": "In development - watch this space!\nhttps://github.com/ambmodels/ambdes",
+    "crumbs": [
+      "Research",
+      "Reproducible and reusable",
+      "Ambulance modelling"
+    ]
   },
   {
     "objectID": "index.html",
@@ -893,6 +902,7 @@
     "text": "We have supported some existing modellers to make their DES more reproducible and reusable.",
     "crumbs": [
       "Research",
+      "Reproducible and reusable",
       "Reviewing models to support authors in making their work reproducible and reusable"
     ]
   },
@@ -904,6 +914,7 @@
     "text": "Hybrid simulation modelling for orthopaedics\nThe model is available at:\n\nMatthew Howells , Paul Harper , Daniel Gartner , Geraint Palmer  (2025) Hybrid Simulation Modelling for Orthopaedics. GitHub. https://github.com/MHowells/HybridSimModel.\n\nIt combines:\n\nA system dynamics model used to model patient deterioration while waiting for a GP referral to primary care.\nA DES model used to model the patient journey through an orthopaedic department.\n\nIt is summarised in the poster “Clinical Pathway Modelling of a Trauma and Orthopaedics Department” from the OR Society’s 12th Simulation Workshop (SW25) conference\nAmy reviewed the model repository, providing the review as a GitHub issue (and an accompanying pull request). The review was structured into:\n\nA review summary.\nFeedback from running the code (e.g., dependency management, code troubleshooting).\nEvaluation against the STARS framework for model reuse.\nEvaluation against the STARS reproducibility recommendations.\n\n\n\n\n\n\n\nNoteExample snapshot from review\n\n\n\n\n\n\n\n\nScreenshot from the review GitHub issue",
     "crumbs": [
       "Research",
+      "Reproducible and reusable",
       "Reviewing models to support authors in making their work reproducible and reusable"
     ]
   },
@@ -915,6 +926,7 @@
     "text": "Nurse staffing simulation\nThe model is available at:\n\nTolusha Dahanayake Yapa , Peter Griffiths , Tom Monks , Chiara Dall’Ora , Ezekwesiri Nwanosike , Natalie Pattison , Christina Saville  (2026). Nurse Staffing Simulation Paper. GitHub. https://github.com/TolushaDYapa/NurseStaffingSimulation_Paper.\n\nAmy attempted to reproduce results in the draft paper, recording results in a GitHub issues and providing pull requests with some suggested changes.\nThis supported the addition of an environment file with all required dependencies, and identified a missing analysis script required for creating the paper tables.",
     "crumbs": [
       "Research",
+      "Reproducible and reusable",
       "Reviewing models to support authors in making their work reproducible and reusable"
     ]
   },
@@ -926,6 +938,7 @@
     "text": "Stroke pathway simulation\nThe model is available at:\n\nJohn Williams (2026). GitHub. https://github.com/jfwilliams4/des_stroke_project.\n\nA revised version of the repository is available at: https://github.com/Bergam0t/jw_hsma_des_stroke_project.\nWorking alongside Sammi Rosser , Amy has been contributing to improvements of the model repository. This includes testing, documentation, further analyses, and more.",
     "crumbs": [
       "Research",
+      "Reproducible and reusable",
       "Reviewing models to support authors in making their work reproducible and reusable"
     ]
   },
@@ -937,6 +950,7 @@
     "text": "This page was written by Amy Heather and reflects her interpretation of this work, which may not fully represent the views of all project authors or affiliated institutions.",
     "crumbs": [
       "Research",
+      "Reproducible and reusable",
       "Reviewing models to support authors in making their work reproducible and reusable"
     ]
   },
