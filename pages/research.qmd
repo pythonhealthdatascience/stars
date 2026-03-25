@@ -45,14 +45,6 @@ Our research has been focused on helping improving the reproducibility, reusabil
   </div>
 </a>
 <br>
-<a href="research/jos_mri.qmd" class="value-box pale small-title">
-  <div class="icon"><i class="bi bi-journal"></i></div>
-  <div class="text">
-    <div class="title">Journal of Simulation - Model Reproducibility Initiative</div>
-    <div class="details">This new initiative lets authors submit their simulation models for review, awarding badges that show the word is open, reviewed, reproduced and/or reusable.</div>
-  </div>
-</a>
-<br>
 <a href="research/hdr_uk_futures.qmd" class="value-box pale small-title">
   <div class="icon"><i class="bi bi-person-workspace"></i></div>
   <div class="text">

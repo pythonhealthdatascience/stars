@@ -31,12 +31,16 @@ website:
             - pages/research/des_sharing_review.qmd
             - pages/research/stars_framework_reuse.qmd
             - pages/research/eom_rcc.qmd
+        - section: "Reproducible and reusable"
+          contents:
+            - pages/research/model_reviews.qmd
+            - pages/research/ambulance.qmd
         - section: "Replicable"
           contents:
             - pages/research/stress.qmd
-        - pages/research/model_reviews.qmd
         - pages/research/llm_generate_des.qmd
         - pages/research/simtools.qmd
+        - pages/research/quarto.qmd
   page-footer:
     center: |
       ![](/images/exeter.png){width=150px}
