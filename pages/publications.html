@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b437f79f4ce874bb4001322097544fe4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6e13e9d27a0269d7fb3540b673c0cf1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,6 +72,34 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts_2026 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-date-format','listing-citation','listing-appendix-cite-as','listing-title','listing-doi','listing-author','listing-date','listing-image','listing-categories','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-date-format","listing-citation","listing-appendix-cite-as","listing-title","listing-doi","listing-author","listing-date","listing-image","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts_2026'] = new List('listing-posts_2026', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-posts_2025 .list');
@@ -328,14 +356,15 @@ window.Quarto = {
     <h2 id="toc-title">Year</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2025</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2024</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2023</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2022</a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2018</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2026</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2025</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2024</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2023</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2022</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2018</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(11)</span></div><div class="category" data-category="RnJhbWV3b3Jr">Framework <span class="quarto-category-count">(4)</span></div><div class="category" data-category="TExNcw==">LLMs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVwbGljYWJsZQ==">Replicable <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVwcm9kdWNpYmxl">Reproducible <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmV1c2FibGU=">Reusable <span class="quarto-category-count">(4)</span></div><div class="category" data-category="VHV0b3JpYWw=">Tutorial <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="RnJhbWV3b3Jr">Framework <span class="quarto-category-count">(4)</span></div><div class="category" data-category="TExNcw==">LLMs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVwbGljYWJsZQ==">Replicable <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVwcm9kdWNpYmxl">Reproducible <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UmV1c2FibGU=">Reusable <span class="quarto-category-count">(4)</span></div><div class="category" data-category="VHV0b3JpYWw=">Tutorial <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -344,12 +373,61 @@ window.Quarto = {
 
 
 <section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2025</h2>
+<h2 class="anchored" data-anchor-id="section">2026</h2>
+<div id="listing-posts_2026" class="quarto-listing quarto-listing-container-custom">
+<div class="list quarto-listing-default">
+    
+
+    <div class="quarto-post" data-index="0" data-categories="UmVwcm9kdWNpYmxl" data-listing-date-sort="1781568000000" data-listing-file-modified-sort="1782742723679" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+
+        <div class="metadata">
+            <div>Amy Heather, Thomas Monks, Alison Harper, Fatemeh Alidoost, Robert Challen, Thomas Slater, Navonil Mustafee</div>
+            <div>Jun 16, 2026</div>
+        </div>
+
+        <div class="body">
+            <a href="../pages/publications/2026/heather2026reproducible/index.html">
+                <h3 class="listing-title anchored">Reproducible analytical pipelines for healthcare discrete‑event simulation: An open guide and worked examples</h3>
+                
+            </a>
+            
+            
+                <div class="listing-container-title">
+                    NIHR Open Research
+                </div>
+            
+            
+            
+                <div class="listing-categories">
+                    
+                        <div class="listing-category">Reproducible</div>
+                    
+                </div>
+            
+
+        </div>
+
+        <div class="thumbnail">
+            <a href="../pages/publications/2026/heather2026reproducible/index.html">
+                
+                    <img src="../pages/publications/2026/heather2026reproducible/frontpage.png" alt="Reproducible analytical pipelines for healthcare discrete‑event simulation: An open guide and worked examples">
+                
+            </a>
+        </div>
+
+    </div>
+    
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2025</h2>
 <div id="listing-posts_2025" class="quarto-listing quarto-listing-container-custom">
 <div class="list quarto-listing-default">
     
 
-    <div class="quarto-post" data-index="0" data-categories="TExNcw==" data-listing-date-sort="1757462400000" data-listing-file-modified-sort="1774454855216" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="176">
+    <div class="quarto-post" data-index="0" data-categories="TExNcw==" data-listing-date-sort="1757462400000" data-listing-file-modified-sort="1782742723666" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="176">
 
         <div class="metadata">
             <div>Thomas Monks, Alison Harper, Amy Heather</div>
@@ -389,7 +467,7 @@ window.Quarto = {
     </div>
     
 
-    <div class="quarto-post" data-index="1" data-categories="UmVwcm9kdWNpYmxl" data-listing-date-sort="1757376000000" data-listing-file-modified-sort="1774454855170" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
+    <div class="quarto-post" data-index="1" data-categories="UmVwcm9kdWNpYmxl" data-listing-date-sort="1757376000000" data-listing-file-modified-sort="1782742723624" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
 
         <div class="metadata">
             <div>Amy Heather, Thomas Monks, Alison Harper, Navonil Mustafee, Andrew Mayne</div>
@@ -429,7 +507,7 @@ window.Quarto = {
     </div>
     
 
-    <div class="quarto-post" data-index="2" data-categories="VHV0b3JpYWw=" data-listing-date-sort="1743379200000" data-listing-file-modified-sort="1774454855213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="112">
+    <div class="quarto-post" data-index="2" data-categories="VHV0b3JpYWw=" data-listing-date-sort="1743379200000" data-listing-file-modified-sort="1782742723664" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="112">
 
         <div class="metadata">
             <div>Thomas Monks, Alison Harper, Amy Heather, Andrew Mayne, Navonil Mustafee</div>
@@ -472,13 +550,13 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2024</h2>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">2024</h2>
 <div id="listing-posts_2024" class="quarto-listing quarto-listing-container-custom">
 <div class="list quarto-listing-default">
     
 
-    <div class="quarto-post" data-index="0" data-categories="VHV0b3JpYWw=" data-listing-date-sort="1724371200000" data-listing-file-modified-sort="1774454855140" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="255">
+    <div class="quarto-post" data-index="0" data-categories="VHV0b3JpYWw=" data-listing-date-sort="1724371200000" data-listing-file-modified-sort="1782742723597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="255">
 
         <div class="metadata">
             <div>Alison Harper, Thomas Monks, Sean Manzi</div>
@@ -518,7 +596,7 @@ window.Quarto = {
     </div>
     
 
-    <div class="quarto-post" data-index="1" data-categories="UmVwcm9kdWNpYmxl" data-listing-date-sort="1718841600000" data-listing-file-modified-sort="1774454855144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="90">
+    <div class="quarto-post" data-index="1" data-categories="UmVwcm9kdWNpYmxl" data-listing-date-sort="1718841600000" data-listing-file-modified-sort="1782742723600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="90">
 
         <div class="metadata">
             <div>Amy Heather, Thomas Monks, Alison Harper, Navonil Mustafee, Andrew Mayne</div>
@@ -558,7 +636,7 @@ window.Quarto = {
     </div>
     
 
-    <div class="quarto-post" data-index="2" data-categories="UmV1c2FibGUlMkNGcmFtZXdvcms=" data-listing-date-sort="1714608000000" data-listing-file-modified-sort="1774454855149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190">
+    <div class="quarto-post" data-index="2" data-categories="UmV1c2FibGUlMkNGcmFtZXdvcms=" data-listing-date-sort="1714608000000" data-listing-file-modified-sort="1782742723604" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190">
 
         <div class="metadata">
             <div>Thomas Monks, Alison Harper, Navonil Mustafee</div>
@@ -603,13 +681,13 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">2023</h2>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">2023</h2>
 <div id="listing-posts_2023" class="quarto-listing quarto-listing-container-custom">
 <div class="list quarto-listing-default">
     
 
-    <div class="quarto-post" data-index="0" data-categories="UmV1c2FibGU=" data-listing-date-sort="1702598400000" data-listing-file-modified-sort="1774454855132" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="239">
+    <div class="quarto-post" data-index="0" data-categories="UmV1c2FibGU=" data-listing-date-sort="1702598400000" data-listing-file-modified-sort="1782742723589" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="239">
 
         <div class="metadata">
             <div>Thomas Monks, Alison Harper</div>
@@ -649,7 +727,7 @@ window.Quarto = {
     </div>
     
 
-    <div class="quarto-post" data-index="1" data-categories="UmV1c2FibGU=" data-listing-date-sort="1696032000000" data-listing-file-modified-sort="1774454855122" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="220">
+    <div class="quarto-post" data-index="1" data-categories="UmV1c2FibGU=" data-listing-date-sort="1696032000000" data-listing-file-modified-sort="1782742723580" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="220">
 
         <div class="metadata">
             <div>Thomas Monks, Alison Harper</div>
@@ -689,7 +767,7 @@ window.Quarto = {
     </div>
     
 
-    <div class="quarto-post" data-index="2" data-categories="UmV1c2FibGUlMkNGcmFtZXdvcms=" data-listing-date-sort="1682640000000" data-listing-file-modified-sort="1774454855117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="184">
+    <div class="quarto-post" data-index="2" data-categories="UmV1c2FibGUlMkNGcmFtZXdvcms=" data-listing-date-sort="1682640000000" data-listing-file-modified-sort="1782742723575" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="184">
 
         <div class="metadata">
             <div>Alison Harper, Thomas Monks</div>
@@ -734,13 +812,13 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3">2022</h2>
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4">2022</h2>
 <div id="listing-posts_2022" class="quarto-listing quarto-listing-container-custom">
 <div class="list quarto-listing-default">
     
 
-    <div class="quarto-post" data-index="0" data-categories="RnJhbWV3b3Jr" data-listing-date-sort="1657756800000" data-listing-file-modified-sort="1774454855113" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="132">
+    <div class="quarto-post" data-index="0" data-categories="RnJhbWV3b3Jr" data-listing-date-sort="1657756800000" data-listing-file-modified-sort="1782742723573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="132">
 
         <div class="metadata">
             <div>Thomas Monks, Alison Harper, Anastasia Anagnostou, Simon Taylor</div>
@@ -783,13 +861,13 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-4" class="level2">
-<h2 class="anchored" data-anchor-id="section-4">2018</h2>
+<section id="section-5" class="level2">
+<h2 class="anchored" data-anchor-id="section-5">2018</h2>
 <div id="listing-posts_2018" class="quarto-listing quarto-listing-container-custom">
 <div class="list quarto-listing-default">
     
 
-    <div class="quarto-post" data-index="0" data-categories="UmVwbGljYWJsZSUyQ0ZyYW1ld29yaw==" data-listing-date-sort="1520294400000" data-listing-file-modified-sort="1774454855107" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
+    <div class="quarto-post" data-index="0" data-categories="UmVwbGljYWJsZSUyQ0ZyYW1ld29yaw==" data-listing-date-sort="1520294400000" data-listing-file-modified-sort="1782742723568" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
 
         <div class="metadata">
             <div>Thomas Monks, Christine Currie, Bhakti Onggo, Stewart Robinson, Martin Kunc, Simon Taylor</div>

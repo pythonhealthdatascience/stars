@@ -1,38 +1,20 @@
 [
   {
-    "listing": "/pages/research/des_sharing_review.html",
-    "items": [
-      "/pages/publications/2023/monks2023computer/index.html"
-    ]
-  },
-  {
-    "listing": "/pages/research/stress.html",
-    "items": [
-      "/pages/publications/2018/monks2018strengthening/index.html"
-    ]
-  },
-  {
-    "listing": "/pages/research/computational_reproducibility.html",
-    "items": [
-      "/pages/publications/2025/heather2025reproducibility/index.html",
-      "/pages/publications/2024/heather2024protocol/index.html"
-    ]
-  },
-  {
     "listing": "/pages/research/llm_generate_des.html",
     "items": [
       "/pages/publications/2025/monks2025unlocking/index.html"
     ]
   },
   {
-    "listing": "/pages/research/stars_framework_reuse.html",
+    "listing": "/pages/research/des_rap_book.html",
     "items": [
-      "/pages/publications/2024/monks2024towards/index.html"
+      "/pages/publications/2026/heather2026reproducible/index.html"
     ]
   },
   {
     "listing": "/pages/publications.html",
     "items": [
+      "/pages/publications/2026/heather2026reproducible/index.html",
       "/pages/publications/2025/monks2025unlocking/index.html",
       "/pages/publications/2025/heather2025reproducibility/index.html",
       "/pages/publications/2025/monks2025building/index.html",
@@ -44,6 +26,31 @@
       "/pages/publications/2023/harper2023framework/index.html",
       "/pages/publications/2022/monks2022open/index.html",
       "/pages/publications/2018/monks2018strengthening/index.html"
+    ]
+  },
+  {
+    "listing": "/pages/research/computational_reproducibility.html",
+    "items": [
+      "/pages/publications/2025/heather2025reproducibility/index.html",
+      "/pages/publications/2024/heather2024protocol/index.html"
+    ]
+  },
+  {
+    "listing": "/pages/research/stress.html",
+    "items": [
+      "/pages/publications/2018/monks2018strengthening/index.html"
+    ]
+  },
+  {
+    "listing": "/pages/research/stars_framework_reuse.html",
+    "items": [
+      "/pages/publications/2024/monks2024towards/index.html"
+    ]
+  },
+  {
+    "listing": "/pages/research/des_sharing_review.html",
+    "items": [
+      "/pages/publications/2023/monks2023computer/index.html"
     ]
   }
 ]
