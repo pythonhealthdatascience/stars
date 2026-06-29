@@ -19,6 +19,10 @@ author:
   - name: Navonil Mustafee
     affiliation: University of Exeter Business School
     orcid: 0000-0002-2204-8924
+listing:
+  - id: pub
+    contents:
+      - "../publications/2026/heather2026reproducible/index.qmd"
 ---
 
 ## Summary
@@ -82,7 +86,8 @@ Key features include:
 
 ## Publications
 
-In development!
+::: {#pub}
+:::
 
 <br>
 ---
