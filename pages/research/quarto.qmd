@@ -8,9 +8,9 @@ On 1 June 2026, we used these materials in an in-person workshop for the Departm
 
 All materials were developed openly and remain available online:
 
-* Workshop site: https://pythonhealthdatascience.github.io/quarto-tutorial/
-* Workshop site GitHub: https://github.com/pythonhealthdatascience/quarto-tutorial/
-* Template/Codespace used in workshop: https://github.com/pythonhealthdatascience/quarto-template
+* Workshop site: <https://pythonhealthdatascience.github.io/quarto-tutorial/>
+* Workshop site GitHub: <https://github.com/pythonhealthdatascience/quarto-tutorial/>
+* Template/Codespace used in workshop: <https://github.com/pythonhealthdatascience/quarto-template>
 
 The aim was to provide a simple, reusable starting point for building Quarto websites that can serve as research homepages, project sites, or documentation hubs.
 
