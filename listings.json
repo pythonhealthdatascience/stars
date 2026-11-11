@@ -1,19 +1,27 @@
 [
   {
+    "listing": "/pages/research/stress.html",
+    "items": [
+      "/pages/publications/2018/monks2018strengthening/index.html"
+    ]
+  },
+  {
     "listing": "/pages/research/llm_generate_des.html",
     "items": [
       "/pages/publications/2025/monks2025unlocking/index.html"
     ]
   },
   {
-    "listing": "/pages/research/des_rap_book.html",
+    "listing": "/pages/research/computational_reproducibility.html",
     "items": [
-      "/pages/publications/2026/heather2026reproducible/index.html"
+      "/pages/publications/2025/heather2025reproducibility/index.html",
+      "/pages/publications/2024/heather2024protocol/index.html"
     ]
   },
   {
     "listing": "/pages/publications.html",
     "items": [
+      "/pages/publications/2026/boyle2026grand/index.html",
       "/pages/publications/2026/heather2026reproducible/index.html",
       "/pages/publications/2025/monks2025unlocking/index.html",
       "/pages/publications/2025/heather2025reproducibility/index.html",
@@ -29,16 +37,9 @@
     ]
   },
   {
-    "listing": "/pages/research/computational_reproducibility.html",
+    "listing": "/pages/research/des_sharing_review.html",
     "items": [
-      "/pages/publications/2025/heather2025reproducibility/index.html",
-      "/pages/publications/2024/heather2024protocol/index.html"
-    ]
-  },
-  {
-    "listing": "/pages/research/stress.html",
-    "items": [
-      "/pages/publications/2018/monks2018strengthening/index.html"
+      "/pages/publications/2023/monks2023computer/index.html"
     ]
   },
   {
@@ -48,9 +49,9 @@
     ]
   },
   {
-    "listing": "/pages/research/des_sharing_review.html",
+    "listing": "/pages/research/des_rap_book.html",
     "items": [
-      "/pages/publications/2023/monks2023computer/index.html"
+      "/pages/publications/2026/heather2026reproducible/index.html"
     ]
   }
 ]
