@@ -6,7 +6,7 @@ author:
     orcid: 0000-0002-6596-3479
 ---
 
-We have been developing training materials for HDR UK Futures, designed to introduce researchers working in Python and R to testing.
+We developed training materials for HDR UK Futures, designed to introduce researchers working in Python and R to testing.
 
 You can check out our companion site for the training materials here:
 
@@ -29,3 +29,11 @@ You can check out our companion site for the training materials here:
 </div>
 <br>
 ```
+
+You can find our course via the HDR UK Futures platform: <https://hdruklearn.org/courses/course-v1:HDRUK+STARS001+2026>.
+
+[![](/images/futures_screenshot.png)](https://hdruklearn.org/courses/course-v1:HDRUK+STARS001+2026)
+
+You can read about our course in the NIHR ARC South West news:
+
+[![](/images/arc_testing.png)](https://arc-sw.nihr.ac.uk/news/new-course-supports-researchers-to-build-more-reproducible-analytical-workflows/)
