@@ -2,6 +2,24 @@
 title: Ambulance modelling
 ---
 
-In development - watch this space!
+We have been working alongside the South West Ambulance Service to develop an open reproducible discrete-event simulation model of ambulance operations in Python.
 
-<https://github.com/ambmodels/ambdes>
+```{=html}
+<div class="iframe-wrapper">
+  <div class="iframe-header">
+    <span>Website preview:</span>
+    <a href="https://ambmodels.github.io/ambdes/"
+       target="_blank" rel="noopener">
+      View full website in new tab
+    </a>
+  </div>
+
+  <iframe
+    width="100%"
+    height="800"
+    src="https://ambmodels.github.io/ambdes/"
+    title="ambdes: open reproducible discrete-event simulation of ambulance operations">
+  </iframe>
+</div>
+<br>
+```
