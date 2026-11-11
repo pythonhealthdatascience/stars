@@ -1,0 +1,40 @@
+---
+title: "Grand challenges in healthcare simulation"
+doi: 10.1080/17477778.2026.2696528
+author:
+  - name: Laura Boyle
+    affiliation: Queen's University Belfast
+    orcid: 0000-0001-9651-1363
+  - name: Christine Currie
+    affiliation: University of Southampton
+    orcid: 0000-0002-7016-3652
+  - name: Thomas Monks
+    affiliation: University of Exeter
+    orcid: 0000-0003-2631-4481
+  - name: Lucy Morgan
+    affiliation: The Strategy Unit, NHS Midlands and Lancashire
+    orcid: 0000-0003-0987-2350
+  - name: Alexander Rutherford
+    affiliation: Lancaster University
+    orcid: 0000-0001-5661-2063
+date: 20 July 2026
+citation:
+  container-title: "Journal of Simulation"
+image: frontpage.png
+categories:
+  - Reproducible
+  - Replicable
+  - Reusable
+---
+
+## Abstract
+
+This paper describes grand challenges in healthcare simulation for the next 10 years. We consider challenges within seven themes that are likely to have the greatest impact on healthcare simulation during the next decade: digital twins and real time simulation, open science for simulation, validation, improving the integration of the health system, decision support, including human behaviour, ‘equity and health inequality’. Drawing on previous work in the area, we suggest directions that healthcare simulation research may follow and the associated challenges. Our aim is to help shape the research agenda in this important area.
+
+## Article
+
+```{=html}
+<div class="embed-container">
+  <iframe src="paper.pdf" style="border: 0.5px"></iframe>
+</div>
+```
